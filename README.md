@@ -4,7 +4,9 @@
 
 ## 所使用到的软件清单
 
-操作系统: RedHat Server 7.2
+* 操作系统: RedHat Server 7.2
+* 开发机器: MacBook Pro \(Retina, 13-inch, Late 2013\)
+* 开发操作系统: macOS Sierra 10.12.5
 
-开发机器: MacBook Pro
+
 
