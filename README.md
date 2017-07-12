@@ -1,6 +1,6 @@
 # 大数据学习笔记
 
-# This file file serves as your book's preface, a great place to describe your book's content and ideas.
+# 大数据的技术日新月异，本书将我在学习大数据的时的方法和心得记录下来，供新入门的同学参考。
 
 
 
