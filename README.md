@@ -11,3 +11,16 @@
 
 
 
+## 介绍 {#介绍}
+
+* 项目首页：
+  https://github.com/guoliang1114
+* 代码仓库：
+  https://github.com/guoliang1114/BigDataCode
+* 在线阅读：
+  https://github.com/guoliang1114/BigData/content/
+
+### 纠错 {#纠错}
+
+欢迎大家指出不足，如有任何疑问，请邮件联系guoliang1114@gmail.com 或者直接修复并提交 Pull Request。
+
