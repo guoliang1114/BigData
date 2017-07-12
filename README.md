@@ -9,16 +9,14 @@
 * 开发操作系统: macOS Sierra 10.12.5
 * Hadoop: 
 
-
-
-## 介绍 {#介绍}
+## 项目信息 {#介绍}
 
 * 项目首页：
-  https://github.com/guoliang1114
+  [https://github.com/guoliang1114](https://github.com/guoliang1114)
 * 代码仓库：
-  https://github.com/guoliang1114/BigDataCode
+  [https://github.com/guoliang1114/BigDataCode](https://github.com/guoliang1114/BigDataCode)
 * 在线阅读：
-  https://github.com/guoliang1114/BigData/content/
+  [https://github.com/guoliang1114/BigData/content/](https://github.com/guoliang1114/BigData/content/)
 
 ### 纠错 {#纠错}
 
