@@ -55,14 +55,14 @@
 
 `hostnamectl set-hostname hadoopmaster`
 
-### 3.2.5 JDK安装和设置
+### 3.2.5 JDK安装和配置
 
 首先解压jdk  
 `tar xvfz jdk-8u131-linux-x64.tar.gz`
 
 设置JAVA环境变量
 
-`vi /etc/profile  
+`vi /etc/profile    
 export JAVA_HOME=/home/jdk1.8.0_131`
 
 `export JRE_HOME=${JAVA_HOME}/jre`
@@ -74,4 +74,6 @@ export JAVA_HOME=/home/jdk1.8.0_131`
 执行source /etc/profile立即生效。
 
 
+
+3.2.6 Hadoop安装和配置
 
