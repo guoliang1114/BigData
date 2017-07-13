@@ -62,7 +62,7 @@
 
 设置JAVA环境变量
 
-`vi /etc/profile      
+`vi /etc/profile        
 export JAVA_HOME=/home/jdk1.8.0_131`
 
 `export JRE_HOME=${JAVA_HOME}/jre`
@@ -80,6 +80,57 @@ export JAVA_HOME=/home/jdk1.8.0_131`
 `groupadd hadoop`
 
 `adduser -g hadoop hadoop`
+
+### 3.2.7 无密码登陆
+
+ssh-key-gen在hadoopmaster主机上创建公钥与密钥。需要注意一下,一定要用hadoop用户生成公钥,因为我们是免密钥登录用的是hadoop。
+
+  
+`[hadoop@hadoopmaster /]$ ssh-keygen -t rsa`
+
+`Generating public/private rsa key pair.`
+
+`Enter file in which to save the key (/home/hadoop/.ssh/id_rsa):`
+
+`Created directory '/home/hadoop/.ssh'.`
+
+`Enter passphrase (empty for no passphrase):`
+
+`Enter same passphrase again:`
+
+`Your identification has been saved in /home/hadoop/.ssh/id_rsa.`
+
+`Your public key has been saved in /home/hadoop/.ssh/id_rsa.pub.`
+
+`The key fingerprint is:`
+
+`fd:63:be:4e:cc:29:0f:d3:64:c4:e1:eb:ed:f1:de:72 hadoop@hadoopmaster`
+
+`The key's randomart image is:`
+
+`+--[ RSA 2048]----+`
+
+`| . |`
+
+`|  o .  |`
+
+`| + |`
+
+`|  . . .  |`
+
+`| S . + |`
+
+`|  O o  |`
+
+`| + @ o |`
+
+`|  O o.oE|`
+
+`|  .=..++|`
+
+`+-----------------+`
+
+
 
 
 
