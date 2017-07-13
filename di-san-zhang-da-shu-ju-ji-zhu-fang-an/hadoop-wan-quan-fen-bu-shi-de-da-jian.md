@@ -80,7 +80,7 @@ HBASE和其他的数据库软件一样会同时打开很多文件,Linux默认的
 
 设置JAVA环境变量
 
-`vi /etc/profile                              
+`vi /etc/profile                                
 export JAVA_HOME=/home/jdk1.8.0_131`
 
 `export JRE_HOME=${JAVA_HOME}/jre`
@@ -173,7 +173,9 @@ export JAVA_HOME=/home/jdk1.8.0_131`
 
 ### 3.2.8 HadoopMaster安装
 
-### 
+我们把hadoop安装到/hadoop目录下。hadoop的用户和组也是hadoop。
+
+
 
 
 
