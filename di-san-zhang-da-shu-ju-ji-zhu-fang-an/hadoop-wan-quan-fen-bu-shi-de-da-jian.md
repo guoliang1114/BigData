@@ -62,7 +62,7 @@
 
 设置JAVA环境变量
 
-`vi /etc/profile        
+`vi /etc/profile          
 export JAVA_HOME=/home/jdk1.8.0_131`
 
 `export JRE_HOME=${JAVA_HOME}/jre`
@@ -83,9 +83,8 @@ export JAVA_HOME=/home/jdk1.8.0_131`
 
 ### 3.2.7 无密码登陆
 
-ssh-key-gen在hadoopmaster主机上创建公钥与密钥。需要注意一下,一定要用hadoop用户生成公钥,因为我们是免密钥登录用的是hadoop。
+步骤一： ssh-key-gen在hadoopmaster主机上创建公钥与密钥。需要注意一下,一定要用hadoop用户生成公钥,因为我们是免密钥登录用的是hadoop。
 
-  
 `[hadoop@hadoopmaster /]$ ssh-keygen -t rsa`
 
 `Generating public/private rsa key pair.`
@@ -132,5 +131,9 @@ ssh-key-gen在hadoopmaster主机上创建公钥与密钥。需要注意一下,�
 
 
 
+步骤二: 保证hadoopmaster登录自已是有效的
 
+`cd .ssh`
+
+`cat ./id_rsa.pub >> ./authorized_keys`
 
