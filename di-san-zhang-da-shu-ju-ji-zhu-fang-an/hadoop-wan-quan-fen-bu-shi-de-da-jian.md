@@ -62,7 +62,7 @@
 
 设置JAVA环境变量
 
-`vi /etc/profile    
+`vi /etc/profile      
 export JAVA_HOME=/home/jdk1.8.0_131`
 
 `export JRE_HOME=${JAVA_HOME}/jre`
@@ -73,7 +73,13 @@ export JAVA_HOME=/home/jdk1.8.0_131`
 
 执行source /etc/profile立即生效。
 
+### 3.2.6 Hadoop安装和配置
+
+1. 创建用户和用户组。
+
+`groupadd hadoop`
+
+`adduser -g hadoop hadoop`
 
 
-3.2.6 Hadoop安装和配置
 
