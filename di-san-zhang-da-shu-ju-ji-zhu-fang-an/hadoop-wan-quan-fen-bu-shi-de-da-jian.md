@@ -39,7 +39,7 @@
 
 执行
 
-` service network restart`
+`service network restart`
 
 然后使用 ip addr show查看服务器IP信息。
 
@@ -55,12 +55,23 @@
 
 `hostnamectl set-hostname hadoopmaster`
 
-#### 3.2.5 JDK安装和设置
+### 3.2.5 JDK安装和设置
 
 首先解压jdk  
-` tar xvfz jdk-8u131-linux-x64.tar.gz`
+`tar xvfz jdk-8u131-linux-x64.tar.gz`
 
 设置JAVA环境变量
+
+`vi /etc/profile  
+export JAVA_HOME=/home/jdk1.8.0_131`
+
+`export JRE_HOME=${JAVA_HOME}/jre`
+
+`export CLASSPATH=.:${JAVA_HOME}/lib:${JRE_HOME}/lib`
+
+`export PATH=${JAVA_HOME}/bin:$PATH`
+
+执行source /etc/profile立即生效。
 
 
 
