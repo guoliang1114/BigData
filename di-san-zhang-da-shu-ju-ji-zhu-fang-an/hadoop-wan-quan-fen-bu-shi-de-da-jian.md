@@ -62,7 +62,7 @@
 
 设置JAVA环境变量
 
-`vi /etc/profile            
+`vi /etc/profile              
 export JAVA_HOME=/home/jdk1.8.0_131`
 
 `export JRE_HOME=${JAVA_HOME}/jre`
@@ -135,15 +135,11 @@ export JAVA_HOME=/home/jdk1.8.0_131`
 
 `cat ./id_rsa.pub >> ./authorized_keys`
 
-
-
 步骤三： 将公钥拷贝到其他主机上
 
 `scp ~/.ssh/id_rsa.pub hadoop@hadoopslave1:/home/hadoop/`
 
 `scp ~/.ssh/id_rsa.pub hadoop@hadoopslave2:/home/hadoop/`
-
-
 
 步骤四 在其他二个节点上做的工作
 
@@ -155,10 +151,5 @@ export JAVA_HOME=/home/jdk1.8.0_131`
 
 `rm ~/id_rsa.pub    # 用完就可以删掉了`
 
-
-
-  
-
-
-
+接着，另外两台服务器也需要如上操作。确保3台服务器之间无密码直接登陆。
 
