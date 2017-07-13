@@ -55,14 +55,21 @@
 
 `hostnamectl set-hostname hadoopmaster`
 
-### 3.2.5 JDK安装和配置
+#### 资源限制配置
+
+此步骤要求在hadoopmaster hadoopslave1 hadoopslave2都要进行配置,以防止处理达到机器文件上限
+
+  
+
+
+#### 3.2.5 JDK安装和配置
 
 首先解压jdk  
 `tar xvfz jdk-8u131-linux-x64.tar.gz`
 
 设置JAVA环境变量
 
-`vi /etc/profile              
+`vi /etc/profile                
 export JAVA_HOME=/home/jdk1.8.0_131`
 
 `export JRE_HOME=${JAVA_HOME}/jre`
