@@ -73,8 +73,6 @@ HBASE和其他的数据库软件一样会同时打开很多文件,Linux默认的
 
 可以使用ulimit -aH查看是否生效。
 
-
-
 #### 3.2.5 JDK安装和配置
 
 首先解压jdk  
@@ -82,7 +80,7 @@ HBASE和其他的数据库软件一样会同时打开很多文件,Linux默认的
 
 设置JAVA环境变量
 
-`vi /etc/profile                            
+`vi /etc/profile                              
 export JAVA_HOME=/home/jdk1.8.0_131`
 
 `export JRE_HOME=${JAVA_HOME}/jre`
@@ -172,8 +170,6 @@ export JAVA_HOME=/home/jdk1.8.0_131`
 `rm ~/id_rsa.pub    # 用完就可以删掉了`
 
 接着，另外两台服务器也需要如上操作。确保3台服务器之间无密码直接登陆。
-
-
 
 ### 3.2.8 HadoopMaster安装
 
