@@ -80,7 +80,7 @@ HBASE和其他的数据库软件一样会同时打开很多文件,Linux默认的
 
 设置JAVA环境变量
 
-`vi /etc/profile                                
+`vi /etc/profile                                  
 export JAVA_HOME=/home/jdk1.8.0_131`
 
 `export JRE_HOME=${JAVA_HOME}/jre`
@@ -175,7 +175,42 @@ export JAVA_HOME=/home/jdk1.8.0_131`
 
 我们把hadoop安装到/hadoop目录下。hadoop的用户和组也是hadoop。
 
+1. 解压安装
 
+tar -xvf hadoop-2.8.0.tar.gz  \#解压文件
+
+接着就是配置hadoop的环境变量了，我建议将所有需要的环境变量配置加入到/etc/profile中,这是全局变量。
+
+
+
+`export HADOOP_INSTALL=/hadoop/hadoop-2.8.0`
+
+`export PATH=$PATH:$HADOOP_INSTALL/bin`
+
+`export PATH=$PATH:$HADOOP_INSTALL/sbin`
+
+`export HADOOP_MAPRED_HOME=$HADOOP_INSTALL`
+
+`export HADOOP_COMMON_HOME=$HADOOP_INSTALL`
+
+`export HADOOP_HDFS_HOME=$HADOOP_INSTALL`
+
+`export YARN_HOME=$HADOOP_INSTALL`
+
+`export HADOOP_COMMON_LIB_NATIVE_DIR=$HADOOP_INSTALL/lib/native`
+
+`export HADOOP_OPTS="-Djava.library.path=$HADOOP_INSTALL/lib"`
+
+2. 设置slave节点
+
+cd /hadoop/hadoop-2.8.0/etc/hadoop/
+
+vi slaves
+
+将loaclhost删除，填写我们自己设定的两台slave  
+hadoopslave1
+
+hadoopslave2
 
 
 
