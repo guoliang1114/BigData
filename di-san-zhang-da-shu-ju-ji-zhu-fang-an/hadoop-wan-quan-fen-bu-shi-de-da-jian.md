@@ -62,7 +62,7 @@
 
 设置JAVA环境变量
 
-`vi /etc/profile          
+`vi /etc/profile            
 export JAVA_HOME=/home/jdk1.8.0_131`
 
 `export JRE_HOME=${JAVA_HOME}/jre`
@@ -129,11 +129,36 @@ export JAVA_HOME=/home/jdk1.8.0_131`
 
 `+-----------------+`
 
-
-
 步骤二: 保证hadoopmaster登录自已是有效的
 
 `cd .ssh`
 
 `cat ./id_rsa.pub >> ./authorized_keys`
+
+
+
+步骤三： 将公钥拷贝到其他主机上
+
+`scp ~/.ssh/id_rsa.pub hadoop@hadoopslave1:/home/hadoop/`
+
+`scp ~/.ssh/id_rsa.pub hadoop@hadoopslave2:/home/hadoop/`
+
+
+
+步骤四 在其他二个节点上做的工作
+
+`mkdir ~/.ssh       # 如果不存在该文件夹需先创建，若已存在则忽略`
+
+`cat ~/id_rsa.pub >> ~/.ssh/authorized_keys`
+
+`chmod 600 .ssh/authorized_keys #确保权限可用,authorized_keys的权限要是600。`
+
+`rm ~/id_rsa.pub    # 用完就可以删掉了`
+
+
+
+  
+
+
+
 
