@@ -80,7 +80,7 @@ HBASE和其他的数据库软件一样会同时打开很多文件,Linux默认的
 
 设置JAVA环境变量
 
-`vi /etc/profile                                  
+`vi /etc/profile                                        
 export JAVA_HOME=/home/jdk1.8.0_131`
 
 `export JRE_HOME=${JAVA_HOME}/jre`
@@ -103,49 +103,30 @@ export JAVA_HOME=/home/jdk1.8.0_131`
 
 步骤一： ssh-key-gen在hadoopmaster主机上创建公钥与密钥。需要注意一下,一定要用hadoop用户生成公钥,因为我们是免密钥登录用的是hadoop。
 
-`[hadoop@hadoopmaster /]$ ssh-keygen -t rsa`
-
-`Generating public/private rsa key pair.`
-
-`Enter file in which to save the key (/home/hadoop/.ssh/id_rsa):`
-
-`Created directory '/home/hadoop/.ssh'.`
-
-`Enter passphrase (empty for no passphrase):`
-
-`Enter same passphrase again:`
-
-`Your identification has been saved in /home/hadoop/.ssh/id_rsa.`
-
-`Your public key has been saved in /home/hadoop/.ssh/id_rsa.pub.`
-
-`The key fingerprint is:`
-
-`fd:63:be:4e:cc:29:0f:d3:64:c4:e1:eb:ed:f1:de:72 hadoop@hadoopmaster`
-
-`The key's randomart image is:`
-
-`+--[ RSA 2048]----+`
-
-`| . |`
-
-`|  o .  |`
-
-`| + |`
-
-`|  . . .  |`
-
-`| S . + |`
-
-`|  O o  |`
-
-`| + @ o |`
-
-`|  O o.oE|`
-
-`|  .=..++|`
-
-`+-----------------+`
+```
+[hadoop@hadoopmaster /]$ ssh-keygen -t rsa
+Generating public/private rsa key pair.
+Enter file in which to save the key (/home/hadoop/.ssh/id_rsa):
+Created directory '/home/hadoop/.ssh'.
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /home/hadoop/.ssh/id_rsa.
+Your public key has been saved in /home/hadoop/.ssh/id_rsa.pub.
+The key fingerprint is:
+fd:63:be:4e:cc:29:0f:d3:64:c4:e1:eb:ed:f1:de:72 hadoop@hadoopmaster
+The key's randomart image is:
++--[ RSA 2048]----+
+| . |
+|  o .  |
+| + |
+|  . . .  |
+| S . + |
+|  O o  |
+| + @ o |
+|  O o.oE|
+|  .=..++|
++-----------------+
+```
 
 步骤二: 保证hadoopmaster登录自已是有效的
 
@@ -155,25 +136,27 @@ export JAVA_HOME=/home/jdk1.8.0_131`
 
 步骤三： 将公钥拷贝到其他主机上
 
-`scp ~/.ssh/id_rsa.pub hadoop@hadoopslave1:/home/hadoop/`
-
-`scp ~/.ssh/id_rsa.pub hadoop@hadoopslave2:/home/hadoop/`
+```
+scp ~/.ssh/id_rsa.pub hadoop@hadoopslave1:/home/hadoop/
+scp ~/.ssh/id_rsa.pub hadoop@hadoopslave2:/home/hadoop/
+```
 
 步骤四 在其他二个节点上做的工作
 
-`mkdir ~/.ssh       # 如果不存在该文件夹需先创建，若已存在则忽略`
-
-`cat ~/id_rsa.pub >> ~/.ssh/authorized_keys`
-
-`chmod 600 .ssh/authorized_keys #确保权限可用,authorized_keys的权限要是600。`
-
-`rm ~/id_rsa.pub    # 用完就可以删掉了`
+```
+mkdir ~/.ssh       # 如果不存在该文件夹需先创建，若已存在则忽略
+cat ~/id_rsa.pub >> ~/.ssh/authorized_keys
+chmod 600 .ssh/authorized_keys #确保权限可用,authorized_keys的权限要是600。
+rm ~/id_rsa.pub    # 用完就可以删掉了
+```
 
 接着，另外两台服务器也需要如上操作。确保3台服务器之间无密码直接登陆。
 
-### 3.2.8 HadoopMaster安装
+### 3.2.8 HadoopMaster安装和配置
 
 我们把hadoop安装到/hadoop目录下。hadoop的用户和组也是hadoop。
+
+集群/分布式模式需要修改 /hadoop/hadoop-2.8.0/etc/hadoop 中的5个配置文件，更多设置项可点击查看官方说明，这里仅设置了正常启动所必须的设置项： slaves、core-site.xml、hdfs-site.xml、mapred-site.xml、yarn-site.xml 。
 
 1. 解压安装
 
@@ -181,36 +164,121 @@ tar -xvf hadoop-2.8.0.tar.gz  \#解压文件
 
 接着就是配置hadoop的环境变量了，我建议将所有需要的环境变量配置加入到/etc/profile中,这是全局变量。
 
+```
+export HADOOP_INSTALL=/hadoop/hadoop-2.8.0
+export PATH=$PATH:$HADOOP_INSTALL/bin
+export PATH=$PATH:$HADOOP_INSTALL/sbin
+export HADOOP_MAPRED_HOME=$HADOOP_INSTALL
+export HADOOP_COMMON_HOME=$HADOOP_INSTALL
+export HADOOP_HDFS_HOME=$HADOOP_INSTALL
+export YARN_HOME=$HADOOP_INSTALL
+export HADOOP_COMMON_LIB_NATIVE_DIR=$HADOOP_INSTALL/lib/native
+export HADOOP_OPTS="-Djava.library.path=$HADOOP_INSTALL/lib"
+```
 
+1. 设置slave
 
-`export HADOOP_INSTALL=/hadoop/hadoop-2.8.0`
+本教程让 hadoopmaster 节点仅作为 NameNode 使用，因此将文件中原来的 localhost 删除，只添加二行内容：hadoopslave1 hadoopslave2。
 
-`export PATH=$PATH:$HADOOP_INSTALL/bin`
-
-`export PATH=$PATH:$HADOOP_INSTALL/sbin`
-
-`export HADOOP_MAPRED_HOME=$HADOOP_INSTALL`
-
-`export HADOOP_COMMON_HOME=$HADOOP_INSTALL`
-
-`export HADOOP_HDFS_HOME=$HADOOP_INSTALL`
-
-`export YARN_HOME=$HADOOP_INSTALL`
-
-`export HADOOP_COMMON_LIB_NATIVE_DIR=$HADOOP_INSTALL/lib/native`
-
-`export HADOOP_OPTS="-Djava.library.path=$HADOOP_INSTALL/lib"`
-
-2. 设置slave节点
-
+```
 cd /hadoop/hadoop-2.8.0/etc/hadoop/
-
 vi slaves
+```
 
-将loaclhost删除，填写我们自己设定的两台slave  
+将loaclhost删除，填写我们自己设定的两台slave
+
+```
 hadoopslave1
-
 hadoopslave2
+```
+
+1. 配置core-site.xml
+
+```
+<configuration>
+    <property>
+        <name>fs.defaultFS</name>
+        <value>hdfs://hadoopmaster:9000</value>
+    </property>
+    <property>
+        <name>hadoop.tmp.dir</name>
+        <value>file:/hadoop/hadoop-2.8.0/tmp</value>
+        <description>Abase for other temporary directories.</description>
+    </property>
+</configuration>
+```
+
+1. 配置hdfs-site.xml
+
+dfs.replication 一般设为 3，但我们只有二个 Slave 节点，所以 dfs.replication 的值还是设为 2
+
+```
+<configuration>
+    <property>
+        <name>dfs.namenode.secondary.http-address</name>
+        <value>hadoopmaster:50090</value>
+    </property>
+    <property>
+        <name>dfs.replication</name>
+        <value>2</value>
+    </property>
+    <property>
+        <name>dfs.namenode.name.dir</name>
+        <value>file:/usr/local/hadoop/tmp/dfs/name</value>
+    </property>
+    <property>
+        <name>dfs.datanode.data.dir</name>
+        <value>file:/usr/local/hadoop/tmp/dfs/data</value>
+    </property>
+</configuration>
+```
+
+1. 配置mapred-site.xml
+
+（可能需要先重命名，默认文件名为 mapred-site.xml.template），然后配置修改如下：
+
+```
+<configuration>
+    <property>
+        <name>mapreduce.framework.name</name>
+        <value>yarn</value>
+    </property>
+    <property>
+        <name>mapreduce.jobhistory.address</name>
+        <value>hadoopmaster:10020</value>
+    </property>
+    <property>
+        <name>mapreduce.jobhistory.webapp.address</name>
+        <value>hadoopmaster:19888</value>
+    </property>
+</configuration>
+```
+
+1. 配置yarn-site.xml
+
+```
+<configuration>
+    <property>
+        <name>yarn.resourcemanager.hostname</name>
+        <value>hadoopmaster</value>
+    </property>
+    <property>
+        <name>yarn.nodemanager.aux-services</name>
+        <value>mapreduce_shuffle</value>
+    </property>
+</configuration>
+```
+
+### 3.2.9 HadoopSlave安装和配置
+
+首先通过sftp把hadoop配置好的hadoop打包,之后转输到Slave节点上,配置好环境变量JDK PATH SSH 基本上与Master是一样的。
+
+在 Master 节点上执行：
+
+```
+ tar cvzfz /hadoop/hadoop.master.tar.gz /hadoop/hadoop-2.8.0
+ scp hadoop.master.tar.gz hadoopslave1:/hadoop #将文件拷贝到slave1和slave2
+```
 
 
 
