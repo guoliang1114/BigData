@@ -87,7 +87,7 @@ HBASE和其他的数据库软件一样会同时打开很多文件,Linux默认的
 
 设置JAVA环境变量
 
-`vi /etc/profile                                            
+`vi /etc/profile                                              
 export JAVA_HOME=/home/jdk1.8.0_131`
 
 `export JRE_HOME=${JAVA_HOME}/jre`
@@ -324,9 +324,13 @@ hdfs dfsadmin -report
 11243 NodeManager
 ```
 
-访问http://192.168.44.131:50070/查看结果。
+访问[http://192.168.44.131:50070/查看结果。](http://192.168.44.131:50070/查看结果。)
 
 ![](/assets/3.2.10_3.png)
 
 ![](/assets/3.2.10_2.png)
+
+3.2.11 测试Hadoop集群
+
+
 
