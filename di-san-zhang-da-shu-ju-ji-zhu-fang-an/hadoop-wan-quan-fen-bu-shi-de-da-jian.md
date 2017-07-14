@@ -45,6 +45,13 @@
 
 > Redhat 7.2不推荐使用ifconfig命令，也建议使用ip命令来查看和设置网络信息
 
+关闭防火墙
+
+```
+systemctl stop firewalld #临时关闭
+systemctl disable firewalld #永久关闭
+```
+
 #### 设置hostname
 
 为了方便后续操作，设置服务器名称
@@ -80,7 +87,7 @@ HBASE和其他的数据库软件一样会同时打开很多文件,Linux默认的
 
 设置JAVA环境变量
 
-`vi /etc/profile                                        
+`vi /etc/profile                                          
 export JAVA_HOME=/home/jdk1.8.0_131`
 
 `export JRE_HOME=${JAVA_HOME}/jre`
@@ -174,6 +181,11 @@ export HADOOP_HDFS_HOME=$HADOOP_INSTALL
 export YARN_HOME=$HADOOP_INSTALL
 export HADOOP_COMMON_LIB_NATIVE_DIR=$HADOOP_INSTALL/lib/native
 export HADOOP_OPTS="-Djava.library.path=$HADOOP_INSTALL/lib"
+
+#在启动hadoop的时候经常会出现,找不到JAVA_HOME的问题,这个问题可以通过修改hadoop环境变量来解决,直接写死变量就可以了
+vi hadoop-env.sh
+
+export JAVA_HOME=/home/jdk1.8.0_131
 ```
 
 1. 设置slave
@@ -278,6 +290,40 @@ dfs.replication 一般设为 3，但我们只有二个 Slave 节点，所以 dfs
 ```
  tar cvzfz /hadoop/hadoop.master.tar.gz /hadoop/hadoop-2.8.0
  scp hadoop.master.tar.gz hadoopslave1:/hadoop #将文件拷贝到slave1和slave2
+ scp hadoop.master.tar.gz hadoopslave2:/hadoop #将文件拷贝到slave1和slave2
+ tar -zxvf /hadoop/hadoop.master.tar.gz #解压文件
+ 
+```
+
+### 3.2.10 启动集群
+
+```
+hdfs namenode -format  #首次初始化，之后不需要
+
+在Master上执行:
+$start-dfs.sh
+$start-yarn.sh
+$mr-jobhistory-daemon.sh start historyserver
+
+#之后分别在Master与Slave上执行jps,会看到不同的结果.缺少任一进程都表示出错。
+#另外还需要在 Master 节点上通过命令 hdfs dfsadmin -report 查看 DataNode 是否正常启动，
+#如果 Live datanodes 不为 0 ，则说明集群启动成功。例如我这边一共有 1 个 Datanodes：
+
+jps
+hdfs dfsadmin -report
+
+[hadoop@hadoopmaster sbin]$ jps
+6209 ResourceManager
+6563 Jps
+6491 JobHistoryServer
+5868 NameNode
+6062 SecondaryNameNode
+
+[hadoop@hadoopslave1 hadoop]$ jps
+11368 Jps
+11146 DataNode
+11243 NodeManager
+
 ```
 
 
