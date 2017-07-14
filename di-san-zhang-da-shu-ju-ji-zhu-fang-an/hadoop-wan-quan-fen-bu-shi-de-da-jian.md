@@ -87,7 +87,7 @@ HBASE和其他的数据库软件一样会同时打开很多文件,Linux默认的
 
 设置JAVA环境变量
 
-`vi /etc/profile                                          
+`vi /etc/profile                                            
 export JAVA_HOME=/home/jdk1.8.0_131`
 
 `export JRE_HOME=${JAVA_HOME}/jre`
@@ -292,7 +292,6 @@ dfs.replication 一般设为 3，但我们只有二个 Slave 节点，所以 dfs
  scp hadoop.master.tar.gz hadoopslave1:/hadoop #将文件拷贝到slave1和slave2
  scp hadoop.master.tar.gz hadoopslave2:/hadoop #将文件拷贝到slave1和slave2
  tar -zxvf /hadoop/hadoop.master.tar.gz #解压文件
- 
 ```
 
 ### 3.2.10 启动集群
@@ -307,7 +306,7 @@ $mr-jobhistory-daemon.sh start historyserver
 
 #之后分别在Master与Slave上执行jps,会看到不同的结果.缺少任一进程都表示出错。
 #另外还需要在 Master 节点上通过命令 hdfs dfsadmin -report 查看 DataNode 是否正常启动，
-#如果 Live datanodes 不为 0 ，则说明集群启动成功。例如我这边一共有 1 个 Datanodes：
+#如果 Live datanodes 不为 0 ，则说明集群启动成功。例如我这边一共有 2 个 Datanodes：
 
 jps
 hdfs dfsadmin -report
@@ -323,8 +322,11 @@ hdfs dfsadmin -report
 11368 Jps
 11146 DataNode
 11243 NodeManager
-
 ```
 
+访问http://192.168.44.131:50070/查看结果。
 
+![](/assets/3.2.10_3.png)
+
+![](/assets/3.2.10_2.png)
 
