@@ -133,10 +133,8 @@ chronyc sources -v
 #重启时间同步服务：# 
 systemctl restart chronyd.service
 #查看时间同步状态：# 
-systemctl status chronyd.service   
+systemctl status chronyd.service
 ```
-
-
 
 ### 3.2.5 JDK安装和配置
 
@@ -145,7 +143,7 @@ systemctl status chronyd.service
 
 设置JAVA环境变量
 
-`vi /etc/profile                                                  
+`vi /etc/profile                                                    
 export JAVA_HOME=/home/jdk1.8.0_131`
 
 `export JRE_HOME=${JAVA_HOME}/jre`
@@ -410,7 +408,7 @@ hadoop jar /hadoop/hadoop-2.8.0/share/hadoop/mapreduce/hadoop-mapreduce-examples
 
 进入地址：[http://192.168.44.131:8088/cluster/apps查看任务执行情况。](http://192.168.44.131:8088/cluster/apps查看任务执行情况。)
 
-
+![](/assets/3.2.11_2.png)
 
 ### 3.2.12 关闭集群
 
