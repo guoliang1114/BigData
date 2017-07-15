@@ -143,7 +143,7 @@ systemctl status chronyd.service
 
 设置JAVA环境变量
 
-`vi /etc/profile                                                    
+`vi /etc/profile                                                      
 export JAVA_HOME=/home/jdk1.8.0_131`
 
 `export JRE_HOME=${JAVA_HOME}/jre`
@@ -398,9 +398,7 @@ $ hdfs dfs -put /hadoop/hadoop-2.8.0/etc/hadoop/*.xml input
 
 通过查看 DataNode 的状态（占用大小有改变），输入文件确实复制到了 DataNode 中，如下图所示
 
-![](/assets/3.2.11_1import.png)
-
-1. 分布式计算测试
+![](/assets/3.2.11_1import.png)2.分布式计算测试
 
 ```
 hadoop jar /hadoop/hadoop-2.8.0/share/hadoop/mapreduce/hadoop-mapreduce-examples-*.jar grep  /user/hadoop/input /user/hadoop/output 'dfs[a-z.]+'
