@@ -84,9 +84,10 @@ HBASE和其他的数据库软件一样会同时打开很多文件,Linux默认的
 
 在文件中添加如下内容：
 
-`hadoop - nofile 65535`
-
-`hadoop - nproc 32000`
+```
+hadoop - nofile 65535 
+hadoop - nproc 32000
+```
 
 可以使用ulimit -aH查看是否生效。
 
@@ -143,7 +144,7 @@ systemctl status chronyd.service
 
 设置JAVA环境变量
 
-`vi /etc/profile                                                      
+`vi /etc/profile                                                        
 export JAVA_HOME=/home/jdk1.8.0_131`
 
 `export JRE_HOME=${JAVA_HOME}/jre`
