@@ -38,8 +38,7 @@
 rpm -aq|grep yum|xargs rpm -e --nodeps
 
 #从阿里云下载yum相关安装包
-wget http://mirrors.aliyun.com/centos/7.2.1511/os/x86_64/Packages/yum-metadata-parser-1.1.4-10.el7.x86_64.rpm  
-
+wget http://mirrors.aliyun.com/centos/7.2.1511/os/x86_64/Packages/yum-metadata-parser-1.1.4-10.el7.x86_64.rpm
 ```
 
 #### 网络设置
@@ -91,8 +90,6 @@ HBASE和其他的数据库软件一样会同时打开很多文件,Linux默认的
 
 可以使用ulimit -aH查看是否生效。
 
-
-
 ### 配置yum源
 
 ```
@@ -112,49 +109,34 @@ enabled=1
 gpgcheck=0
 ```
 
-保存后，执行yum list,测试。 
+保存后，执行yum list,测试。
 
 ### 时间同步
 
 由于集群之间需要时间同步，如下配置：
 
 ```
-apt-get install ntp
-#安装完毕后可以查看ntp服务是否已经启动。
-hadoop@hadoopmaster:~$ sudo service --status-all
- [ + ]  acpid
- [ + ]  apparmor
- [ ? ]  apport
- [ + ]  atd
- [ ? ]  console-setup
- [ + ]  cron
- [ - ]  dbus
- [ ? ]  dns-clean
- [ + ]  friendly-recovery
- [ - ]  grub-common
- [ ? ]  irqbalance
- [ ? ]  killprocs
- [ ? ]  kmod
- [ ? ]  networking
- [ + ]  ntp
- [ ? ]  ondemand
- [ ? ]  pppd-dns
- [ - ]  procps
- [ ? ]  rc.local
- [ + ]  resolvconf
- [ - ]  rsync
- [ + ]  rsyslog
- [ ? ]  screen-cleanup
- [ ? ]  sendsigs
- [ - ]  ssh
- [ - ]  sudo
- [ + ]  udev
- [ ? ]  umountfs
- [ ? ]  umountnfs.sh
- [ ? ]  umountroot
- [ - ]  unattended-upgrades
- [ - ]  urandom
+#安装chrony
+yum install chrony
+#启动服务
+systemctl start chronyd.service
+
+#查看时间同步信息
+chronyc sources -v
+
+#另外如果需要自定义时钟服务器，需要编辑配置文件
+
+ vi /etc/chrony.conf
+ server 0.rhel.pool.ntp.org iburst
+ server 1.rhel.pool.ntp.org iburst
+ server  192.168.44.131   iburst 
+#重启时间同步服务：# 
+systemctl restart chronyd.service
+#查看时间同步状态：# 
+systemctl status chronyd.service   
 ```
+
+
 
 ### 3.2.5 JDK安装和配置
 
@@ -163,7 +145,7 @@ hadoop@hadoopmaster:~$ sudo service --status-all
 
 设置JAVA环境变量
 
-`vi /etc/profile                                                
+`vi /etc/profile                                                  
 export JAVA_HOME=/home/jdk1.8.0_131`
 
 `export JRE_HOME=${JAVA_HOME}/jre`
@@ -418,19 +400,17 @@ $ hdfs dfs -put /hadoop/hadoop-2.8.0/etc/hadoop/*.xml input
 
 通过查看 DataNode 的状态（占用大小有改变），输入文件确实复制到了 DataNode 中，如下图所示
 
-![](/assets/3.2.11-1.png)
+![](/assets/3.2.11_1import.png)
 
-
-
-2. 分布式计算测试
+1. 分布式计算测试
 
 ```
 hadoop jar /hadoop/hadoop-2.8.0/share/hadoop/mapreduce/hadoop-mapreduce-examples-*.jar grep  /user/hadoop/input /user/hadoop/output 'dfs[a-z.]+'
 ```
 
-进入地址：http://192.168.44.131:8088/cluster/apps查看任务执行情况。
+进入地址：[http://192.168.44.131:8088/cluster/apps查看任务执行情况。](http://192.168.44.131:8088/cluster/apps查看任务执行情况。)
 
-![](/assets/3.2.10-2.png)
+
 
 ### 3.2.12 关闭集群
 
