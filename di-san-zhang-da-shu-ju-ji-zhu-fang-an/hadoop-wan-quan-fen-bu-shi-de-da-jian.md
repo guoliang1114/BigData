@@ -31,6 +31,17 @@
 
 由于使用了最小安装，因此需要进行以下设置：
 
+### YUM源配置
+
+```
+#首先删除自带的yum
+rpm -aq|grep yum|xargs rpm -e --nodeps
+
+#从阿里云下载yum相关安装包
+wget http://mirrors.aliyun.com/centos/7.2.1511/os/x86_64/Packages/yum-metadata-parser-1.1.4-10.el7.x86_64.rpm  
+
+```
+
 #### 网络设置
 
 `vi /etc/sysconfig/network-scripts/ifcfg-enoXXXX`
@@ -80,14 +91,79 @@ HBASE和其他的数据库软件一样会同时打开很多文件,Linux默认的
 
 可以使用ulimit -aH查看是否生效。
 
-#### 3.2.5 JDK安装和配置
+
+
+### 配置yum源
+
+```
+#将光盘mount到linux
+mount /dev/cdrom /mnt
+
+#移除以前的yum源
+rm -rf /etc/yum.repos.d/*
+
+#新建yum源
+vi /etc/yum.repos.d/rhel7.repo
+#内容
+[rhel7-yum]
+name=rhel7-source
+baseurl=file:///mnt
+enabled=1
+gpgcheck=0
+```
+
+保存后，执行yum list,测试。 
+
+### 时间同步
+
+由于集群之间需要时间同步，如下配置：
+
+```
+apt-get install ntp
+#安装完毕后可以查看ntp服务是否已经启动。
+hadoop@hadoopmaster:~$ sudo service --status-all
+ [ + ]  acpid
+ [ + ]  apparmor
+ [ ? ]  apport
+ [ + ]  atd
+ [ ? ]  console-setup
+ [ + ]  cron
+ [ - ]  dbus
+ [ ? ]  dns-clean
+ [ + ]  friendly-recovery
+ [ - ]  grub-common
+ [ ? ]  irqbalance
+ [ ? ]  killprocs
+ [ ? ]  kmod
+ [ ? ]  networking
+ [ + ]  ntp
+ [ ? ]  ondemand
+ [ ? ]  pppd-dns
+ [ - ]  procps
+ [ ? ]  rc.local
+ [ + ]  resolvconf
+ [ - ]  rsync
+ [ + ]  rsyslog
+ [ ? ]  screen-cleanup
+ [ ? ]  sendsigs
+ [ - ]  ssh
+ [ - ]  sudo
+ [ + ]  udev
+ [ ? ]  umountfs
+ [ ? ]  umountnfs.sh
+ [ ? ]  umountroot
+ [ - ]  unattended-upgrades
+ [ - ]  urandom
+```
+
+### 3.2.5 JDK安装和配置
 
 首先解压jdk  
 `tar xvfz jdk-8u131-linux-x64.tar.gz`
 
 设置JAVA环境变量
 
-`vi /etc/profile                                              
+`vi /etc/profile                                                
 export JAVA_HOME=/home/jdk1.8.0_131`
 
 `export JRE_HOME=${JAVA_HOME}/jre`
@@ -330,7 +406,40 @@ hdfs dfsadmin -report
 
 ![](/assets/3.2.10_2.png)
 
-3.2.11 测试Hadoop集群
+### 3.2.11 测试Hadoop集群
+
+1. 分布式存储
+
+```
+$ hdfs dfs -mkdir -p /user/hadoop  
+$ hdfs dfs -mkdir input
+$ hdfs dfs -put /hadoop/hadoop-2.8.0/etc/hadoop/*.xml input
+```
+
+通过查看 DataNode 的状态（占用大小有改变），输入文件确实复制到了 DataNode 中，如下图所示
+
+![](/assets/3.2.11-1.png)
+
+
+
+2. 分布式计算测试
+
+```
+hadoop jar /hadoop/hadoop-2.8.0/share/hadoop/mapreduce/hadoop-mapreduce-examples-*.jar grep  /user/hadoop/input /user/hadoop/output 'dfs[a-z.]+'
+```
+
+进入地址：http://192.168.44.131:8088/cluster/apps查看任务执行情况。
+
+![](/assets/3.2.10-2.png)
+
+### 3.2.12 关闭集群
+
+```
+关闭集群
+stop-yarn.sh
+stop-dfs.sh
+mr-jobhistory-daemon.sh stop historyserver
+```
 
 
 
