@@ -2,6 +2,17 @@
 
 ## 3.2 Hadoop 完全分布式的搭建
 
+Hadoop的安装过程如下：
+
+1. 安装JDK。Hadoop是基于Java开发的，所以首先必须安装JDK
+2. 设置SSH无密码登陆。Hadoop必须通过SSH和本地计算机以及其他主机连接，所以必须设置SSH。
+3. 下载和安装Hadoop。
+4. 设置hadoop环境变量。环境变量能够让我们更方便的使用hadoop的命令。
+5. Hadoop配置文件设置。Hadoop的配置文件来启用基本配置或者更高级的功能。
+6. 创建并格式化HDFS目录。HDFS目录是存储HDFS文件的地方，再启动hadoop之前必须先创建并格式化HDFS目录。
+7. 启动Hadoop。jps可以查看启动的组件。
+8. 测试Hadoop web界面。Hadoop界面可以查看当前Hadoop的状态： Node的节点、应用程序、任务运行状态等等。
+
 ### 3.2.1 系统环境
 
 * VMWare Fusion 8.5.7
@@ -144,7 +155,7 @@ systemctl status chronyd.service
 
 设置JAVA环境变量
 
-`vi /etc/profile                                                        
+`vi /etc/profile                                                          
 export JAVA_HOME=/home/jdk1.8.0_131`
 
 `export JRE_HOME=${JAVA_HOME}/jre`
@@ -261,7 +272,7 @@ hadoopslave1
 hadoopslave2
 ```
 
-1. 配置core-site.xml
+1. 配置core-site.xml。
 
 ```
 <configuration>
@@ -277,7 +288,7 @@ hadoopslave2
 </configuration>
 ```
 
-1. 配置hdfs-site.xml
+  2. 配置hdfs-site.xml
 
 dfs.replication 一般设为 3，但我们只有二个 Slave 节点，所以 dfs.replication 的值还是设为 2
 
@@ -302,7 +313,7 @@ dfs.replication 一般设为 3，但我们只有二个 Slave 节点，所以 dfs
 </configuration>
 ```
 
-1. 配置mapred-site.xml
+  3. 配置mapred-site.xml
 
 （可能需要先重命名，默认文件名为 mapred-site.xml.template），然后配置修改如下：
 
@@ -323,7 +334,7 @@ dfs.replication 一般设为 3，但我们只有二个 Slave 节点，所以 dfs
 </configuration>
 ```
 
-1. 配置yarn-site.xml
+  4. 配置yarn-site.xml
 
 ```
 <configuration>
