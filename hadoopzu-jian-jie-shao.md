@@ -2,13 +2,11 @@
 
 Hadoop包含以下内容:
 
-**Hadoop Common**: The common utilities that support the other Hadoop modules.
+**Hadoop Common**: 为Hadoop的其它项目提供一些常用工具，主要包括系统配置工具Configuration、远程过程调用RPC、序列化机制和Hadoop抽象文件系统FieSystem等。
 
-**Hadoop Distributed File System \(HDFS™\)**: A distributed file system that provides high-throughput access to application data.
+**Hadoop Distributed File System \(HDFS™\)**: Hadoop分布式文件系统，是Hadoop体系中数据存储管理的基础。
 
-**Hadoop YARN**: A framework for job scheduling and cluster resource management.
+**Hadoop YARN**: 一个集群资源管理系统框架。
 
-**Hadoop MapReduce**: A YARN-based system for parallel processing of large data sets.
-
-
+**Hadoop MapReduce**: 是一种计算模型，用于进行大数据量的计算。
 
