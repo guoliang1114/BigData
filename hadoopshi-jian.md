@@ -93,7 +93,9 @@ $hadoop fs –rm -r /u01/tmp
 
 **在Hadoop HDFS Web用户界面浏览HDFS**
 
+打开地址： http://192.168.44.131:50070/explorer.html\#/
 
+![](/assets/3.4.1_1.png)![](/assets/3.4.1_2.png)可以输入完整路径直接查看该目录下的文件。
 
 ### 3.4.2 MapReduce
 
