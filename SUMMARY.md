@@ -6,5 +6,6 @@
 * [第三章  大数据技术方案](chapter3.md)
   * [Hadoop简介](chapter301.md)
   * [Hadoop 完全分布式的搭建](chapter302.md)
-  * [Hadoop组件介绍](hadoopzu-jian-jie-shao.md)
+  * [Hadoop组件及原理介绍](hadoopzu-jian-jie-shao.md)
+  * [Hadoop实践](hadoopshi-jian.md)
 
