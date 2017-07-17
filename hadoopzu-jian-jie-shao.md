@@ -42,5 +42,47 @@ MapReduce框架包括一个主节点（ResourceManager）、多个子节点（�
 
 虽然Hadoop框架是用Java实现的，但MapReduce应用程序则不一定要用Java来写，也可以使用Ruby、Python、C++等来编写。
 
+MapReduce框架的流程如下图所示。
 
+![](/assets/3.3.2_1.png)
+
+_**Map阶段**_
+
+1）InputFormat根据输入文件产生键值对，并传送到Mapper类的map函数中；
+
+2）map输出键值对到一个没有排序的缓冲内存中；
+
+3）当缓冲内存达到给定值或者map任务完成，在缓冲内存中的键值对就会被排序，然后输出到磁盘中的溢出文件；
+
+4）如果有多个溢出文件，那么就会整合这些文件到一个文件中，且是排序的；
+
+5）这些排序过的、在溢出文件中的键值对会等待Reducer的获取。
+
+_**Reduce阶段**_
+
+1）Reducer获取Mapper的记录，然后产生另外的键值对，最后输出到HDFS中；
+
+2）shuffle：相同的key被传送到同一个的Reducer中；
+
+3）当有一个Mapper完成后，Reducer就开始获取相关数据，所有的溢出文件会被排序到一个内存缓冲区中；
+
+4）当内存缓冲区满了后，就会产生溢出文件到本地磁盘；
+
+5）当Reducer所有相关的数据都传输完成后，所有溢出文件就会被整合和排序；
+
+6）Reducer中的reduce方法针对每个key调用一次；
+
+7）Reducer的输出到HDFS。
+
+### 3.3.3 Hadoop YARN原理
+
+经典MapReduce的最严重的限制主要关系到可伸缩性、资源利用和对与MapReduce不同的工作负载的支持。在MapReduce框架中，作业执行受两种类型的进程控制：一个称为JobTracker的主要进程，它协调在集群上运行的所有作业，分配要在TaskTracker上运行的map和reduce任务。另一个就是许多称为TaskTracker的下级进程，它们运行分配的任务并定期向JobTracker报告进度。
+
+这时，经过工程师们的努力，诞生了一种全新的Hadoop架构——YARN（也称为MRv2）。YARN称为下一代Hadoop计算平台，主要包括ResourceManager、ApplicationMaster、NodeManager，其中ResourceManager用来代替集群管理器，ApplicationMaster代替一个专用且短暂的JobTracker，NodeManager代替TaskTracker。
+
+MRv2最核心的思想就是将JobTracker两个主要的功能分离成单独的组件，这两个功能是资源管理和任务调度/监控。新的资源管理器全局管理所有应用程序计算资源的分配，每一个应用的ApplicationMaster负责相应的调度和协调。一个应用程序要么是一个单独的传统的MapReduce任务或者是一个DAG（有向无环图）任务。ResourceManager和每一台机器的节点管理服务（NodeManger）能够管理用户在那台机器上的进程并能对计算进行组织。事实上，每一个应用的ApplicationMaster是一个特定的框架库，它和ResourceManager来协调资源，和NodeManager协同工作以运行和监控任务。
+
+ResourceManager有两个重要的组件：Scheduler和ApplicationsManager。Scheduler负责分配资源给每个正在运行的应用，同时需要注意Scheduler是一个单一的分配资源的组件，不负责监控或者跟踪任务状态的任务，而且它不保证重启失败的任务。ApplicationsManager注意负责接受任务的提交和执行应用的第一个容器ApplicationMaster协调，同时提供当任务失败时重启的服务。如图2-7所示，客户端提交任务到ResourceManager的ApplicationsManager，然后Scheduler在获得了集群各个节点的资源后，为每个应用启动一个App Mastr（ApplicationMaster），用于执行任务。每个App Mastr启动一个或多个Container用于实际执行任务。
+
+![](/assets/3.3.3_1.png)
 
