@@ -155,7 +155,7 @@ systemctl status chronyd.service
 
 设置JAVA环境变量
 
-`vi /etc/profile                                                          
+`vi /etc/profile                                                            
 export JAVA_HOME=/home/jdk1.8.0_131`
 
 `export JRE_HOME=${JAVA_HOME}/jre`
@@ -248,7 +248,7 @@ export HADOOP_COMMON_HOME=$HADOOP_INSTALL
 export HADOOP_HDFS_HOME=$HADOOP_INSTALL
 export YARN_HOME=$HADOOP_INSTALL
 export HADOOP_COMMON_LIB_NATIVE_DIR=$HADOOP_INSTALL/lib/native
-export HADOOP_OPTS="-Djava.library.path=$HADOOP_INSTALL/lib"
+export HADOOP_OPTS="-Djava.library.path=$HADOOP_INSTALL/lib:HADOOP_COMMON_LIB_NATIVE_DIR"
 
 #在启动hadoop的时候经常会出现,找不到JAVA_HOME的问题,这个问题可以通过修改hadoop环境变量来解决,直接写死变量就可以了
 vi hadoop-env.sh
@@ -288,7 +288,7 @@ hadoopslave2
 </configuration>
 ```
 
-  2. 配置hdfs-site.xml
+1. 配置hdfs-site.xml
 
 dfs.replication 一般设为 3，但我们只有二个 Slave 节点，所以 dfs.replication 的值还是设为 2
 
@@ -313,7 +313,7 @@ dfs.replication 一般设为 3，但我们只有二个 Slave 节点，所以 dfs
 </configuration>
 ```
 
-  3. 配置mapred-site.xml
+1. 配置mapred-site.xml
 
 （可能需要先重命名，默认文件名为 mapred-site.xml.template），然后配置修改如下：
 
@@ -334,7 +334,7 @@ dfs.replication 一般设为 3，但我们只有二个 Slave 节点，所以 dfs
 </configuration>
 ```
 
-  4. 配置yarn-site.xml
+1. 配置yarn-site.xml
 
 ```
 <configuration>
