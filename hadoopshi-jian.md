@@ -224,5 +224,11 @@ hadoop fs -put /home/hadoop/LIXENSE.txt /u01/wordcount/input
 hadoop fs -ls /u01/worcount/input
 ```
 
+**运行wordcount**
+
+```
+hadoop jar wc.jar WordCount /u01/wordcount/input/LICENSE.txt /u01/wordcount/output
+```
+
 
 
