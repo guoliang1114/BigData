@@ -22,6 +22,9 @@
 ```
 $hadoop fs -mkdir /u01
 $hadoop fs -mkdir /u01/tmp
+
+#创建多级HDFS目录
+
 ```
 
 **查看文件夹权限**
@@ -86,6 +89,8 @@ $hadoop fs -get /u01/tmp/2.txt /home/hadoop
 ```
 $hadoop fs –rm -r /u01/tmp
 ```
+
+> HDFS提供了一些方便选项，比如可以在命令中加上 -R,R代表recursive\(递归\)
 
 ### 3.4.2 MapReduce
 
