@@ -99,7 +99,15 @@ $hadoop fs –rm -r /u01/tmp
 
 ![](/assets/3.4.1_3.png)
 
+
+
 ### 3.4.2 MapReduce
+
+MapReduce是一种程序开发模式，可以使用大量服务器来并行处理。MapReduce，简单地说，Map就是分配工作、Reduce就是将工作整理汇总。
+
+首先使用Map将待处理的数据分割成很多的小份数据，由每台服务器分别运行。
+
+再通过Reduce程序进行数据合并，最后汇总整理出结果。
 
 
 
