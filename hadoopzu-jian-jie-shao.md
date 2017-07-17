@@ -20,7 +20,21 @@ HDFS采用master/slave架构。一个HDFS集群是由一个NameNode和一定数�
 
 ![](/assets/3.3.1_1.png)
 
+HDFS数据上传原理可以参考上图对照理解，数据上传过程如下所示：
 
+1）Client端发送一个添加文件到HDFS的请求给NameNode；
+
+2）NameNode告诉Client端如何来分发数据块以及分发的位置；
+
+3）Client端把数据分为块（block），然后把这些块分发到DataNode中；
+
+4）DataNode在NameNode的指导下复制这些块，保持冗余。
+
+### 3.3.2　Hadoop MapReduce原理
+
+Hadoop MapReduce是一个快速、高效、简单用于编写并行处理大数据程序并应用在大集群上的编程框架。其前身是Google公司的MapReduce。MapReduce是Google公司的核心计算模型，它将复杂的、运行于大规模集群上的并行计算过程高度地抽象到了两个函数：**Map**和**Reduce**。适合用MapReduce来处理的数据集（或任务），需要满足一个基本要求：待处理的数据集可以分解成许多小的数据集，而且每一个小数据集都可以完全并行地进行处理。概念“Map”（映射）和“Reduce”（归约），以及它们的主要思想，都是从函数式编程语言里借来的，同时包含了从矢量编程语言里借来的特性。Hadoop MapReduce极大地方便了编程人员在不会分布式并行编程的情况下，将自己的程序运行在分布式系统上。
+
+一个MapReduce作业（job）通常会把输入的数据集切分为若干独立的数据块，由map任务（task）以完全并行的方式处理它们。框架会对map的输出先进行
 
 
 
