@@ -155,14 +155,13 @@ systemctl status chronyd.service
 
 设置JAVA环境变量
 
-`vi /etc/profile                                                            
-export JAVA_HOME=/home/jdk1.8.0_131`
-
-`export JRE_HOME=${JAVA_HOME}/jre`
-
-`export CLASSPATH=.:${JAVA_HOME}/lib:${JRE_HOME}/lib`
-
-`export PATH=${JAVA_HOME}/bin:$PATH`
+```
+vi /etc/profile                                                            
+export JAVA_HOME=/home/jdk1.8.0_131
+export JRE_HOME=${JAVA_HOME}/jre
+export CLASSPATH=.:${JAVA_HOME}/lib:${JRE_HOME}/lib
+export PATH=${JAVA_HOME}/bin:$PATH
+```
 
 执行source /etc/profile立即生效。
 
@@ -170,9 +169,10 @@ export JAVA_HOME=/home/jdk1.8.0_131`
 
 1. 创建用户和用户组。
 
-`groupadd hadoop`
-
-`adduser -g hadoop hadoop`
+```
+groupadd hadoop
+adduser -g hadoop hadoop
+```
 
 ### 3.2.7 无密码登陆
 
