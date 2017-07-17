@@ -20,6 +20,8 @@ drwxr-xr-x   - hadoop supergroup          0 2017-07-16 02:43 /u01/tmp
 
 hadoop fs –put \[本地地址\] \[hadoop目录\]
 
+> 同时也可以上传文件夹
+
 ```
 $hadoop fs –put /home/file.txt /user/u01/
 
@@ -47,7 +49,27 @@ $hadoop fs -mv /u01/tmp/2.txt /u01/tmp/3.txt
 
 #删除
 $hadoop fs -rm /u01/tmp/3.txt
+Deleted /u01/tmp/3.txt
+```
 
+**创建新的空文件**
+
+```
+$hadoop fs -touchz /u01/tmp/5.txt
+```
+
+**下载Hadoop上的文件**
+
+hadoop fs -get \[文件目录\] \[本地目录\]
+
+```
+$hadoop fs -get /u01/tmp/2.txt /home/hadoop
+```
+
+**删除文件夹**
+
+```
+$hadoop fs –rmr /u01/tmp
 ```
 
 
