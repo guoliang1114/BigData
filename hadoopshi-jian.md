@@ -2,6 +2,12 @@
 
 ### 3.4.1 HDFS命令
 
+**常用介绍下列常用HDFS命令**
+
+本节所有命令，我们都在master虚拟机的“终端”程序中运行。
+
+
+
 **新建文件夹**
 
 ```
@@ -72,9 +78,7 @@ $hadoop fs -get /u01/tmp/2.txt /home/hadoop
 $hadoop fs –rm -r /u01/tmp
 ```
 
-### 
 
-### 
 
 ### 3.4.2 MapReduce
 
