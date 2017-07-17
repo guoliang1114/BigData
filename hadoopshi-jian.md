@@ -10,7 +10,7 @@
 | :--- | :--- |
 | hadoop fs -mkdir | 创建HDFS目录 |
 | hadoop fs -ls | 列出HDFS目录 |
-| hadoop fs -copyFrontLocal | 使用-copyFrontLocal复制本地\(Local\)文件到HDFS |
+| hadoop fs -copyFromLocal | 使用-copyFromLocal复制本地\(Local\)文件到HDFS |
 | hadoop fs -put | 使用-put复制本地\(local\)文件到HDFS |
 | hadoop fs -copyToLocal | 使用-copyToLocal将HDFS上的文件复制到本地\(Local\) |
 | hadoop fs -get | 使用-get将HDFS上的文件复制到本地\(Local\) |
