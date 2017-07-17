@@ -221,8 +221,7 @@ cp /hadoop/hadoop-2.8.0/LICENSE.txt /home/hadoop/
 #上传至HDFS目录
 hadoop fs -mkdir /u01/wordcount/input
 hadoop fs -put /home/hadoop/LIXENSE.txt /u01/wordcount/input
-hadoop fs -ls /u01/worcount
-
+hadoop fs -ls /u01/worcount/input
 ```
 
 
