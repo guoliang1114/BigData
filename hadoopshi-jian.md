@@ -122,9 +122,13 @@ http://hadoop.apache.org/docs/r2.8.0/hadoop-mapreduce-client/hadoop-mapreduce-cl
 
 步骤如下:
 
-| 顺序 | 开发步骤 |
-| :--- | :--- |
-|  |  |
+| 顺序 | 开发步骤 | 说明 |
+| :--- | :--- | :--- |
+| 1 | 编辑wordcount.java | 使用gedit编辑wordcount.java |
+| 2 | 编辑wordcount.java | 编译、打包wordcount.java程序 |
+| 3 | 创建文本文件 | 使用hadoop目录下LICENSE.txt作为测试文件，并上传文本文件至HDFS |
+| 4 | 运行wordcount.java | 在Hadoop环境运行WordCount |
+| 5 | 查看运行结果 | 运行会产生输出文件并存储到HDFS中，可使用HDFS命令查看。 |
 
 
 
