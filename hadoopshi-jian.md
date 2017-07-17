@@ -130,8 +130,6 @@ http://hadoop.apache.org/docs/r2.8.0/hadoop-mapreduce-client/hadoop-mapreduce-cl
 | 4 | 运行wordcount.java | 在Hadoop环境运行WordCount |
 | 5 | 查看运行结果 | 运行会产生输出文件并存储到HDFS中，可使用HDFS命令查看。 |
 
-
-
 **准备class**
 
 ```
@@ -150,6 +148,7 @@ import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 
 public class WordCount {
 
+//Map类
   public static class TokenizerMapper
        extends Mapper<Object, Text, Text, IntWritable>{
 
@@ -166,6 +165,7 @@ public class WordCount {
     }
   }
 
+//Reduce类
   public static class IntSumReducer
        extends Reducer<Text,IntWritable,Text,IntWritable> {
     private IntWritable result = new IntWritable();
