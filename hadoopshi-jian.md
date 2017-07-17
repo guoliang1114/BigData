@@ -69,7 +69,7 @@ $hadoop fs -get /u01/tmp/2.txt /home/hadoop
 **删除文件夹**
 
 ```
-$hadoop fs –rmr /u01/tmp
+$hadoop fs –rm -r /u01/tmp
 ```
 
 
