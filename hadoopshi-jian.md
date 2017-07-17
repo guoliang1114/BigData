@@ -312,5 +312,13 @@ $hadoop jar wc.jar WordCount /u01/wordcount/input/LICENSE.txt /u01/wordcount/out
  hadoop fs -cat /u01/wordcount/output/part-r-00000|more
 ```
 
+**Hadoop MapReduce的缺点**
+
+MapReduce有以下缺点：
+
+1. 程序设计模式不容易使用，而且Hadoop的Map Reduce API太过低级，很难提高开发者效率。
+2. 有运行效率的问题，Map Reduce需要将中间产生的数据保存到硬盘中，因此会有读写数据延迟的问题。
+3. 不支持实时处理，它的原始设计就是批处理为主。
+
 
 
