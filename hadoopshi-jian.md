@@ -116,3 +116,13 @@ wordcount用来计算文件中每一个英文单词出现的次数，步骤下�
 
 
 
+在Hadoop说明文件中就有Wordcount.java代码，请浏览下列网址:
+
+```
+http://hadoop.apache.org/docs/r2.8.0/hadoop-mapreduce-client/hadoop-mapreduce-client-core/MapReduceTutorial.html
+```
+
+测试过程如下:
+
+
+
