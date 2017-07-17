@@ -301,7 +301,16 @@ $hadoop jar wc.jar WordCount /u01/wordcount/input/LICENSE.txt /u01/wordcount/out
 
 **查看运行结果**
 
+执行成功后，结果会输出到/u01/wordcount/output。output目录下会生成两个文件：
 
+* \_SUCCESS: 代表程序运行成功
+* part-r-00000: 运行结果的文本文件
+
+可以直接查看part-r-00000文件，该文件里会列出每个英文单词出现的次数。
+
+```
+ hadoop fs -cat /u01/wordcount/output/part-r-00000|more
+```
 
 
 
