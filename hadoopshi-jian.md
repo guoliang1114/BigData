@@ -201,24 +201,15 @@ public class WordCount {
 **编译文件**
 
 ```
-export HADOOP_CLASSPATH=${JAVA_HOME}/lib/tools.jar #准备环境
-hadoop com.sun.tools.javac.Main WordCount #编译WordCount程序
-jar cf wc.jar WordCount*.class #把WordCount类打包为wc.jar
+$export HADOOP_CLASSPATH=${JAVA_HOME}/lib/tools.jar #准备环境
+$hadoop com.sun.tools.javac.Main WordCount #编译WordCount程序
+$jar cf wc.jar WordCount*.class #把WordCount类打包为wc.jar
+-rw-rw-r--. 1 hadoop hadoop 3075 Jul 16 05:37 wc.jar
+-rw-rw-r--. 1 hadoop hadoop 1491 Jul 16 05:35 WordCount.class
+-rw-rw-r--. 1 hadoop hadoop 1739 Jul 16 05:35 WordCount$IntSumReducer.class
+-rw-r--r--. 1 root   root   2088 Jul 16 05:19 WordCount.java
+-rw-rw-r--. 1 hadoop hadoop 1736 Jul 16 05:35 WordCount$TokenizerMapper.class
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
