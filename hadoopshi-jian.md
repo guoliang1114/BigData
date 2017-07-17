@@ -72,5 +72,9 @@ $hadoop fs -get /u01/tmp/2.txt /home/hadoop
 $hadoop fs –rm -r /u01/tmp
 ```
 
+### 3.4.2 MapReduce
+
+
+
 
 
