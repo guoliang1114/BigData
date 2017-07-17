@@ -213,9 +213,17 @@ $jar cf wc.jar WordCount*.class #把WordCount类打包为wc.jar
 
 最后我们生成了wc.jar
 
-
-
 **创建测试文件**
+
+```
+#复制LICENSE.txt
+cp /hadoop/hadoop-2.8.0/LICENSE.txt /home/hadoop/
+#上传至HDFS目录
+hadoop fs -mkdir /u01/wordcount/input
+hadoop fs -put /home/hadoop/LIXENSE.txt /u01/wordcount/input
+hadoop fs -ls /u01/worcount
+
+```
 
 
 
