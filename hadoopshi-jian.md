@@ -211,5 +211,11 @@ $jar cf wc.jar WordCount*.class #把WordCount类打包为wc.jar
 -rw-rw-r--. 1 hadoop hadoop 1736 Jul 16 05:35 WordCount$TokenizerMapper.class
 ```
 
+最后我们生成了wc.jar
+
+
+
+**创建测试文件**
+
 
 
