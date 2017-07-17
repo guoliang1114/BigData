@@ -200,6 +200,24 @@ public class WordCount {
 
 **编译文件**
 
+```
+export HADOOP_CLASSPATH=${JAVA_HOME}/lib/tools.jar #准备环境
+hadoop com.sun.tools.javac.Main WordCount #编译WordCount程序
+jar cf wc.jar WordCount*.class #把WordCount类打包为wc.jar
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
