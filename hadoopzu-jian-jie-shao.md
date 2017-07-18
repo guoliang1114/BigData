@@ -30,6 +30,27 @@ HDFS数据上传原理可以参考上图对照理解，数据上传过程如下�
 
 4）DataNode在NameNode的指导下复制这些块，保持冗余。
 
+**深入理解HDFS工作机制**
+
+* HDFS中的文件在物理上是**分块存储（block）**，块的大小可以通过配置参数\( dfs.blocksize\)来规定，默认大小在hadoop2.x版本中是128M，之前的版本中是64M。
+* HDFS文件系统会给客户端提供一个**统一的抽象目录树**，客户端通过路径来访问文件，形如：hdfs://namenode:port/dir-a/dir-b/dir-c/file.data
+* **目录结构及文件分块位置信息\(元数据\)**的管理由namenode节点承担，namenode是HDFS集群主节点，负责维护整个hdfs文件系统的目录树，以及每一个路径（文件）所对应的数据块信息（blockid及所在的datanode服务器）
+* 文件的各个block的存储管理由datanode节点承担，datanode是HDFS集群从节点，每一个block都可以在多个datanode上存储多个副本（副本数量也可以通过参数设置dfs.replication，默认是3）
+* Datanode会定期向Namenode汇报自身所保存的文件block信息，而namenode则会负责保持文件的副本数量，HDFS的内部工作机制对客户端保持透明，客户端请求访问HDFS都是通过向namenode申请来进行。
+
+* HDFS是设计成适应一次写入，多次读出的场景，且不支持文件的修改。需要频繁的RPC交互，写入性能不好。
+
+  
+  
+
+  
+
+
+  
+
+
+
+
 ### 3.3.2　Hadoop MapReduce原理
 
 Hadoop MapReduce是一个快速、高效、简单用于编写并行处理大数据程序并应用在大集群上的编程框架。其前身是Google公司的MapReduce。MapReduce是Google公司的核心计算模型，它将复杂的、运行于大规模集群上的并行计算过程高度地抽象到了两个函数：**Map**和**Reduce**。适合用MapReduce来处理的数据集（或任务），需要满足一个基本要求：待处理的数据集可以分解成许多小的数据集，而且每一个小数据集都可以完全并行地进行处理。概念“Map”（映射）和“Reduce”（归约），以及它们的主要思想，都是从函数式编程语言里借来的，同时包含了从矢量编程语言里借来的特性。Hadoop MapReduce极大地方便了编程人员在不会分布式并行编程的情况下，将自己的程序运行在分布式系统上。
