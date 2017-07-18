@@ -8,4 +8,5 @@
   * [Hadoop 完全分布式的搭建](chapter302.md)
   * [Hadoop组件及原理介绍](hadoopzu-jian-jie-shao.md)
   * [Hadoop实践](hadoopshi-jian.md)
+  * [深刻理解HDFS工作机制](shen-ke-li-jie-hdfs-gong-zuo-ji-zhi.md)
 
