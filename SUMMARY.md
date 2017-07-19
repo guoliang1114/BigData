@@ -10,8 +10,4 @@
   * [Hadoop实践](hadoopshi-jian.md)
   * [深刻理解HDFS工作机制](shen-ke-li-jie-hdfs-gong-zuo-ji-zhi.md)
   * [HDFS知识自查](hdfszhi-shi-zi-cha.md)
-* [第四章 Hadoop在企业中的架构](di-si-zhang-hadoop-zai-qi-ye-zhong-de-jia-gou.md)
-  * [集群-Clusters](di-si-zhang-hadoop-zai-qi-ye-zhong-de-jia-gou/ji-7fa4-clusters.md)
-  * 计算和存储
-  * 高可用
 
