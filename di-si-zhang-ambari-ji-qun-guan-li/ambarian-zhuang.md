@@ -54,8 +54,10 @@
 $wget http://www.apache.org/dist/ambari/ambari-2.5.1/apache-ambari-2.5.1-src.tar.gz 
 $tar xfvz apache-ambari-2.5.1-src.tar.gz
 $cd apache-ambari-2.5.1-src
+#设置主目录版本号
 $mvn versions:set -DnewVersion=2.5.1.0.0
 
+#ambari-metrics打上版本
 $pushd ambari-metrics
 $mvn versions:set -DnewVersion=2.5.1.0.0
 $popd
