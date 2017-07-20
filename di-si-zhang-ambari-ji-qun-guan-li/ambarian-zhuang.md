@@ -47,13 +47,11 @@
 
 **Step 5**: 使用Ambari Web UI部署集群
 
-
-
 首先需要获取 Ambari 的公共库文件（public repository）。登录到 Linux 主机并执行下面的命令（也可以自己手工下载）：
 
 ```
 #安装需要使用的库
-yum install -y rpm-build
+yum install rpm-build gcc make gcc-c++ openssl-devel git ant -y
 
 #也可以使用其他镜像
 $wget http://www.apache.org/dist/ambari/ambari-2.5.1/apache-ambari-2.5.1-src.tar.gz 
