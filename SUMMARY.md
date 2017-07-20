@@ -10,4 +10,5 @@
   * [Hadoop实践](hadoopshi-jian.md)
   * [深刻理解HDFS工作机制](shen-ke-li-jie-hdfs-gong-zuo-ji-zhi.md)
   * [HDFS知识自查](hdfszhi-shi-zi-cha.md)
+* [第四章 Ambari集群管理](di-si-zhang-ambari-ji-qun-guan-li.md)
 
