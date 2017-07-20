@@ -14,6 +14,8 @@
 > 以上的检查点，如果之前在hadoop安装的时候已经有详细的说明。
 >
 > 如果未安装wget，请使用yum install wget
+>
+> 所有的安装过程都可以参考官方文档：https://cwiki.apache.org/confluence/display/AMBARI/Installation+Guide+for+Ambari+2.5.1
 
 **安装过程**
 
