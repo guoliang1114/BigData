@@ -63,5 +63,5 @@ $mvn versions:set -DnewVersion=2.5.1.0.0
 $popd
 ```
 
-
+整个过程需要联网下载，使用maven进行编译和打包，因此需要花费一定的时间。
 
