@@ -12,4 +12,5 @@
   * [HDFS知识自查](hdfszhi-shi-zi-cha.md)
 * [第四章 Ambari集群管理](di-si-zhang-ambari-ji-qun-guan-li.md)
   * [Ambari介绍](di-si-zhang-ambari-ji-qun-guan-li/ambarijie-shao.md)
+  * [Ambari安装](di-si-zhang-ambari-ji-qun-guan-li/ambarian-zhuang.md)
 
