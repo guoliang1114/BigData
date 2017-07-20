@@ -28,7 +28,7 @@
 >
 > #配置环境变量
 > vi /etc/profile
-> export M2_HOME=/usr/local/apache-maven/apache-maven-3.2.1
+> export M2_HOME=/home/apache-maven/apache-maven-3.5.0
 > export M2=$M2_HOME/bin
 > export PATH=$M2:$PATH
 > ```
