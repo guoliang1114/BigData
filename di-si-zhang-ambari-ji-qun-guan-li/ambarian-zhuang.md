@@ -12,6 +12,8 @@
 4. 确保机器的 Python 版本大于或等于 2.7.5.（Redhat7.2，默认就是 2.7.5 的）。
 
 > 以上的检查点，如果之前在hadoop安装的时候已经有详细的说明。
+>
+> 如果未安装wget，请使用yum install wget
 
 **安装过程**
 
@@ -19,11 +21,11 @@
 
 ```
 #也可以使用其他镜像
-$wget http://www.apache.org/dist/ambari/ambari-2.5.1/apache-ambari-2.5.1-src.tar.gz 
+$wget http://www.apache.org/dist/ambari/ambari-2.5.1/apache-ambari-2.5.1-src.tar.gz 
 $tar xfvz apache-ambari-2.5.1-src.tar.gz
 $cd apache-ambari-2.5.1-src
 $mvn versions:set -DnewVersion=2.5.1.0.0
- 
+
 $pushd ambari-metrics
 $mvn versions:set -DnewVersion=2.5.1.0.0
 $popd
