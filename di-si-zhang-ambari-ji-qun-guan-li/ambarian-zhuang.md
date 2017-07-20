@@ -23,10 +23,11 @@
 > ```
 > #下载
 > cd /home/apache-maven
-> wget http://mirror.olnevhost.net/pub/apache/maven/binaries/apache-maven-3.5.0-bin.tar.gz
+> wget https://mirrors.tuna.tsinghua.edu.cn/apache/maven/maven-3/3.5.0/binaries/apache-maven-3.5.0-bin.tar.gz
 > tar -xvf apache-maven-3.5.0-bin.tar.gz
 >
 > #配置环境变量
+> vi /etc/profile
 > export M2_HOME=/usr/local/apache-maven/apache-maven-3.2.1
 > export M2=$M2_HOME/bin
 > export PATH=$M2:$PATH
