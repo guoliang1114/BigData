@@ -6,3 +6,5 @@ Apache Hadoop：Apache Hadoop是一款支持数据密集型分布式应用并以
 
 第三方发行版Hadoop：Hadoop遵从Apache开源协议，用户可以免费地任意使用和修改Hadoop，也正因此，市面上出现了很多Hadoop版本。其中有很多厂家在Apache Hadoop的基础上开发自己的Hadoop产品，比如Cloudera的CDH，Hortonworks的HDP，MapR的MapR产品等。
 
+
+
