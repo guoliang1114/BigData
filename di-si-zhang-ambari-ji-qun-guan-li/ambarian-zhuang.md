@@ -10,12 +10,27 @@
 2. 确保 Yum 可以正常工作；通过公共库（public repository），安装 Hadoop 这些软件，背后其实就是应用 Yum 在安装公共库里面的 rpm 包。所以这里需要您的机器都能访问 Internet。
 3. 确保 home 目录的写权限。Ambari 会创建一些 OS 用户。
 4. 确保机器的 Python 版本大于或等于 2.7.5.（Redhat7.2，默认就是 2.7.5 的）。
+5. 确保机器安装了Maven 3.5.0。
 
 > 以上的检查点，如果之前在hadoop安装的时候已经有详细的说明。
 >
 > 如果未安装wget，请使用yum install wget
 >
-> 所有的安装过程都可以参考官方文档：https://cwiki.apache.org/confluence/display/AMBARI/Installation+Guide+for+Ambari+2.5.1
+> 所有的安装过程都可以参考官方文档：[https://cwiki.apache.org/confluence/display/AMBARI/Installation+Guide+for+Ambari+2.5.1](https://cwiki.apache.org/confluence/display/AMBARI/Installation+Guide+for+Ambari+2.5.1)
+>
+> 安装maven
+>
+> ```
+> #下载
+> cd /home/apache-maven
+> wget http://mirror.olnevhost.net/pub/apache/maven/binaries/apache-maven-3.5.0-bin.tar.gz
+> tar -xvf apache-maven-3.5.0-bin.tar.gz
+>
+> #配置环境变量
+> export M2_HOME=/usr/local/apache-maven/apache-maven-3.2.1
+> export M2=$M2_HOME/bin
+> export PATH=$M2:$PATH
+> ```
 
 **安装过程**
 
