@@ -70,6 +70,14 @@ MapReduce框架包括一个主节点（ResourceManager）、多个子节点（�
 
 ![](/assets/3.3-3.png)
 
+在YARN/MR v2版本中，YARN把JobTracker的工作分为两个部分：
+
+1）ResourceManager（资源管理器）全局管理所有应用程序计算资源的分配。
+
+2）ApplicationMaster负责相应的调度和协调。
+
+NodeManager是每一台机器框架的代理，是执行应用程序的容器，监控应用程序的资源（CPU、内存、硬盘、网络）使用情况，并且向调度器汇报。
+
 虽然Hadoop框架是用Java实现的，但MapReduce应用程序则不一定要用Java来写，也可以使用Ruby、Python、C++等来编写。
 
 MapReduce框架的流程如下图所示。
@@ -115,4 +123,22 @@ MRv2最核心的思想就是将JobTracker两个主要的功能分离成单独的
 ResourceManager有两个重要的组件：Scheduler和ApplicationsManager。Scheduler负责分配资源给每个正在运行的应用，同时需要注意Scheduler是一个单一的分配资源的组件，不负责监控或者跟踪任务状态的任务，而且它不保证重启失败的任务。ApplicationsManager注意负责接受任务的提交和执行应用的第一个容器ApplicationMaster协调，同时提供当任务失败时重启的服务。如图2-7所示，客户端提交任务到ResourceManager的ApplicationsManager，然后Scheduler在获得了集群各个节点的资源后，为每个应用启动一个App Mastr（ApplicationMaster），用于执行任务。每个App Mastr启动一个或多个Container用于实际执行任务。
 
 ![](/assets/3.3.3_1.png)
+
+（1）ResourceManager
+
+ResourceManager是一个全局的资源管理器，负责整个系统的资源管理和分配。它主要由两个组件构成：调度器（Scheduler）和应用程序管理器（ApplicationManager，AM）。
+
+Scheduler负责分配最少但满足Application运行所需的资源量给Application。Scheduler只是基于资源的使用情况进行调度，并不负责监视/跟踪Application的状态，当然也不会处理失败的Task。
+
+ApplicationManager负责处理客户端提交的Job以及协商第一个Container以供App-licationMaster运行，并且在ApplicationMaster失败的时候会重新启动ApplicationMaster（YARN中使用Resource Container概念来管理集群的资源，Resource Container是资源的抽象，每个Container包括一定的内存、IO、网络等资源）。
+
+（2）ApplicationMaster
+
+ApplicatonMaster是一个框架特殊的库，每个Application有一个ApplicationMaster，主要管理和监控部署在YARN集群上的各种应用。
+
+（3）NodeManager
+
+主要负责启动Resourcemanager分配给ApplicationMaster的Container，并且会监视Container的运行情况。在启动Container的时候，NodeManager会设置一些必要的环境变量以及相关文件；当所有准备工作做好后，才会启动该Container。启动后，NodeManager会周期性地监视该Container运行占用的资源情况，若是超过了该Container所声明的资源量，则会kill掉该Container所代表的进程。
+
+
 
