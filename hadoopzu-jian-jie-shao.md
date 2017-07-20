@@ -66,6 +66,8 @@ Hadoop MapReduce是一个快速、高效、简单用于编写并行处理大数�
 
 MapReduce框架包括一个主节点（ResourceManager）、多个子节点（运行NodeManager）和MRAppMaster（每个任务一个）共同组成。应用程序至少应该指明输入/输出的位置（路径），并通过实现合适的接口或抽象类提供map和reduce函数，再加上其他作业的参数，就构成了作业配置（job configuration）。Hadoop的job client提交作业（jar包/可执行程序等）和配置信息给ResourceManager，后者负责分发这些软件和配置信息给slave、调度任务且监控它们的执行，同时提供状态和诊断信息给job-client。
 
+下图为MapReduce发展历史
+
 ![](/assets/3.3-3.png)
 
 虽然Hadoop框架是用Java实现的，但MapReduce应用程序则不一定要用Java来写，也可以使用Ruby、Python、C++等来编写。
