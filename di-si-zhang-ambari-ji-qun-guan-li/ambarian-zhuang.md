@@ -47,9 +47,14 @@
 
 **Step 5**: 使用Ambari Web UI部署集群
 
+
+
 首先需要获取 Ambari 的公共库文件（public repository）。登录到 Linux 主机并执行下面的命令（也可以自己手工下载）：
 
 ```
+#安装需要使用的库
+yum install -y rpm-build
+
 #也可以使用其他镜像
 $wget http://www.apache.org/dist/ambari/ambari-2.5.1/apache-ambari-2.5.1-src.tar.gz 
 $tar xfvz apache-ambari-2.5.1-src.tar.gz
@@ -64,4 +69,12 @@ $popd
 ```
 
 整个过程需要联网下载，使用maven进行编译和打包，因此需要花费一定的时间。
+
+继续执行打包命令
+
+```
+mvn -B clean install package rpm:rpm -DnewVersion=2.5.1.0.0 -DskipTests -Dpython.ver="python >= 2.6"
+```
+
+
 
