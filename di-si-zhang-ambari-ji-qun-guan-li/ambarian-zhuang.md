@@ -17,6 +17,25 @@
 
 **安装过程**
 
+安装过程概述:
+
+**Step 1**: 下载及编译Ambari 2.5.1源码。
+
+**Step 2**: 安装Ambari Server
+
+**Step 3**: 设置和启动Ambari Server
+
+**Step 4**: 在hadoopslave1、hadoopslave2上安装和启动Ambari Agent
+
+Step 5: 使用Ambari Web UI部署集群
+
+  
+  
+
+
+  
+
+
 首先需要获取 Ambari 的公共库文件（public repository）。登录到 Linux 主机并执行下面的命令（也可以自己手工下载）：
 
 ```
