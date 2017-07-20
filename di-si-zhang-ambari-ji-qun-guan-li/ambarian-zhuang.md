@@ -13,11 +13,21 @@
 
 > 以上的检查点，如果之前在hadoop安装的时候已经有详细的说明。
 
-
-
 **安装过程**
 
 首先需要获取 Ambari 的公共库文件（public repository）。登录到 Linux 主机并执行下面的命令（也可以自己手工下载）：
+
+```
+#也可以使用其他镜像
+$wget http://www.apache.org/dist/ambari/ambari-2.5.1/apache-ambari-2.5.1-src.tar.gz 
+$tar xfvz apache-ambari-2.5.1-src.tar.gz
+$cd apache-ambari-2.5.1-src
+$mvn versions:set -DnewVersion=2.5.1.0.0
+ 
+$pushd ambari-metrics
+$mvn versions:set -DnewVersion=2.5.1.0.0
+$popd
+```
 
 
 
