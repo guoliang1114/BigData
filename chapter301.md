@@ -4,6 +4,8 @@
 
 Apache Hadoop是一个软件框架，可以在具有数千个节点和PB级数据的大型集群上进行分布式处理。Apache Hadoop集群可以使用故障率一般较高的低价通用硬件来构建。Hadoop的设计能够在没有用户干预的情况下优雅地处理这些故障。此外，Hadoop采用了让计算贴近数据（move computation to the data）的方法，从而显著降低了网络流量。它的用户能够快速开发并行的应用程序，从而专注于业务逻辑，而无需承担分发数据、分发用于并行处理的代码以及处理故障等繁重的工作。Apache Hadoop主要包含四个项目：Hadoop Common、Hadoop分布式文件系统（Hadoop Distributed File System，HDFS）、YARN（Yet Another Resource Negotiator）和MapReduce。
 
+![](/assets/3.1-1.png)
+
 简而言之，HDFS用于存储数据，MapReduce用于处理数据，YARN则用来管理集群的资源（CPU和内存）及支持Hadoop的公共实用程序。Apache Hadoop可以与许多其他项目集成，如Avro、Hive、Pig、HBase、Zookeeper和Apache Spark。
 
 Hadoop带来的主要是以下三个组件：
