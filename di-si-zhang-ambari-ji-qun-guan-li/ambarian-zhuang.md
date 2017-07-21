@@ -47,7 +47,7 @@
 
 **Step 5**: 使用Ambari Web UI部署集群
 
-> 安装Ambari的过程非常痛苦，需要使用maven等各种工具。
+> 安装Ambari的过程非常痛苦，需要使用maven等各种工具。编译的时候需要联网下载各种软件包。
 
 首先需要获取 Ambari 的公共库文件（public repository）。登录到 Linux 主机并执行下面的命令（也可以自己手工下载）：
 
