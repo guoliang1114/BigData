@@ -53,7 +53,7 @@
 
 ```
 #安装需要使用的库
-yum install rpm-build gcc make gcc-c++ openssl-devel git ant -y
+yum install rpm-build gcc make gcc-c++ openssl-devel git ant python-devel -y
 
 #也可以使用其他镜像
 $wget http://www.apache.org/dist/ambari/ambari-2.5.1/apache-ambari-2.5.1-src.tar.gz 
