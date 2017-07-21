@@ -79,7 +79,9 @@ $popd
 mvn -B clean install package rpm:rpm -DnewVersion=2.5.1.0.0 -DskipTests -Dpython.ver="python >= 2.6"
 ```
 
-异常处理
+
+
+**异常处理**
 
 ```
 [ERROR] Failed to execute goal on project ambari-metrics-storm-sink: Could not resolve dependencies for project org.apache.ambari:ambari-metrics-storm-sink:jar:2.4.2.0.0: Failure to find org.apache.storm:storm-core:jar:1.1.0-SNAPSHOT in http://repo.hortonworks.com/content/groups/public/ was cached in the local repository, resolution will not be reattempted until the update interval of apache-hadoop has elapsed or updates are forced -> [Help 1]
