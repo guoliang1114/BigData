@@ -55,6 +55,20 @@
 #安装需要使用的库
 yum install rpm-build gcc make gcc-c++ openssl-devel git ant python-devel -y
 
+#由于编译需要安装Python 2.6，而redhat默认的版本是2.7，因此需要安装2.6
+wget https://www.python.org/ftp/python/2.6.9/Python-2.6.9.tar.xz //下载python2.6包
+tar -xf Python-2.6.9.tar.xz //解压python2.6包
+cd Python-2.6.9 //切换路径
+./configure //配置python源码
+make && make install //编译并安装，安装默认在/usr/local/bin/python2.6
+
+mv /usr/bin/python2  /usr/bin/python2.bak
+mv /usr/bin/python2-config  /usr/bin/python2-config.bak
+ln -s /usr/local/bin/python2.6 /usr/bin/python2.6
+ln -s /usr/local/bin/python2.6-config /usr/bin/python2.6-config
+ln -s /usr/local/bin/python2 /usr/bin/python2.6
+ln -s /usr/local/bin/python2-config /usr/bin/python2.6-config
+
 执行JVM参数设置
 #export _JAVA_OPTIONS="-Xmx2048m -XX:MaxPermSize=512m -Djava.awt.headless=true"
 
