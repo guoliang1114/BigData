@@ -73,11 +73,13 @@ $popd
 
 整个过程需要联网下载,如果有VPN，请一定要连接VPN。使用maven进行编译和打包，因此需要花费一定的时间。
 
-继续执行打包命令
+执行打包命令
 
 ```
 mvn -B clean install package rpm:rpm -DnewVersion=2.5.1.0.0 -DskipTests -Dpython.ver="python >= 2.6"
 ```
+
+如果中途出错，去掉clean继续运行。
 
 **异常处理**
 
