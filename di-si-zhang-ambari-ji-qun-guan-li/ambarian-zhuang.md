@@ -108,6 +108,7 @@ mvn -B clean install package rpm:rpm -DnewVersion=2.5.1.0.0 -DskipTests -Dpython
 
 ```
 cd ambari-server/target/rpm/ambari-server/RPMS/noarch/
+export buildNumber=2.5.1.0.0
 ambari-server start
 ```
 
