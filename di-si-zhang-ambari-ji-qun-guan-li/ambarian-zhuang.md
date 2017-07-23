@@ -112,6 +112,8 @@ export buildNumber=2.5.1.0.0
 ambari-server start
 ```
 
+![](/assets/4.2_3.png)
+
 **异常处理**
 
 ```
