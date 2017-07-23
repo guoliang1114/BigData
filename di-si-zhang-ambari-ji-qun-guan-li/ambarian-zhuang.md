@@ -66,6 +66,11 @@ mv /usr/bin/python2  /usr/bin/python2.bak
 mv /usr/bin/python2-config  /usr/bin/python2-config.bak
 ln -s /usr/local/bin/python2.7 /usr/local/bin/python
 
+由于yum使用的是python2.7版本需要编辑
+vi /usr/bin/yum
+修改第一行
+#!/usr/bin/python2.7
+
 #安装工具
 sh setuptools-0.6c11-py2.6.egg
 
@@ -96,8 +101,6 @@ mvn -B clean install package rpm:rpm -DnewVersion=2.5.1.0.0 -DskipTests -Dpython
 如果中途出错，去掉clean继续运行。
 
 ![](/assets/4.2.1_1.png)
-
-
 
 安装Ambari Server
 
