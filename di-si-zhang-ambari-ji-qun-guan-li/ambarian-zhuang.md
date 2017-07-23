@@ -104,7 +104,12 @@ mvn -B clean install package rpm:rpm -DnewVersion=2.5.1.0.0 -DskipTests -Dpython
 
 安装Ambari Server
 
+进入目录
 
+```
+cd ambari-server/target/rpm/ambari-server/RPMS/noarch/
+ambari-server start
+```
 
 **异常处理**
 
