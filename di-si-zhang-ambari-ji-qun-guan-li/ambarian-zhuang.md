@@ -64,10 +64,10 @@ make && make install //编译并安装，安装默认在/usr/local/bin/python2.6
 
 mv /usr/bin/python2  /usr/bin/python2.bak
 mv /usr/bin/python2-config  /usr/bin/python2-config.bak
-ln -s /usr/local/bin/python2.6 /usr/bin/python2.6
-ln -s /usr/local/bin/python2.6-config /usr/bin/python2.6-config
-ln -s /usr/local/bin/python2 /usr/bin/python2.6
-ln -s /usr/local/bin/python2-config /usr/bin/python2.6-config
+ln -s /usr/local/bin/python2.7 /usr/local/bin/python
+
+#安装工具
+sh setuptools-0.6c11-py2.6.egg
 
 执行JVM参数设置
 #export _JAVA_OPTIONS="-Xmx2048m -XX:MaxPermSize=512m -Djava.awt.headless=true"
