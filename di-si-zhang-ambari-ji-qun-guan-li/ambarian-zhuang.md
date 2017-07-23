@@ -97,6 +97,12 @@ mvn -B clean install package rpm:rpm -DnewVersion=2.5.1.0.0 -DskipTests -Dpython
 
 ![](/assets/4.2.1_1.png)
 
+
+
+安装Ambari Server
+
+
+
 **异常处理**
 
 ```
