@@ -116,7 +116,11 @@ ambari-server start
 
 **安装Ambari Agent**
 
+拷贝到ambari-agent/target/rpm/ambari-agent/RPMS/x86\_64/ 下的rpm包到agent服务器。
 
+```
+
+```
 
 **设置和启动Ambari Server**
 
