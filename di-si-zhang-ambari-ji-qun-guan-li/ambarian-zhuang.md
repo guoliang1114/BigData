@@ -120,8 +120,6 @@ ambari-server start
 
 ![](/assets/4.3.4_1.png)
 
-
-
 **异常处理**
 
 ```
