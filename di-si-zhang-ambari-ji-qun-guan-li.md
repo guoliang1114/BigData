@@ -24,7 +24,7 @@
 | 易用性、稳定性 | 易用、稳定 | 较易用，较稳定 |
 | 市场占有率（国内） | 高 | 较高 |
 
-常见的情况是，Cloudera Manger 去部署CDH Ambari去部署HDP， 当然，两者也可以互相，也可以去部署Apache Hadoop
+常见的情况是，Cloudera Manger 去部署CDH, Ambari去部署HDP， 当然，两者也可以互相，也可以去部署Apache Hadoop
 
 本节我们首先以Ambari为例，讲解如何使用工具管理管理Hadoop组件。
 
