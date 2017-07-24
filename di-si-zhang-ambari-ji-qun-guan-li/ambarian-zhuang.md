@@ -143,6 +143,10 @@ ambari-agent start
 
 ![](/assets/4.2.3_3.png)
 
+![](/assets/3.2.3_4.png)
+
+等待安装完成。
+
 **异常处理**
 
 ```
