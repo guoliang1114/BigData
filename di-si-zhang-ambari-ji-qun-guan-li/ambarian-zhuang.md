@@ -119,6 +119,12 @@ ambari-server start
 拷贝到ambari-agent/target/rpm/ambari-agent/RPMS/x86\_64/ 下的rpm包到agent服务器。
 
 ```
+cp ambari-agent-2.5.1.0-0.x86_64.rpm hadoopslave1:/home
+cp ambari-agent-2.5.1.0-0.x86_64.rpm hadoopslave2:/home
+
+在各个服务器上安装agent
+[root@hadoopslave1 home]# yum install ambari-agent-2.5.1.0-0.x86_64.rpm 
+[root@hadoopslave2 home]# yum install ambari-agent-2.5.1.0-0.x86_64.rpm 
 
 ```
 
