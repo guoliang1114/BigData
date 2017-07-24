@@ -141,6 +141,8 @@ ambari-agent start
 
 选择hadoopmaster的root私有文件。目录/root/.ssh/id\_rsa
 
+![](/assets/4.2.3_3.png)
+
 **异常处理**
 
 ```
