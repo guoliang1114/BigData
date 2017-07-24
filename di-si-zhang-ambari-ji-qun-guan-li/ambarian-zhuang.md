@@ -137,6 +137,10 @@ ambari-agent start
 
 ![](/assets/4.3.4_1.png)
 
+首先选择最新版本。接着填写ambria HOST:hadoopslave1,hadoopslave2。
+
+选择hadoopmaster的root私有文件。目录/root/.ssh/id\_rsa
+
 **异常处理**
 
 ```
