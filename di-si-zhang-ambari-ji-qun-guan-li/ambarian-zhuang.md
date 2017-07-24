@@ -114,6 +114,14 @@ ambari-server start
 
 ![](/assets/4.2_3.png)
 
+**设置和启动Ambari Server**
+
+http://192.168.44.131:8080/
+
+
+
+
+
 **异常处理**
 
 ```
