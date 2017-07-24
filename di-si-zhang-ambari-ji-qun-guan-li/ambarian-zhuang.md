@@ -124,8 +124,11 @@ cp ambari-agent-2.5.1.0-0.x86_64.rpm hadoopslave2:/home
 
 在各个服务器上安装agent
 [root@hadoopslave1 home]# yum install ambari-agent-2.5.1.0-0.x86_64.rpm 
-[root@hadoopslave2 home]# yum install ambari-agent-2.5.1.0-0.x86_64.rpm 
+[root@hadoopslave2 home]# yum install ambari-agent-2.5.1.0-0.x86_64.rpm
 
+启动agent
+export buildNumber=2.5.1.0.0
+ambari-agent start
 ```
 
 **设置和启动Ambari Server**
