@@ -114,7 +114,7 @@ ambari-server start
 
 ![](/assets/4.2_3.png)
 
-**安装Ambari Agent\(该部分可以使用Manger安装。\)**
+**安装Ambari Agent\(该部分可以使用Manger安装\)**
 
 拷贝到ambari-agent/target/rpm/ambari-agent/RPMS/x86\_64/ 下的rpm包到agent服务器。
 
