@@ -114,9 +114,7 @@ ambari-server start
 
 ![](/assets/4.2_3.png)
 
-安装Ambari Agent
-
-
+**安装Ambari Agent**
 
 
 
