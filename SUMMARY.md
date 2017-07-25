@@ -14,5 +14,5 @@
 * [第四章 Ambari集群管理](di-si-zhang-ambari-ji-qun-guan-li.md)
   * [Ambari介绍](di-si-zhang-ambari-ji-qun-guan-li/ambarijie-shao.md)
   * [Ambari安装](di-si-zhang-ambari-ji-qun-guan-li/ambarian-zhuang.md)
-* [第五章 Hadoop生态圈](di-wu-zhang-hadoop-sheng-tai-quan.md)
+* [第五章 大数据查询Hive](di-wu-zhang-hadoop-sheng-tai-quan.md)
 
