@@ -28,8 +28,6 @@ Flume是Cloudera提供的一个高可用、高可靠、分布式的海量日志�
 
 ![](/assets/5.0_3.png)
 
-
-
 （6）Oozie
 
 Oozie是基于Hadoop的调度器，以XML的形式写调度流程，可以调度Mr、Pig、Hive、shell、jar任务等。
@@ -45,6 +43,10 @@ Oozie是基于Hadoop的调度器，以XML的形式写调度流程，可以调度
 3）Bundle Job：绑定多个Coordinator。
 
 
+
+（7）Chukwa
+
+Chukwa是一个开源的、用于监控大型分布式系统的数据收集系统。它构建在Hadoop的HDFS和MapReduce框架上，继承了Hadoop的可伸缩性和鲁棒性。Chukwa还包含了一个强大和灵活的工具集，可用于展示、监控和分析已收集的数据。
 
 
 
