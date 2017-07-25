@@ -28,3 +28,23 @@ Flume是Cloudera提供的一个高可用、高可靠、分布式的海量日志�
 
 ![](/assets/5.0_3.png)
 
+
+
+（6）Oozie
+
+Oozie是基于Hadoop的调度器，以XML的形式写调度流程，可以调度Mr、Pig、Hive、shell、jar任务等。
+
+主要的功能如下。
+
+1）Workflow：顺序执行流程节点，支持fork（分支多个节点）、join（将多个
+
+节点合并为一个）。
+
+2）Coordinator：定时触发Workflow。
+
+3）Bundle Job：绑定多个Coordinator。
+
+
+
+
+
