@@ -46,9 +46,13 @@ Oozie是基于Hadoop的调度器，以XML的形式写调度流程，可以调度
 
 Chukwa是一个开源的、用于监控大型分布式系统的数据收集系统。它构建在Hadoop的HDFS和MapReduce框架上，继承了Hadoop的可伸缩性和鲁棒性。Chukwa还包含了一个强大和灵活的工具集，可用于展示、监控和分析已收集的数据。
 
-
-
 （8）ZooKeeper
 
 ZooKeeper是一个开放源码的分布式应用程序协调服务，是Google的Chubby一个开源的实现，是Hadoop和Hbase的重要组件，如图2-15所示。它是一个为分布式应用提供一致性服务的软件，提供的功能包括：配置维护、域名服务、分布式同步、组服务等。![](/assets/5.0_5.png)
+
+（10）Mahout
+
+Mahout是Apache Software Foundation（ASF）旗下的一个开源项目，提供一些可扩展的机器学习领域经典算法的实现，旨在帮助开发人员更加方便快捷地创建智能应用程序。Mahout包含许多实现，包括聚类、分类、推荐过滤、频繁子项挖掘。此外，通过使用Apache Hadoop库，可以有效地将Mahout扩展到云中。
+
+
 
