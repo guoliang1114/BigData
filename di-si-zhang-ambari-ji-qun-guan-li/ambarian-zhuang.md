@@ -163,7 +163,7 @@ ambari-agent start
 
 接着分别是选择安装软件所指定的 Master 机器和 Slave 机器，以及 Client 机器。这里使用默认选择即可（真正在生产环境中，需要根据具体的机器配置选择）。
 
-![](/assets/3.2.4_6.png)
+![](/assets/4.2_6.png)
 
 ambari会给一个安装汇总，确认无误后点击部署。
 
