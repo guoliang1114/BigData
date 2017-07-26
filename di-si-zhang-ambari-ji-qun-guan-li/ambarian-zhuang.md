@@ -167,6 +167,10 @@ ambari-agent start
 
 ambari会给一个安装汇总，确认无误后点击部署。
 
+![](/assets/4.2_10.png)
+
+访问仪表盘，可以对所有组件和状态进行查看。也可以启动、停止某些服务。
+
 **异常处理**
 
 ```
@@ -190,7 +194,6 @@ ambari-server stop
 ambari-server reset
 ```
 
-  
 libtirpc-devel找不到。hadoop在安装的时候需要使用该包，在系统盘中并无该包，需要自己下载安装
 
 ```
