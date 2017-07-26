@@ -181,8 +181,6 @@ ambari会给一个安装汇总，确认无误后点击部署。
  </properties>
 ```
 
-
-
 ambari server重置
 
 如果在安装的过程中发现ambari有相关问题，可以使用命令进行重置
@@ -190,6 +188,14 @@ ambari server重置
 ```
 ambari-server stop
 ambari-server reset
+```
+
+  
+libtirpc-devel找不到。hadoop在安装的时候需要使用该包，在系统盘中并无该包，需要自己下载安装
+
+```
+wget ftp://mirror.switch.ch/pool/4/mirror/scientificlinux/7.2/x86_64/os/Packages/libtirpc-devel-0.2.4-0.6.el7.x86_64.rpm
+yum install libtirpc-devel*.rpm
 ```
 
 
