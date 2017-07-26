@@ -183,3 +183,14 @@ ambari会给一个安装汇总，确认无误后点击部署。
 
 
 
+ambari server重置
+
+如果在安装的过程中发现ambari有相关问题，可以使用命令进行重置
+
+```
+ambari-server stop
+ambari-server reset
+```
+
+
+
