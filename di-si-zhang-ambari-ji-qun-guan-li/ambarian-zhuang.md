@@ -71,6 +71,12 @@ vi /usr/bin/yum
 修改第一行
 #!/usr/bin/python2.7
 
+vi /usr/libexec/urlgrabber-ext-down
+修改第一行
+#!/usr/bin/python2.7
+
+
+
 #安装工具
 sh setuptools-0.6c11-py2.6.egg
 
@@ -159,7 +165,7 @@ ambari-agent start
 
 ![](/assets/3.2.4_6.png)
 
-ambari会给一个安装汇总，确认无误后点击部署。 
+ambari会给一个安装汇总，确认无误后点击部署。
 
 **异常处理**
 
