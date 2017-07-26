@@ -14,5 +14,10 @@ Hive的出现正好可以解决这一系列问题，Hive最初是由Facebook设�
 
 上图为Hive的体系架构。
 
+1. 用户接口。用户与Hive交互主要有3种方式：CLI、Client和WUI。CLI方式主要用于Linux平台命令行查询。WUI方式是Hive的Web界面访问方式，通过浏览器访问Hive。Client是Hive的客户端，连接至远程服务HiveServer2。
+2. 元数据存储。Hive将元数据存储在数据库中，如MySQL、Derby等，其中元数据存储依赖于Metastore DB服务。Hive中的元数据包括表名、表的列和分区及其属性、表的属性（是否为外部表）、表的数据所在目录等。
+3. 解析器、编译器、优化器。完成HQL查询语句从词法分析、语法分析、编译、优化以及查询计划的生成，随后由MapReduce调用执行。
+4. 数据存储。Hive中表的数据存储在HDFS中，包含表（Table）、外部表（External Table）、分区（Partition）、桶（Bucket）等数据模型，其中数据库、分区、表都对应HDFS上的某个目录，Hive表里的数据存储在表目录下面。
+
 
 
