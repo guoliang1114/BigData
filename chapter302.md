@@ -146,7 +146,21 @@ systemctl restart chronyd.service
 systemctl status chronyd.service
 ```
 
-### 3.2.5 JDK安装和配置
+**关闭SELinux**
+
+```
+#查看SELinux状态
+sestatus
+
+#临时关闭
+setenforce 0
+
+#彻底关闭
+vi /etc/sysconfig/selinux
+SELINUX=disabled
+```
+
+3.2.5 JDK安装和配置
 
 首先解压jdk  
 `tar xvfz jdk-8u131-linux-x64.tar.gz`
