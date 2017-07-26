@@ -19,5 +19,7 @@ Hive的出现正好可以解决这一系列问题，Hive最初是由Facebook设�
 3. 解析器、编译器、优化器。完成HQL查询语句从词法分析、语法分析、编译、优化以及查询计划的生成，随后由MapReduce调用执行。
 4. 数据存储。Hive中表的数据存储在HDFS中，包含表（Table）、外部表（External Table）、分区（Partition）、桶（Bucket）等数据模型，其中数据库、分区、表都对应HDFS上的某个目录，Hive表里的数据存储在表目录下面。
 
+> HiveQL执行过程：用户通过CLI、JDBC/ODBC或WUI接口提交HiveQL到Hive-Server2服务，通过解释器、编译器、优化器完成HiveQL查询语句从词法分析、语法分析、编译、优化以及查询计划的生成，将元数据存储到数据库中，执行器完成查询计划的处理，由MapReduce调用执行。
+
 
 
