@@ -30,5 +30,5 @@ e\) Tasktracker   执行任务;
 
 ![](/assets/3.6_1.png)
 
-
+电影的数据主要有，用户ID，电影ID，评分，时间。
 
