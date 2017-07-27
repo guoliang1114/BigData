@@ -58,7 +58,6 @@ hadoop fs -put ratings.csv /u01/
 
 #查看文件
 
-
 ```
 
 
