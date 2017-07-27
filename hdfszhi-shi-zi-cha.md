@@ -48,7 +48,17 @@ Reduce: 将评分一样的求和。
 1. 提交文件到HDFS
 
 ```
-hadoop fs -put 
+#下载文件
+wget http://files.grouplens.org/datasets/movielens/ml-latest-small.zip
+unzip ml-latest-small.zip
+
+
+#上传文件
+hadoop fs -put ratings.csv /u01/
+
+#查看文件
+
+
 ```
 
 
