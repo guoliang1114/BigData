@@ -28,7 +28,7 @@ e\) Tasktracker   执行任务;
 
 1. 首先梳理思路
 
-
+![](/assets/3.6_1.png)
 
 
 
