@@ -26,10 +26,12 @@ e\) Tasktracker   执行任务;
 
 基于[https://grouplens.org](https://grouplens.org/) 中电影评分的数据
 
-1. 将数据保存到HDFS
-2. 统计各个评分的电影分别有多少部？
+1. 将数据保存到HDFS。
+2. 统计各个评分的电影分别有多少部。
 
 首先梳理思路
+
+将文件保存到HDFS比较简单。
 
 ![](/assets/3.6_1.png)
 
