@@ -24,7 +24,10 @@ e\) Tasktracker   执行任务;
 
 ### 3.6.3 MapReduce例子
 
-基于[https://grouplens.org](https://grouplens.org/) 中电影评分的数据，统计各个评分的电影分别有多少部？
+基于[https://grouplens.org](https://grouplens.org/) 中电影评分的数据
+
+1. 将数据保存到HDFS
+2. 统计各个评分的电影分别有多少部？
 
 1. 首先梳理思路
 
