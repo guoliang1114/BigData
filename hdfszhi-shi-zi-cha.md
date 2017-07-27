@@ -4,7 +4,7 @@
 
 > 在开始自查之前，我们需要给大家介绍一些内容。
 >
-> 1. 数据网站: [https://grouplens.org/](https://grouplens.org/) 里有大量的数据可以供我们在学习的时候使用。
+> 1. 数据网站: [https://grouplens.org/](https://grouplens.org/) 是明尼苏达大学社会计算研究的数据集，里有大量的数据可以供我们在学习的时候使用。
 
 ### 3.6.1 **hadoop与云计算之间的关系?**
 
@@ -25,6 +25,4 @@ e\) Tasktracker   执行任务;
 ### 3.6.3 MapReduce例子
 
 基于[https://grouplens.org](https://grouplens.org/) 中电影评分的数据，统计各个评分的电影分别有多少部？
-
-
 
