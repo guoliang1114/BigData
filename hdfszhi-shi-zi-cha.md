@@ -45,7 +45,7 @@ Reduce: 将评分一样的求和。
 
 以下为整个过程：
 
-1. 提交文件到HDFS
+1）提交文件到HDFS
 
 ```
 #下载文件
@@ -59,6 +59,8 @@ hadoop fs -put ratings.csv /u01/
 #查看文件
 hadoop fs -ls /u01
 ```
+
+2）进行统计
 
 
 
