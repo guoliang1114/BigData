@@ -57,7 +57,7 @@ unzip ml-latest-small.zip
 hadoop fs -put ratings.csv /u01/
 
 #查看文件
-
+hadoop fs -ls /u01
 ```
 
 
