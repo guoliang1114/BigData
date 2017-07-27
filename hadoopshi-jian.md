@@ -322,7 +322,3 @@ MapReduce有以下缺点：
 
 
 
-3.4.2 MapReduce例子
-
-
-
