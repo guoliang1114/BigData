@@ -422,5 +422,12 @@ FileStatus{path=hdfs://192.168.44.131:9000/u01/ratings.csv; isDirectory=false; l
 FileStatus{path=hdfs://192.168.44.131:9000/u01/wordcount; isDirectory=true; modification_time=1501133714318; access_time=0; owner=hadoop; group=supergroup; permission=rwxr-xr-x; isSymlink=false}
 ```
 
-查看u01
+查看u01/hadoop.log文件
+
+```
+hadoop fs -cat /u01/hadoop.log
+开启我的Hadoop之旅
+```
+
+
 
