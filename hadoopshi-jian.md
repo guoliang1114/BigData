@@ -406,9 +406,6 @@ public class HDFSExample {
             os.flush();
             os.close();
 
-            // 显示在hdfs的指定文件的内容
-            InputStream is = fs.open(new Path("/u01/hadoop.log"));
-            IOUtils.copyBytes(is, System.out, 1024, true);
         }catch (Exception e){
             e.printStackTrace();
         }
@@ -425,5 +422,5 @@ FileStatus{path=hdfs://192.168.44.131:9000/u01/ratings.csv; isDirectory=false; l
 FileStatus{path=hdfs://192.168.44.131:9000/u01/wordcount; isDirectory=true; modification_time=1501133714318; access_time=0; owner=hadoop; group=supergroup; permission=rwxr-xr-x; isSymlink=false}
 ```
 
-
+查看u01
 
