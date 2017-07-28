@@ -64,3 +64,95 @@ hadoop fs -ls /u01
 
 
 
+```
+import org.apache.hadoop.conf.Configuration;
+import org.apache.hadoop.fs.Path;
+import org.apache.hadoop.io.IntWritable;
+import org.apache.hadoop.io.Text;
+
+import org.apache.hadoop.mapreduce.Job;
+import org.apache.hadoop.mapreduce.Mapper;
+import org.apache.hadoop.mapreduce.Reducer;
+import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
+import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
+
+import java.io.IOException;
+import java.util.StringTokenizer;
+
+/**
+ * Created by geguo on 2017/7/28.
+ */
+public class MlExample {
+
+    //Map
+    public static class csvMapper extends Mapper<Object, Text, Text, IntWritable> {
+
+        private final static IntWritable one = new IntWritable(1);
+        private Text word = new Text();
+
+
+        @Override
+        protected void map(Object key, Text value, Context context) throws IOException, InterruptedException {
+            String[] args = value.toString().split(",");
+
+            word.set(args[2]);
+            context.write(word,one);
+
+        }
+    }
+
+    public static class SumReducer extends Reducer<Text, IntWritable, Text, IntWritable> {
+
+        private IntWritable result = new IntWritable();
+
+
+        @Override
+        protected void reduce(Text key, Iterable<IntWritable> values, Context context) throws IOException, InterruptedException {
+
+            int sum = 0;
+            for (IntWritable val : values) {
+                sum += val.get();
+            }
+            result.set(sum);
+            context.write(key, result);
+        }
+    }
+
+    public static void main(String[] args) throws IOException, ClassNotFoundException, InterruptedException {
+
+        Configuration conf = new Configuration();
+        Job job = Job.getInstance(conf, "csv ml count");
+        job.setJarByClass(MlExample.class);
+        job.setMapperClass(csvMapper.class);
+        job.setCombinerClass(SumReducer.class);
+        job.setReducerClass(SumReducer.class);
+        job.setOutputKeyClass(Text.class);
+        job.setOutputValueClass(IntWritable.class);
+        FileInputFormat.addInputPath(job, new Path(args[0]));
+        FileOutputFormat.setOutputPath(job, new Path(args[1]));
+        System.exit(job.waitForCompletion(true) ? 0 : 1);
+    }
+}
+
+```
+
+执行
+
+```
+$ hadoop jar hadoop-ml-1.0-SNAPSHOT.jar MlExample  /u01/ratings.csv /u01/output
+ 
+$ hadoop fs -cat /u01/output/part-r-00000
+0.5	1101
+1.0	3326
+1.5	1687
+2.0	7271
+2.5	4449
+3.0	20064
+3.5	10538
+4.0	28750
+4.5	7723
+5.0	15095
+```
+
+
+
