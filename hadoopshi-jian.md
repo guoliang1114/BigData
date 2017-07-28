@@ -415,7 +415,14 @@ public class HDFSExample {
 
     }
 }
+```
 
+执行jar
+
+```
+$ hadoop jar hadoop-ml-1.0-SNAPSHOT.jar  HDFSExample
+FileStatus{path=hdfs://192.168.44.131:9000/u01/ratings.csv; isDirectory=false; length=2438266; replication=2; blocksize=134217728; modification_time=1501124895929; access_time=1501133091132; owner=hadoop; group=supergroup; permission=rw-r--r--; isSymlink=false}
+FileStatus{path=hdfs://192.168.44.131:9000/u01/wordcount; isDirectory=true; modification_time=1501133714318; access_time=0; owner=hadoop; group=supergroup; permission=rwxr-xr-x; isSymlink=false}
 ```
 
 
