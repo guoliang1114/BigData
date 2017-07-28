@@ -62,8 +62,6 @@ hadoop fs -ls /u01
 
 2）进行统计
 
-
-
 ```
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.Path;
@@ -133,25 +131,24 @@ public class MlExample {
         System.exit(job.waitForCompletion(true) ? 0 : 1);
     }
 }
-
 ```
 
 执行
 
 ```
 $ hadoop jar hadoop-ml-1.0-SNAPSHOT.jar MlExample  /u01/ratings.csv /u01/output
- 
+
 $ hadoop fs -cat /u01/output/part-r-00000
-0.5	1101
-1.0	3326
-1.5	1687
-2.0	7271
-2.5	4449
-3.0	20064
-3.5	10538
-4.0	28750
-4.5	7723
-5.0	15095
+0.5    1101
+1.0    3326
+1.5    1687
+2.0    7271
+2.5    4449
+3.0    20064
+3.5    10538
+4.0    28750
+4.5    7723
+5.0    15095
 ```
 
 
