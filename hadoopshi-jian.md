@@ -364,9 +364,59 @@ MapReduce有以下缺点：
 </project>
 ```
 
-新建工程
+新建class
+
+```
+import org.apache.hadoop.conf.Configuration;
+import org.apache.hadoop.fs.FSDataOutputStream;
+import org.apache.hadoop.fs.FileStatus;
+import org.apache.hadoop.fs.FileSystem;
+import org.apache.hadoop.fs.Path;
+import org.apache.hadoop.io.IOUtils;
+
+import java.io.InputStream;
+import java.net.URI;
+
+/**
+ *
+ * Created by geguo on 2017/7/27.
+ *
+ */
+
+public class HDFSExample {
+
+    public static void  main(String[] args){
+
+        String uri = "hdfs://192.168.44.131:9000/";
+        Configuration config = new Configuration();
 
 
+        try {
+            FileSystem fs = FileSystem.get(URI.create(uri), config);
+
+            //列出目录下所有的文件列表
+            FileStatus[] statuses = fs.listStatus(new Path("/u01/"));
+            for (FileStatus status : statuses) {
+                System.out.println(status);
+            }
+
+            // 在hdfs的/u01目录下创建一个文件，并写入一行文本
+            FSDataOutputStream os = fs.create(new Path("/u01/hadoop.log"));
+            os.write("开启我的Hadoop之旅".getBytes());
+            os.flush();
+            os.close();
+
+            // 显示在hdfs的指定文件的内容
+            InputStream is = fs.open(new Path("/u01/hadoop.log"));
+            IOUtils.copyBytes(is, System.out, 1024, true);
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+
+    }
+}
+
+```
 
 
 
