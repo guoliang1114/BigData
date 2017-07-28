@@ -425,7 +425,7 @@ FileStatus{path=hdfs://192.168.44.131:9000/u01/wordcount; isDirectory=true; modi
 查看u01/hadoop.log文件
 
 ```
-hadoop fs -cat /u01/hadoop.log
+$hadoop fs -cat /u01/hadoop.log
 开启我的Hadoop之旅
 ```
 
