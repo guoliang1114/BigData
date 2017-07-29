@@ -51,6 +51,10 @@ This command was run using /hadoop/hadoop-2.8.0/share/hadoop/common/hadoop-commo
 yum install mysql-community-*.rpm
 #安装完毕后启动
 service mysqld start
+service mysqld stop
+
+设置密码
+
 ```
 
 
