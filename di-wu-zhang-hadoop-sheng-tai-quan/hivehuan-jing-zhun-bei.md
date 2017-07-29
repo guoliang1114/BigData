@@ -94,7 +94,9 @@ mysql>create database hive;
 
 ### 5.2.4 安装Hive
 
+准备下载Hive，在官网上找到如下说明:
 
+25 July 2017 : release 2.2.0 available
 
-
+This release works with Hadoop 2.x.y
 
