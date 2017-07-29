@@ -112,8 +112,9 @@ export CLASSPATH=.:${JAVA_HOME}/lib:${JRE_HOME}/lib:/usr/local/hive/lib
 $source /etc/profile
 
 #修改配置文件
-#hive-default.xml 
+#hive-env.sh,hive-default.xml 
 cd /apache-hive-2.3.0-bin/conf
+cp hive-env.sh.template hive-env.sh
 
 ```
 
