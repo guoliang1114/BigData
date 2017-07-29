@@ -51,10 +51,11 @@ This command was run using /hadoop/hadoop-2.8.0/share/hadoop/common/hadoop-commo
 yum install mysql-community-*.rpm
 #安装完毕后启动
 service mysqld start
-service mysqld stop
+#用户的密码保存在/var/log/mysqld.log文件中
 
 #重置Mysql账户密码
 mysql_secure_installation
+
 ```
 
 
