@@ -159,7 +159,30 @@ vi hive-default.xml
 export JAVA_HOME=/home/jdk1.8.0_131
 export HADOOP_HOME=/hadoop/hadoop-2.8.0
 export HIVE_HOME=/hadoop/apache-hive-2.3.0-bin
+
 ```
+
+官方推荐创建jpox.properties来保存以上的设置，例如:
+
+```
+javax.jdo.PersistenceManagerFactoryClass =org.jpox.PersistenceManagerFactoryImpl
+org.jpox.autoCreateSchema = false
+org.jpox.validateTables = false
+org.jpox.validateColumns = false
+org.jpox.validateConstraints = false
+org.jpox.storeManagerType = rdbms
+org.jpox.autoCreateSchema = true
+org.jpox.autoStartMechanismMode = checked
+org.jpox.transactionIsolation = read_committed
+javax.jdo.option.DetachAllOnCommit = true
+javax.jdo.option.NontransactionalRead = true
+javax.jdo.option.ConnectionDriverName = org.apache.derby.jdbc.ClientDriver
+javax.jdo.option.ConnectionURL = jdbc:derby://hadoop1:1527/metastore_db;create = true
+javax.jdo.option.ConnectionUserName = APP
+javax.jdo.option.ConnectionPassword = mine
+```
+
+在此我们就不做测试了。
 
 另外由于hive要连接mysql数据库，因此需要提供mysql的驱动。将mysql的jar文件上传到hive的lib目录下。
 
@@ -171,6 +194,11 @@ cp mysql-connector-java-5.1.42-bin.jar ../../lib/
 ```
 
 初始化数据库
+
+```
+cd /hadoop/apache-hive-2.3.0-bin/lib
+
+```
 
 
 
