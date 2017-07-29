@@ -161,7 +161,7 @@ export HADOOP_HOME=/hadoop/hadoop-2.8.0
 export HIVE_HOME=/hadoop/apache-hive-2.3.0-bin
 ```
 
-另外由于hive要连接mysql数据库，因此需要提供mysql的驱动。
+另外由于hive要连接mysql数据库，因此需要提供mysql的驱动。将mysql的jar文件上传到hive的lib目录下。
 
 
 
