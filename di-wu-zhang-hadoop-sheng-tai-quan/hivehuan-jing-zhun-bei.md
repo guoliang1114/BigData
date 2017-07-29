@@ -124,7 +124,11 @@ HADOOP_HOME=/hadoop/hadoop-2.8.0
 #指定MySQL数据库驱动、数据库名、用户名及密码
 cp hive-default.xml.template hive-default.xml
 vi hive-default.xml
-
+#修改以下内容
+#javax.jdo.option.ConnectionURL参数指定的是Hive连接数据库的连接字符串；
+#javax.jdo.option.ConnectionDriverName参数指定的是驱动的类入口名称；
+#javax.jdo.option.ConnectionUserName参数指定了数据库的用户名；
+#javax.jdo.option.ConnectionPassword参数指定了数据库的密码。
 ```
 
 
