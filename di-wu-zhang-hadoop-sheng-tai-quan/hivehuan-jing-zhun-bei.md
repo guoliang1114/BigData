@@ -129,8 +129,8 @@ vi hive-site.xml
 #javax.jdo.option.ConnectionDriverName参数指定的是驱动的类入口名称；
 #javax.jdo.option.ConnectionUserName参数指定了数据库的用户名；
 #javax.jdo.option.ConnectionPassword参数指定了数据库的密码。
-#hive.exec.local.scratchdir hive jobs临时目录
-#hive.downloaded.resources.dir 添加资源的目录
+#hive.exec.local.scratchdir参数指定hive jobs临时目录
+#hive.downloaded.resources.dir参数指定添加资源的目录
 
  <property>
     <name>javax.jdo.option.ConnectionURL</name>
