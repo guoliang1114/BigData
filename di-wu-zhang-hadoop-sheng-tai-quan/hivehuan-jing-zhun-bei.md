@@ -85,6 +85,7 @@ mysql> show databases;
 
 #创建Hive用户
 mysql>CREATE USER 'hive' IDENTIFIED BY '1qaz@WSX';
+mysql>GRANT ALL PRIVILEGES ON *.* TO 'hive'@'%' IDENTIFIED BY '1qaz@WSX' WITH GRANT OPTION;
 
 ```
 
