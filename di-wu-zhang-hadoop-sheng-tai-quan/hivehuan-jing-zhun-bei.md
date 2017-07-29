@@ -129,6 +129,7 @@ vi hive-site.xml
 #javax.jdo.option.ConnectionDriverName参数指定的是驱动的类入口名称；
 #javax.jdo.option.ConnectionUserName参数指定了数据库的用户名；
 #javax.jdo.option.ConnectionPassword参数指定了数据库的密码。
+#hive.exec.local.scratchdir hive jobs临时目录
 
  <property>
     <name>javax.jdo.option.ConnectionURL</name>
@@ -154,6 +155,8 @@ vi hive-site.xml
     <value>1qaz@WSX</value>
     <description>password to use against metastore database</description>
   </property>
+  
+
 
   #修改bin目录下的hive-config.sh文件
 export JAVA_HOME=/home/jdk1.8.0_131
