@@ -96,9 +96,14 @@ mysql>create database hive;
 
 准备下载Hive，在官网上找到如下说明:
 
-25 July 2017 : release 2.2.0 available This release works with Hadoop 2.x.y
+25 July 2017 : release 2.3.0 available This release works with Hadoop 2.x.y
 
-选择2.2.0版本。
+选择2.3.0版本。
+
+```
+tar -zxvf apache-hive-2.3.0-bin.tar.gz
+
+```
 
 
 
