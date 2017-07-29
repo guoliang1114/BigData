@@ -92,5 +92,9 @@ mysql>flush privileges;
 mysql>create database hive;
 ```
 
+### 5.2.4 安装Hive
+
+
+
 
 
