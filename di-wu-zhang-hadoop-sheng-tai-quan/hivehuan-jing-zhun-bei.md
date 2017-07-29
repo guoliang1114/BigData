@@ -154,7 +154,9 @@ vi hive-default.xml
     <value>1qaz@WSX</value>
     <description>password to use against metastore database</description>
   </property>
-
+  
+  #修改bin目录下的hive-config.sh文件
+  
 ```
 
 
