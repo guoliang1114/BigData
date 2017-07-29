@@ -83,10 +83,10 @@ mysql> show databases;
 +--------------------+
 4 rows in set (0.01 sec)
 
-#创建Hive用户
+#创建Hive用户并分配权限
 mysql>CREATE USER 'hive' IDENTIFIED BY '1qaz@WSX';
 mysql>GRANT ALL PRIVILEGES ON *.* TO 'hive'@'%' IDENTIFIED BY '1qaz@WSX' WITH GRANT OPTION;
-
+mysql>flush privileges;
 ```
 
 
