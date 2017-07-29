@@ -100,3 +100,5 @@ mysql>create database hive;
 
 This release works with Hadoop 2.x.y
 
+
+
