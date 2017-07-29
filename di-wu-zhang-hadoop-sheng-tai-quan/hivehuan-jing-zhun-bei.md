@@ -84,7 +84,8 @@ mysql> show databases;
 4 rows in set (0.01 sec)
 
 #创建Hive用户
-mysql>CREATE USER 'hive' IDENTIFIED BY '1qaz@WSX'
+mysql>CREATE USER 'hive' IDENTIFIED BY '1qaz@WSX';
+
 ```
 
 
