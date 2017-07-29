@@ -33,5 +33,5 @@ From source with checksum 60125541c2b3e266cbf3becc5bda666
 This command was run using /hadoop/hadoop-2.8.0/share/hadoop/common/hadoop-common-2.8.0.jar
 ```
 
-
+默认安装的Hadoop的版本是 2.8.0
 
