@@ -48,7 +48,9 @@ This command was run using /hadoop/hadoop-2.8.0/share/hadoop/common/hadoop-commo
 找到合适的版本进行安装：
 
 ```
-yum install mysql-community-*.rpm 
+yum install mysql-community-*.rpm
+#安装完毕后启动
+service mysqld start
 ```
 
 
