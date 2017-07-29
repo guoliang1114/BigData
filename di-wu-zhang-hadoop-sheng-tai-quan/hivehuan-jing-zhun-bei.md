@@ -101,10 +101,14 @@ mysql>create database hive;
 选择2.3.0版本。
 
 ```
+cd /hadoop
 tar -zxvf apache-hive-2.3.0-bin.tar.gz
 
 #修改环境变量
-
+export HIVE_HOME=/usr/local/hive
+export PATH=$PATH:$HIVE_HOME/bin
+export CLASSPATH=.:${JAVA_HOME}/lib:${JRE_HOME}/lib:/usr/local/hive/lib
+$source /etc/profile
 ```
 
 
