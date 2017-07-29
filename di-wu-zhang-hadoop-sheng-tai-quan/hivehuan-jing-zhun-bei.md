@@ -212,6 +212,13 @@ cp mysql-connector-java-5.1.42-bin.jar ../../lib/
 cd /hadoop/apache-hive-2.3.0-bin/lib
 schematool -initSchema -dbType mysql
 #看到schemaTool completed执行完毕后，数据库中应该会生成很多hive的元数据
+#使用hive查看
+hive> show databases;
+OK
+default
+Time taken: 0.822 seconds, Fetched: 1 row(s)
+hive> 
+
 ```
 
 
