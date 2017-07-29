@@ -115,7 +115,10 @@ $source /etc/profile
 #hive-env.sh,hive-default.xml 
 
 cd /apache-hive-2.3.0-bin/conf
+#指定hadoop的目录
 cp hive-env.sh.template hive-env.sh
+vi hive-env.sh
+HADOOP_HOME=/hadoop/hadoop-2.8.0
 #修改hive-env.sh中hadoop的目录
 
 cp hive-default.xml.template hive-site.xml
