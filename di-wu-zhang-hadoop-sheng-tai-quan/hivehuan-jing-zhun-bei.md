@@ -103,6 +103,8 @@ mysql>create database hive;
 ```
 tar -zxvf apache-hive-2.3.0-bin.tar.gz
 
+#修改环境变量
+
 ```
 
 
