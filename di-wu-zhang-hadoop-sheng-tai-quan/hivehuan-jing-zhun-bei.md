@@ -35,5 +35,7 @@ This command was run using /hadoop/hadoop-2.8.0/share/hadoop/common/hadoop-commo
 
 默认安装的Hadoop的版本是 2.8.0
 
+5.2.3 准备MySQL环境
+
 
 
