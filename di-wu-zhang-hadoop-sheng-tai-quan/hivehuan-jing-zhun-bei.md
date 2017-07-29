@@ -21,9 +21,17 @@ Java HotSpot(TM) 64-Bit Server VM (build 25.131-b11, mixed mode)
 
 java安装完毕。
 
-
-
 5.2.2 验证Hadoop的安装
+
+```
+[root@hadoopmaster ~]# hadoop version
+Hadoop 2.8.0
+Subversion https://git-wip-us.apache.org/repos/asf/hadoop.git -r 91f2b7a13d1e97be65db92ddabc627cc29ac0009
+Compiled by jdu on 2017-03-17T04:12Z
+Compiled with protoc 2.5.0
+From source with checksum 60125541c2b3e266cbf3becc5bda666
+This command was run using /hadoop/hadoop-2.8.0/share/hadoop/common/hadoop-common-2.8.0.jar
+```
 
 
 
