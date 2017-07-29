@@ -119,9 +119,12 @@ cd /apache-hive-2.3.0-bin/conf
 cp hive-env.sh.template hive-env.sh
 vi hive-env.sh
 HADOOP_HOME=/hadoop/hadoop-2.8.0
-#修改hive-env.sh中hadoop的目录
 
+#修改hive-site.xml 文件
+#指定MySQL数据库驱动、数据库名、用户名及密码
 cp hive-default.xml.template hive-site.xml
+vi hive-site.xml
+
 ```
 
 
