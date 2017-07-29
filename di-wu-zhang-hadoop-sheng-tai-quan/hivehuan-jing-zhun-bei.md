@@ -116,6 +116,8 @@ $source /etc/profile
 
 cd /apache-hive-2.3.0-bin/conf
 cp hive-env.sh.template hive-env.sh
+cp hive-default.xml.template hive-site.xml
+
 ```
 
 
