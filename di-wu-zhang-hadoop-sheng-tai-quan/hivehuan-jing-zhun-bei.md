@@ -112,7 +112,7 @@ export CLASSPATH=.:${JAVA_HOME}/lib:${JRE_HOME}/lib:/usr/local/hive/lib
 $source /etc/profile
 
 #修改配置文件
-#hive-env.sh,hive-default.xml 
+#hive-env.sh,hive-site.xml 
 
 cd /apache-hive-2.3.0-bin/conf
 #指定hadoop的目录
@@ -122,8 +122,8 @@ HADOOP_HOME=/hadoop/hadoop-2.8.0
 
 #修改hive-default.xml 文件
 #指定MySQL数据库驱动、数据库名、用户名及密码
-cp hive-default.xml.template hive-default.xml
-vi hive-default.xml
+cp hive-default.xml.template hive-site.xml
+vi hive-site.xml
 #修改以下内容
 #javax.jdo.option.ConnectionURL参数指定的是Hive连接数据库的连接字符串；
 #javax.jdo.option.ConnectionDriverName参数指定的是驱动的类入口名称；
@@ -159,7 +159,6 @@ vi hive-default.xml
 export JAVA_HOME=/home/jdk1.8.0_131
 export HADOOP_HOME=/hadoop/hadoop-2.8.0
 export HIVE_HOME=/hadoop/apache-hive-2.3.0-bin
-
 ```
 
 官方推荐创建jpox.properties来保存以上的设置，例如:
