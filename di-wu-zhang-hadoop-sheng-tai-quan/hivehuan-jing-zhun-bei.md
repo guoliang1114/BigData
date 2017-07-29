@@ -156,6 +156,16 @@ vi hive-site.xml
     <value>1qaz@WSX</value>
     <description>password to use against metastore database</description>
   </property>
+    <property>
+    <name>hive.exec.local.scratchdir</name>
+    <value>/hadoop/hive/iotmp/geguo</value>
+    <description>Local scratch space for Hive jobs</description>
+  </property>
+  <property>
+    <name>hive.downloaded.resources.dir</name>
+    <value>/hadoop/hive/iotmp/${hive.session.id}_resources</value>
+    <description>Temporary local directory for added resources in the remote file system.</description>
+  </property>
 
 
 
