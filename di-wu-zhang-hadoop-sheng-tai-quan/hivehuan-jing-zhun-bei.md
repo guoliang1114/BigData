@@ -170,5 +170,7 @@ cd mysql-connector-java-5.1.42
 cp mysql-connector-java-5.1.42-bin.jar ../../lib/
 ```
 
+初始化数据库
+
 
 
