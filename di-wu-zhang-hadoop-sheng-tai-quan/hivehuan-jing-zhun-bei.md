@@ -163,5 +163,12 @@ export HIVE_HOME=/hadoop/apache-hive-2.3.0-bin
 
 另外由于hive要连接mysql数据库，因此需要提供mysql的驱动。将mysql的jar文件上传到hive的lib目录下。
 
+```
+wget https://downloads.mysql.com/archives/get/file/mysql-connector-java-5.1.42.tar.gz
+tar -zzxvf mysql-connector-java-5.1.42.tar.gz 
+cd mysql-connector-java-5.1.42
+cp mysql-connector-java-5.1.42-bin.jar ../../lib/
+```
+
 
 
