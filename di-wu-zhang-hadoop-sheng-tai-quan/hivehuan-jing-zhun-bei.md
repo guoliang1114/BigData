@@ -110,6 +110,8 @@ export HIVE_HOME=/usr/local/hive
 export PATH=$PATH:$HIVE_HOME/bin
 export CLASSPATH=.:${JAVA_HOME}/lib:${JRE_HOME}/lib:/usr/local/hive/lib
 $source /etc/profile
+
+#修改配置文件
 ```
 
 
