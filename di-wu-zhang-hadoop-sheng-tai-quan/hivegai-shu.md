@@ -23,3 +23,13 @@ Hive的出现正好可以解决这一系列问题，Hive最初是由Facebook设�
 
 
 
+从图中也能看出Hive和Hadoop的关系，Hive构建在 Hadoop 之上
+
+HQL 中对查询语句的解释、优化、生成查询计划是由 Hive 完成的
+
+所有的数据都是存储在 Hadoop 中
+
+查询计划被转化为 MapReduce 任务，在 Hadoop 中执行（有些查询没有 MR 任务，如：select \* from table）
+
+Hadoop和Hive都是用UTF-8编码的
+
