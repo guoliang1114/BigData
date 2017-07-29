@@ -218,6 +218,7 @@ OK
 default
 Time taken: 0.822 seconds, Fetched: 1 row(s)
 hive>show tables;
+#如果不报错,表明基于独立元数据库的 Hive 已经安装成功了
 ```
 
 
