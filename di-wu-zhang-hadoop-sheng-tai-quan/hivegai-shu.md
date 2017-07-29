@@ -21,15 +21,12 @@ Hive的出现正好可以解决这一系列问题，Hive最初是由Facebook设�
 
 > HiveQL执行过程：用户通过CLI、JDBC/ODBC或WUI接口提交HiveQL到Hive-Server2服务，通过解释器、编译器、优化器完成HiveQL查询语句从词法分析、语法分析、编译、优化以及查询计划的生成，将元数据存储到数据库中，执行器完成查询计划的处理，由MapReduce调用执行。
 
-
-
 从图中也能看出Hive和Hadoop的关系，Hive构建在 Hadoop 之上
 
-HQL 中对查询语句的解释、优化、生成查询计划是由 Hive 完成的
+* HQL 中对查询语句的解释、优化、生成查询计划是由 Hive 完成的
+* 所有的数据都是存储在 Hadoop 中
+* 查询计划被转化为 MapReduce 任务，在 Hadoop 中执行（有些查询没有 MR 任务，如：select \* from table）
+* Hadoop和Hive都是用UTF-8编码的
 
-所有的数据都是存储在 Hadoop 中
 
-查询计划被转化为 MapReduce 任务，在 Hadoop 中执行（有些查询没有 MR 任务，如：select \* from table）
-
-Hadoop和Hive都是用UTF-8编码的
 
