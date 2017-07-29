@@ -57,3 +57,5 @@ Mysql目录安装位置：/usr/local/mysql
 
 日志保存位置：/data/log/mysql
 
+
+
