@@ -197,8 +197,7 @@ cp mysql-connector-java-5.1.42-bin.jar ../../lib/
 ```
 cd /hadoop/apache-hive-2.3.0-bin/lib
 schematool -initSchema -dbType mysql
-#执行完毕后，数据库中应该会生成很多hive的元数据
-
+#看到schemaTool completed执行完毕后，数据库中应该会生成很多hive的元数据
 ```
 
 
