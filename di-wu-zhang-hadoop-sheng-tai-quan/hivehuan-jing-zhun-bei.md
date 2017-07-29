@@ -53,7 +53,7 @@ yum install mysql-community-*.rpm
 service mysqld start
 service mysqld stop
 
-设置密码
+#设置密码
 
 ```
 
