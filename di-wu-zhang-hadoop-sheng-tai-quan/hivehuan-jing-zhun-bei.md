@@ -53,8 +53,8 @@ yum install mysql-community-*.rpm
 service mysqld start
 service mysqld stop
 
-#设置密码
-
+#重置Mysql账户密码
+mysql_secure_installation
 ```
 
 
