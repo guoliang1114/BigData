@@ -129,6 +129,32 @@ vi hive-default.xml
 #javax.jdo.option.ConnectionDriverName参数指定的是驱动的类入口名称；
 #javax.jdo.option.ConnectionUserName参数指定了数据库的用户名；
 #javax.jdo.option.ConnectionPassword参数指定了数据库的密码。
+
+ <property>
+    <name>javax.jdo.option.ConnectionURL</name>
+    <value>jdbc:mysql://192.168.44.131:3306/hive?createDatabaseIfNotExist=true</value>
+    <description>
+      JDBC connect string for a JDBC metastore.
+      To use SSL to encrypt/authenticate the connection, provide database-specific SSL flag in the connection URL.
+      For example, jdbc:postgresql://myhost/db?ssl=true for postgres database.
+    </description>
+  </property>
+  <property>
+    <name>javax.jdo.option.ConnectionDriverName</name>
+    <value>com.mysql.jdbc.Driver</value>
+    <description>Driver class name for a JDBC metastore</description>
+  </property>
+  <property>
+    <name>javax.jdo.option.ConnectionUserName</name>
+    <value>hive</value>
+    <description>Username to use against metastore database</description>
+  </property>
+   <property>
+    <name>javax.jdo.option.ConnectionPassword</name>
+    <value>1qaz@WSX</value>
+    <description>password to use against metastore database</description>
+  </property>
+
 ```
 
 
