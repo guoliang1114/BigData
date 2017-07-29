@@ -19,7 +19,7 @@ Java(TM) SE Runtime Environment (build 1.8.0_131-b11)
 Java HotSpot(TM) 64-Bit Server VM (build 25.131-b11, mixed mode)
 ```
 
-java安装完毕。
+java安装的版本是64位的JDK 1.8。
 
 5.2.2 验证Hadoop的安装
 
