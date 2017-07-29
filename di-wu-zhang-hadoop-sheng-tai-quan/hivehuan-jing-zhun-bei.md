@@ -154,9 +154,11 @@ vi hive-default.xml
     <value>1qaz@WSX</value>
     <description>password to use against metastore database</description>
   </property>
-  
+
   #修改bin目录下的hive-config.sh文件
-  
+export JAVA_HOME=/home/jdk1.8.0_131
+export HADOOP_HOME=/hadoop/hadoop-2.8.0
+export HIVE_HOME=/hadoop/apache-hive-2.3.0-bin
 ```
 
 
