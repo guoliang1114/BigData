@@ -217,8 +217,7 @@ hive> show databases;
 OK
 default
 Time taken: 0.822 seconds, Fetched: 1 row(s)
-hive> 
-
+hive>show tables;
 ```
 
 
