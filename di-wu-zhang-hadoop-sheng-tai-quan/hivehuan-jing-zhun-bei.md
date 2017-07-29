@@ -83,10 +83,8 @@ mysql> show databases;
 +--------------------+
 4 rows in set (0.01 sec)
 
-mysql> 
-
-
-
+#创建Hive用户
+mysql>
 ```
 
 
