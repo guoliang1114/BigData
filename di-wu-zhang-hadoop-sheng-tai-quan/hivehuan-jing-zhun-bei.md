@@ -45,9 +45,11 @@ This command was run using /hadoop/hadoop-2.8.0/share/hadoop/common/hadoop-commo
 
 [https://downloads.mysql.com/archives/community/](https://downloads.mysql.com/archives/community/)
 
-找到合适的版本。
+找到合适的版本进行安装：
 
-
+```
+yum install mysql-community-*.rpm 
+```
 
 
 
