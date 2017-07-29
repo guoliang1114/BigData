@@ -41,5 +41,13 @@ This command was run using /hadoop/hadoop-2.8.0/share/hadoop/common/hadoop-commo
 
 ### 5.2.3 准备MySQL环境
 
+下载地址：
+
+https://downloads.mysql.com/archives/community/
+
+找到客户的版本：
+
+https://cdn.mysql.com/archives/mysql-5.7/mysql-5.7.18-linux-glibc2.5-x86\_64.tar.gz
+
 
 
