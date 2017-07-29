@@ -113,9 +113,9 @@ $source /etc/profile
 
 #修改配置文件
 #hive-env.sh,hive-default.xml 
+
 cd /apache-hive-2.3.0-bin/conf
 cp hive-env.sh.template hive-env.sh
-
 ```
 
 
