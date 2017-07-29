@@ -101,6 +101,7 @@ mysql>create database hive;
 选择2.3.0版本。
 
 ```
+#使用hadoop用户
 cd /hadoop
 tar -zxvf apache-hive-2.3.0-bin.tar.gz
 
