@@ -221,11 +221,9 @@ hive>show tables;
 #如果不报错,表明基于独立元数据库的 Hive 已经安装成功了
 ```
 
-### 搭建HWI
-
-默认的情况下Hive的程序包里没有附带HWI的程序包，需要到Hive官网上下载Hive的源码文件。
-
-
+> 另外Hive 2.2版本后，HWI（Hive Web Interface）就被移除了，详细信息请点击:
+>
+> https://issues.apache.org/jira/browse/HIVE-15622
 
 
 
