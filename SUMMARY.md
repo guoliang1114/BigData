@@ -17,4 +17,5 @@
 * [第五章 大数据查询Hive](di-wu-zhang-hadoop-sheng-tai-quan.md)
   * [Hive概述](di-wu-zhang-hadoop-sheng-tai-quan/hivegai-shu.md)
   * [Hive环境准备](di-wu-zhang-hadoop-sheng-tai-quan/hivehuan-jing-zhun-bei.md)
+  * [Hive数据类型](di-wu-zhang-hadoop-sheng-tai-quan/hiveshu-ju-lei-xing.md)
 
