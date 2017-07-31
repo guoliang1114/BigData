@@ -11,8 +11,8 @@ Hive的基本数据类型如下表所示：
 | FLOAT | 4字节单精度浮点数 |  |  |  |
 | DOUBLE | 8字节双精度浮点数 |  |  |  |
 | DECIMAL | 自定义精度 | 默认是DECIMAL\(10,0\)可以自定义例如DECIMAL\(9,7\) |  |  |
-| TIMESTAMP |  |  |  |  |
-| DATE |  |  |  |  |
+| TIMESTAMP |  | 支持到纳秒，YYYY-MM-DD HH:MM:SS.fffffffff |  |  |
+| DATE |  | 日期YYYY-MM-DD |  |  |
 | STRING |  |  |  |  |
 | VARCHAR |  | 1 ~ 65355 |  |  |
 | CHAR |  | 255 |  |  |
