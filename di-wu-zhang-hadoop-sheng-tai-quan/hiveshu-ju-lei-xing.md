@@ -32,8 +32,8 @@ HIve中的复杂类型见下表：
 | 类型 | 说明 | 实例和访问方式 |
 | :--- | :--- | :--- |
 | ARRAY | 有序的类型相同的元素集合，如Array&lt;T&gt; | Array\(1,2\)、Array\("abc","d"\)。访问方式：Array\[n\],下标n从0开始 |
-| MAP | 无序的键值对。键的类型必须相同，值的类型也必须相同。例如Map&lt;STRING,INT&gt; |  |
-| STRUCT | 有名称的元素集合。如STRUCT&lt;name:STRING,age:INT&gt; |  |
+| MAP | 无序的键值对。键的类型必须相同，值的类型也必须相同。例如Map&lt;STRING,INT&gt; | Map\("abc",1,"d",4\)。其中逗号分隔的元素分别为key1,value1,key2,value2。访问方式为M\[key\],其中key为map中的key值 |
+| STRUCT | 有名称的元素集合。如STRUCT&lt;name:STRING,age:INT&gt; | Struct\("John",31\)。访问当时为S.item,item是Struct中的元素。 |
 
 
 
