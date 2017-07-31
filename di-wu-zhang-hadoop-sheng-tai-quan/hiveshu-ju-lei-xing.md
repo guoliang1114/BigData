@@ -27,5 +27,13 @@ Hive支持基本类型的转换，低字节基本类型可转化为高字节的�
 
 ### 5.3.2 复杂类型
 
+HIve中的复杂类型见下表：
+
+| 类型 | 说明 | 实例和访问方式 |
+| :--- | :--- | :--- |
+| ARRAY | 有序的类型相同的元素集合，如Array&lt;T&gt; | Array\(1,2\)、Array\("abc","d"\)。访问方式：Array\[n\],下标n从0开始 |
+| MAP | 无序的键值对。键的类型必须相同，值的类型也必须相同。例如Map&lt;STRING,INT&gt; |  |
+| STRUCT | 有名称的元素集合。如STRUCT&lt;name:STRING,age:INT&gt; |  |
+
 
 
