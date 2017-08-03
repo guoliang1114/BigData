@@ -36,11 +36,9 @@ DESCRIBE FUNCTION EXTENDED <function_name>;
 | A RLIKE B | 字符串 | NULL，如果A或B为NULL；TRUE，如果A任何子字符串匹配Java正则表达式B；否则FALSE。 |
 | A REGEXP B | 字符串 | 等同于RLIKE。 |
 
-
-
 ### 5.5.2 算术运算符
 
-
+这些运算符支持的操作数各种常见的算术运算。所有这些返回数字类型。下表描述了在Hive中可用的算术运算符：
 
 
 
