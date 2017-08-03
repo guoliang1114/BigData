@@ -18,6 +18,10 @@ Integers（整型）
 * FLOAT －单精度
 * DOUBLE －双精度
 
+定点数
+
+* DECIMAL －用户可以指定范围和小数点位数
+
 
 
 Hive的基本数据类型如下表所示：
@@ -56,6 +60,4 @@ HIve中的复杂类型见下表：
 ### 5.3.3 文件的存储结构
 
 Hive常见的存储结构是TEXTFILE。在Hive建表时，通过Stored AS FILE\_FORMAT来指定文件存储结构。比如Stored As TextFile。
-
-
 
