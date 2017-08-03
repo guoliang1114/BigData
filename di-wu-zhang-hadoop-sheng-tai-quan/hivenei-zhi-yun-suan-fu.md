@@ -52,11 +52,19 @@ DESCRIBE FUNCTION EXTENDED <function_name>;
 | A ^ B | 所有数字类型 | A和B的按位异或结果 |
 | ~A | 所有数字类型 | A按位非的结果 |
 
-
-
 ### 5.5.3 逻辑运算符
 
+运算符是逻辑表达式。所有这些返回TRUE或FALSE。
 
+| 运算符 | 操作 | 描述 |
+| :--- | :--- | :--- |
+| A AND B | boolean | TRUE，如果A和B都是TRUE，否则FALSE。 |
+| A && B | boolean | 类似于 A AND B。 |
+| A OR B | boolean | TRUE，如果A或B或两者都是TRUE，否则FALSE。 |
+| A \|\| B | boolean | 类似于 A OR B。 |
+| NOT A | boolean | TRUE，如果A是FALSE，否则FALSE。 |
+| !A | boolean | 类似于 NOT A。 |
 
+  
 
 
