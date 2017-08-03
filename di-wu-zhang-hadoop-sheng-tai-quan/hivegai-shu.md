@@ -10,6 +10,13 @@
 
 Hive的出现正好可以解决这一系列问题，Hive最初是由Facebook设计的，是基于Hadoop的一个数据仓库工具，可以将结构化的数据文件映射为一张数据库表，并提供简单的类SQL查询语言（称为HiveQL）。底层将HiveQL语句转换为MapReduce任务运行，它允许熟悉SQL的用户基于Hadoop框架分析数据。其优点是学习成本低，对于简单的统计分析，不必开发专门的MapReduce程序，直接通过HiveQL即可实现。
 
+简单的说：
+
+1. 设计目标：让精通SQL而Java技能较弱的数据分析师能利用Hadoop数据分析。
+2. 使用率：实际开发中，80%操作使用Hive完成，20%使用MapReduce。
+3. HiveQL：未严格实现SQL-92标准。
+4. 本质：将HiveQL转化为一个或多个MapReduce作业并在集群上运行，但并不是所有HiveQL都会转为MapReduce作业。
+
 ![](/assets/5.1_1.png)
 
 上图为Hive的体系架构。
