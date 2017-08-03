@@ -38,3 +38,9 @@ DESCRIBE FUNCTION EXTENDED <function_name>;
 
 
 
+### 5.5.2 算术运算符
+
+
+
+
+
