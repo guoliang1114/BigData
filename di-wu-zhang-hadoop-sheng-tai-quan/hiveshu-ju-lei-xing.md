@@ -22,18 +22,18 @@ Integers（整型）
 
 * DECIMAL －用户可以指定范围和小数点位数
 
-字符串 
+字符串
 
 * STRING －在特定的字符集中的一个字符串序列 
 * VARCHAR －在特定的字符集中的一个有最大长度限制的字符串序列 
 * CHAR －在特定的字符集中的一个指定长度的字符串序列
 
-日期和时间 
+日期和时间
 
 * TIMESTAMP －一个特定的时间点，精确到纳秒。 
 * DATE －一个日期
 
-二进制 
+二进制
 
 * BINARY －一个二进制位序列
 
@@ -50,7 +50,7 @@ Integers（整型）
 | DECIMAL | 自定义精度 | 默认是DECIMAL\(10,0\)可以自定义例如DECIMAL\(9,7\) |  |  |
 | TIMESTAMP |  | 支持到纳秒，YYYY-MM-DD HH:MM:SS.fffffffff |  |  |
 | DATE |  | 日期YYYY-MM-DD |  |  |
-| STRING |  |  |  |  |
+| STRING |  | 字符串 |  | “hadoop" |
 | VARCHAR |  | 1 ~ 65355 |  |  |
 | CHAR |  | 255 |  |  |
 | BOOLEAN |  |  |  |  |
@@ -73,4 +73,28 @@ HIve中的复杂类型见下表：
 ### 5.3.3 文件的存储结构
 
 Hive常见的存储结构是TEXTFILE。在Hive建表时，通过Stored AS FILE\_FORMAT来指定文件存储结构。比如Stored As TextFile。
+
+1. textfile
+
+    a\) 原理：平面文本文件，默认格式。
+
+    b\) 特点：未压缩，磁盘开销大，数据解析开销大。
+
+2. sequencefile
+
+    a\) 原理：二进制格式。
+
+    b\) 特点：使用方便、可分割、可压缩，数据按行切分。
+
+3. rcfile
+
+    a\) 原理：行列存储结合的存储方式。
+
+    b\) 特点：数据按行分块，保证同一行数据在一个块上，避免读取一行需要读取多个块。
+
+4. parquet
+
+    a\) 原理：面向分析性业务的列式存储格式。
+
+    b\) 特点：对Impala有显著性能提升。
 
