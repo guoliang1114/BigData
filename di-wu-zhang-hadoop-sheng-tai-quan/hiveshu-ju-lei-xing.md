@@ -2,6 +2,24 @@
 
 ### 5.3.1 基本类型
 
+Integers（整型）
+
+* TINYINT －1位的整型
+* SMALLINT －2位的整型
+* INT －4位的整型
+* BIGINT －8位的整型
+
+布尔类型
+
+* BOOLEAN －TRUE/FALSE
+
+浮点数
+
+* FLOAT －单精度
+* DOUBLE －双精度
+
+
+
 Hive的基本数据类型如下表所示：
 
 | 类型 | 所占字节 | 数值范围 | 后缀 | 示例 |
@@ -35,11 +53,9 @@ HIve中的复杂类型见下表：
 | MAP | 映射。无序的键值对。键的类型必须相同，值的类型也必须相同。例如Map&lt;STRING,INT&gt; | Map\("abc",1,"d",4\)。其中逗号分隔的元素分别为key1,value1,key2,value2。访问方式为M\[key\],其中key为map中的key值 |
 | STRUCT | 结构体。有名称的元素集合。如STRUCT&lt;name:STRING,age:INT&gt; | Struct\("John",31\)。访问当时为S.item,item是Struct中的元素。 |
 
-
-
 ### 5.3.3 文件的存储结构
 
-
+Hive常见的存储结构是TEXTFILE。在Hive建表时，通过Stored AS FILE\_FORMAT来指定文件存储结构。比如Stored As TextFile。
 
 
 
