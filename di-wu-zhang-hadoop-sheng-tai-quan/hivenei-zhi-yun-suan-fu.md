@@ -54,3 +54,9 @@ DESCRIBE FUNCTION EXTENDED <function_name>;
 
 
 
+### 5.5.3 逻辑运算符
+
+
+
+
+
