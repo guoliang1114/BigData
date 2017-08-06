@@ -243,5 +243,11 @@ HiveStatement stat = (HiveStatement) conn.createStatement();
 
 也可以使用beeline连接hive server2
 
+```
+#启动hiveserver2
+hiveserver2 >hiveserver2.log &
+
+```
+
 
 
