@@ -247,6 +247,8 @@ HiveStatement stat = (HiveStatement) conn.createStatement();
 #启动hiveserver2
 hiveserver2 >hiveserver2.log &
 
+#使用beeline
+
 ```
 
 
