@@ -245,10 +245,11 @@ HiveStatement stat = (HiveStatement) conn.createStatement();
 
 ```
 #启动hiveserver2
+cd /hadoop/apache-hive/bin
 hiveserver2 >hiveserver2.log &
 
 #使用beeline
-
+beeline
 ```
 
 
