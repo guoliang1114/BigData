@@ -245,7 +245,15 @@ HiveStatement stat = (HiveStatement) conn.createStatement();
 
 ```
 #修改hadoop core-site.xml 的配置
-
+<property>
+    <name>hadoop.proxyuser.hadoop.hosts</name>
+    <value>*</value>
+</property>
+<property>
+    <name>hadoop.proxyuser.hadoop.groups</name>
+    <value>*</value>
+</property>
+#hadoop.proxyuser.hadoop.hosts,根据要使用的用户来配置。
 
 #启动hiveserver2
 cd /hadoop/apache-hive/bin
