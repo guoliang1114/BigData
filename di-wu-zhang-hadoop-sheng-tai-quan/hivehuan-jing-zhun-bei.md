@@ -225,8 +225,6 @@ hive>show tables;
 >
 > [https://issues.apache.org/jira/browse/HIVE-15622](https://issues.apache.org/jira/browse/HIVE-15622)
 
-
-
 **HiveServer2**
 
 HiveServer2（以下简称：HS2）是Hive提供的一种jdbc服务，用户可以通过Hive自带的Beeline连接，也可以使用Java、Python或者PHP等通过jdbc的方式连接。下面以Java连接HiveServer2为例来介绍几种向Hive传递参数的方法。示例代码如下:
@@ -242,4 +240,8 @@ HiveStatement stat = (HiveStatement) conn.createStatement();
 ```
 
 只要URL、用户名和密码正确的话，通过上面的示例代码，就可以连接到HS2执行操作了。
+
+也可以使用beeline连接hive server2
+
+
 
