@@ -256,6 +256,7 @@ SLF4J: Found binding in [jar:file:/hadoop/hadoop-2.8.0/share/hadoop/common/lib/s
 SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
 SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
 Beeline version 2.3.0 by Apache Hive
+#连接到hiveserver2
 beeline>
 ```
 
