@@ -65,6 +65,5 @@ DESCRIBE FUNCTION EXTENDED <function_name>;
 | NOT A | boolean | TRUE，如果A是FALSE，否则FALSE。 |
 | !A | boolean | 类似于 NOT A。 |
 
-  
 
 
