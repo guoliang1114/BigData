@@ -259,16 +259,9 @@ HiveStatement stat = (HiveStatement) conn.createStatement();
 cd /hadoop/apache-hive/bin
 hiveserver2 >hiveserver2.log &
 
-#使用beeline
->./beeline
-SLF4J: Class path contains multiple SLF4J bindings.
-SLF4J: Found binding in [jar:file:/hadoop/apache-hive-2.3.0-bin/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
-SLF4J: Found binding in [jar:file:/hadoop/hadoop-2.8.0/share/hadoop/common/lib/slf4j-log4j12-1.7.10.jar!/org/slf4j/impl/StaticLoggerBinder.class]
-SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
-SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
-Beeline version 2.3.0 by Apache Hive
-#连接到hiveserver2
+#使用beeline连接到hiveserver2
 beeline -u jdbc:hive2://localhost:10000/test -n hadoop
+
 ```
 
 
