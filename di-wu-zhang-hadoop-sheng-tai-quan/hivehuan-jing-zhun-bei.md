@@ -244,6 +244,9 @@ HiveStatement stat = (HiveStatement) conn.createStatement();
 也可以使用beeline连接hive server2
 
 ```
+#修改hadoop core-site.xml 的配置
+
+
 #启动hiveserver2
 cd /hadoop/apache-hive/bin
 hiveserver2 >hiveserver2.log &
