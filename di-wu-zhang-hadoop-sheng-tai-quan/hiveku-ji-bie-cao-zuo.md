@@ -35,5 +35,9 @@ hive中的库的概念对应于在hive-site.xml中配置项hive.metastore.wareho
 
 例如刚才创建的testdb在hdfs中对应的目录为：![](/assets/5.6.1_1.png)
 
+目录的名称就是"库名.db"
+
+在库中创建的表实际上对应的"库名.db "下的子目录
+
 
 
