@@ -67,5 +67,20 @@ CREATE TABLE multi_clumns_table(id int,name string) ROW FORMAT DELIMITED FIELDS 
 
 导入数据
 
+```
+hive> LOAD DATA LOCAL INPATH '/home/hadoop/2.txt' INTO TABLE multi_clumns_table;
+Loading data to table default.multi_clumns_table
+OK
+Time taken: 8.806 seconds
+hive> select *  from multi_clumns_table;
+OK
+1	tianshouzhi
+2	wangxiaoxiao
+3	wanghanao
+4	huhuamin
+5	luyang
+Time taken: 2.414 seconds, Fetched: 5 row(s)
+```
+
 
 
