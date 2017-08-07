@@ -55,5 +55,15 @@ Time taken: 0.72 seconds
 8 rows selected (0.857 seconds)
 ```
 
+**查看分区**
+
+```
+hive> SHOW PARTITIONS partition_table;
+OK
+day=20170802
+day=20170803
+Time taken: 0.291 seconds, Fetched: 2 row(s)
+```
+
 
 
