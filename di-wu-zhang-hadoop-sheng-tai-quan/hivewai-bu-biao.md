@@ -34,7 +34,7 @@ PS. 如果创建外部分区表，hive并不会自动关联hdfs中指定目录�
 需要通过：
 
 ```
-alter table test1 add partition (visitDate=2011-10-23)；
+alter table test1 add partition (visitDate=2017-05-23)；
 ```
 
 进行分区与分区数据的关联。
