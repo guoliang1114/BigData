@@ -28,8 +28,10 @@ HDFS中的存储方式：
 **删除分区**
 
 ```
-alter table partition_table drop partition(day='20160414');
-
+hive> alter table partition_table drop partition(day='20170801');
+Dropped the partition day=20170801
+OK
+Time taken: 0.72 seconds
 ```
 
 
