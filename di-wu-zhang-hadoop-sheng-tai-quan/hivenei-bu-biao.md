@@ -41,7 +41,7 @@ Time taken: 2.97 seconds, Fetched: 10 row(s)
 
 此时我们在控制台上，可以看到![](/assets/5.7_1.png)说明;
 
-> 对于命令LOAD DATA LOCAL INPATH '/tmp/root/id.txt' INTO TABLE testmysql;
+> 对于命令LOAD DATA LOCAL INPATH '/tmp/root/id.txt' INTO TABLE t\_managed\_table;
 >
 > 如果包含LOCAL，则意味着我们导入的数据是从本地，因此导入的数据文件要填写本地文件的路径
 >
