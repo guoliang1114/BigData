@@ -12,5 +12,15 @@ create table bucket_table(id string) clustered by(id) into 4 buckets;
 
 往桶表中加载数据不能再使用LOAD DATA 的方式，要采取以下的方式：
 
+```
+set hive.enforce.bucketing = true;
+#有可能花些时间
+insert into table bucket_table select name from multi_clumns_table;
+insert overwrite table bucket_table select name from stu;
+
+#抽样检查
+select * from bucket_table tablesample(bucket 1 out of 4 on id);
+```
+
 
 
