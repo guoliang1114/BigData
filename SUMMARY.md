@@ -25,4 +25,5 @@
   * [Hive分区表\(Partition\)](di-wu-zhang-hadoop-sheng-tai-quan/hivefen-qu-886828-partition.md)
   * [Hive  桶表\(bucket\)](di-wu-zhang-hadoop-sheng-tai-quan/hive-tong-886828-bucket.md)
   * [HIve外部表](di-wu-zhang-hadoop-sheng-tai-quan/hivewai-bu-biao.md)
+  * [JDBC操作Hive](di-wu-zhang-hadoop-sheng-tai-quan/jdbccao-zuo-hive.md)
 
