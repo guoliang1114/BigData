@@ -52,7 +52,19 @@ No rows affected (0.541 seconds)
 No rows affected (0.175 seconds)
 0: jdbc:hive2://localhost:10000> CREATE TABLE pokes (foo INT, bar STRING);
 No rows affected (0.264 seconds)
-0: jdbc:hive2://localhost:10000> 
+0: jdbc:hive2://localhost:10000>
+```
+
+删除库
+
+```
+DROP DATABASE testdb;
+```
+
+如果库中存在表的表，直接删除会出错，可以加上cascade强制删除
+
+```
+DROP DATABASE testdb CASCADE;
 ```
 
 
