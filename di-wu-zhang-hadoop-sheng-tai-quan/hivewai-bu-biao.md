@@ -39,3 +39,7 @@ alter table test1 add partition (visitDate=2017-05-23)；
 
 进行分区与分区数据的关联。
 
+> 经验表明，如果你对表的操作都在HIVE中，建议使用内部表，如果你对数据的操作除了HIVE还有其它工具，建议用外部表
+
+
+
