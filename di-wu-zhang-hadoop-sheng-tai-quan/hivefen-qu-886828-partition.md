@@ -11,7 +11,7 @@ HIVE采取了另外一种策略，即存储的时候就将每天的数据分开�
 * Partition对应于数据库的Partition列的密集索引
 * 在Hive中，**表中的一个Partition对应于表下的一个目录**，所有的Partition的数据都存储在对应的目录中
 
-分区表的创建语法
+分区表的创建:
 
 ```
 CREATE TABLE partition_table(id int,name string) PARTITIONED BY(day string) ROW FORMAT DELIMITED FIELDS TERMINATED BY '\t' ;
@@ -24,6 +24,13 @@ LOAD DATA LOCAL INPATH '/home/hadoop/partition.txt' INTO TABLE partition_table P
 HDFS中的存储方式：
 
 ![](/assets/5.8_1.png)
+
+**删除分区**
+
+```
+alter table partition_table drop partition(day='20160414');
+
+```
 
 
 
