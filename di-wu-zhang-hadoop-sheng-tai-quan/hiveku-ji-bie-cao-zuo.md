@@ -15,5 +15,6 @@
 2 rows selected (1.283 seconds)
 ```
 
+默认情况下，hive安装完成之后，会有一个`default`库。  
 
 
