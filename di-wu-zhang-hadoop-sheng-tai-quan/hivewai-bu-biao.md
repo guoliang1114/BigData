@@ -29,5 +29,13 @@ alter table tablePartition set TBLPROPERTIES ('EXTERNAL'='TRUE');  //内部表�
 alter table tablePartition set TBLPROPERTIES ('EXTERNAL'='FALSE');  //外部表转内部表
 ```
 
+PS. 如果创建外部分区表，hive并不会自动关联hdfs中指定目录的partitions目录。
 
+需要通过：
+
+```
+alter table test1 add partition (visitDate=2011-10-23)；
+```
+
+进行分区与分区数据的关联。
 
