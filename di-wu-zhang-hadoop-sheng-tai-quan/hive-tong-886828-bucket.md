@@ -18,11 +18,18 @@ set hive.enforce.bucketing = true;
 insert into table bucket_table select name from multi_clumns_table;
 insert overwrite table bucket_table select name from stu;
 
+```
+
+在HDFS的查看文件,如命令行所示，创建了4个bucket。
+
+![](/assets/5.9_2.png)
+
+抽样检查
+
+```
 #抽样检查
 select * from bucket_table tablesample(bucket 1 out of 4 on id);
 ```
 
-在HDFS的查看文件
 
-![](/assets/5.9_1.png)
 
