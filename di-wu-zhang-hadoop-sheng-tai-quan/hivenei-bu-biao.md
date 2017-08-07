@@ -65,5 +65,7 @@ CREATE TABLE multi_clumns_table(id int,name string) ROW FORMAT DELIMITED FIELDS 
 5       luyang
 ```
 
+导入数据
+
 
 
