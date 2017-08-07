@@ -15,7 +15,27 @@ create table t_managed_table(id int);
 这种方式创建的表就是内部表。由于HIVE是数据仓库工具，因此其并没有插入的命令，只有批量导入数据的命令。
 
 ```
-LOAD DATA LOCAL INPATH '/root/id.txt' INTO TABLE t_managed_table;
+hive> create table t_managed_table(id int);
+OK
+Time taken: 1.483 seconds
+hive> LOAD DATA LOCAL INPATH '/home/hadoop/1.txt' INTO TABLE t_managed_table;
+Loading data to table default.t_managed_table
+OK
+Time taken: 2.574 seconds
+hive> select *  from t_managed_table;
+OK
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+Time taken: 2.97 seconds, Fetched: 10 row(s)
+hive> 
 ```
 
 
