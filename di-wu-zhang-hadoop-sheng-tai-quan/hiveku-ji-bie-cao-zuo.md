@@ -37,7 +37,10 @@ hive中的库的概念对应于在hive-site.xml中配置项hive.metastore.wareho
 
 目录的名称就是"库名.db"
 
-在库中创建的表实际上对应的"库名.db "下的子目录
+在库中创建的表实际上对应的"库名.db "下的子目录。
 
+需要注意的是，在default库中创建的表会直接出现在/user/hive/warehouse目录下，因此/user/hive/warehouse下可能会同时存在表和库。如果是表的话，就表示的是default库中的表，如果是库的话，则目录以.db结尾。
+
+  
 
 
