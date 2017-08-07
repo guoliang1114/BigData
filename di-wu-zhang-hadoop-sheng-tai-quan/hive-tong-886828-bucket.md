@@ -22,5 +22,7 @@ insert overwrite table bucket_table select name from stu;
 select * from bucket_table tablesample(bucket 1 out of 4 on id);
 ```
 
+在HDFS的查看文件
 
+![](/assets/5.9_1.png)
 
