@@ -36,5 +36,22 @@ Time taken: 0.72 seconds
 
 分区是以字段的形式在表结构中存在，通过describe table命令可以查看到字段存在，但是该字段不存放实际的数据内容，仅仅是分区的表示。
 
+```
+0: jdbc:hive2://localhost:10000> describe partition_table;
++--------------------------+-----------------------+-----------------------+
+|         col_name         |       data_type       |        comment        |
++--------------------------+-----------------------+-----------------------+
+| id                       | int                   |                       |
+| name                     | string                |                       |
+| day                      | string                |                       |
+|                          | NULL                  | NULL                  |
+| # Partition Information  | NULL                  | NULL                  |
+| # col_name               | data_type             | comment               |
+|                          | NULL                  | NULL                  |
+| day                      | string                |                       |
++--------------------------+-----------------------+-----------------------+
+8 rows selected (0.857 seconds)
+```
+
 
 
