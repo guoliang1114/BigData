@@ -8,7 +8,9 @@ Hive内部表与数据库中的Table在概念上是类似。
 
 **创建内部表**
 
-
+```
+create table t_managed_table(id int);
+```
 
 
 
