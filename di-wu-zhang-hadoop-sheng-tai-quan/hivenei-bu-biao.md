@@ -47,11 +47,13 @@ Time taken: 2.97 seconds, Fetched: 10 row(s)
 >
 > 如果不包含LOCAL，则意味着我们要从HDFS中导入数据，填写的路径应该是HDFS中的路径。
 
-
-
 **多列的内部表**
 
+```
+CREATE TABLE multi_clumns_table(id int,name string) ROW FORMAT DELIMITED FIELDS TERMINATED BY '\t';
+```
 
+这个语句的意思是，以制表符"\t"来区分数据文件中不同的列。所以当我们导入数据的时候，我们的数据文件中也需要用制表符。
 
 
 
