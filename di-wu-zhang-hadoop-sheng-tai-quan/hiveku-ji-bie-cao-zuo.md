@@ -20,7 +20,15 @@
 创建一个数据库testdb;
 
 ```
-
+0: jdbc:hive2://localhost:10000/test> CREATE DATABASE IF NOT EXISTS testdb;
+No rows affected (0.562 seconds)
+0: jdbc:hive2://localhost:10000> show databases;
+ +----------------+--+
+ | database_name  |
+ +----------------+--+
+ | default        |
+ | testdb         |
++----------------+--+
 ```
 
 
