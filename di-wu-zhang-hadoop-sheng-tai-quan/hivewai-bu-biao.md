@@ -21,5 +21,13 @@ CREATE EXTERNAL TABLE page_view
     LOCATION 'hdfs://hadoopmaster:9000/user/data/page_view';
 ```
 
+内部表和外部表转换
+
+```
+可以通过如下语句转换外部表和内部表
+alter table tablePartition set TBLPROPERTIES ('EXTERNAL'='TRUE');  //内部表转外部表
+alter table tablePartition set TBLPROPERTIES ('EXTERNAL'='FALSE');  //外部表转内部表
+```
+
 
 
