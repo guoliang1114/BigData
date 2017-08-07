@@ -74,13 +74,13 @@ OK
 Time taken: 8.806 seconds
 hive> select *  from multi_clumns_table;
 OK
-1	tianshouzhi
-2	wangxiaoxiao
-3	wanghanao
-4	huhuamin
-5	luyang
+1    tianshouzhi
+2    wangxiaoxiao
+3    wanghanao
+4    huhuamin
+5    luyang
 Time taken: 2.414 seconds, Fetched: 5 row(s)
 ```
 
-
+注意，HIVE在查询的时候，除了select \* from 表名不需要走map/reduce之外，其他的语句都要走map/reduce。因为select \* 表示的是全表扫描，全表扫描实际上就是获取HDFS文件中所有内容。
 
