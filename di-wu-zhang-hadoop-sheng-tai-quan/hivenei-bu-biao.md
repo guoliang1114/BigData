@@ -55,5 +55,15 @@ CREATE TABLE multi_clumns_table(id int,name string) ROW FORMAT DELIMITED FIELDS 
 
 这个语句的意思是，以制表符"\t"来区分数据文件中不同的列。所以当我们导入数据的时候，我们的数据文件中也需要用制表符。
 
+准备数据文件2.txt
+
+```
+1       tianshouzhi
+2       wangxiaoxiao
+3       wanghanao
+4       huhuamin
+5       luyang
+```
+
 
 
