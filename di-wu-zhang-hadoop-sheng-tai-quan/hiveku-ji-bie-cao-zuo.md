@@ -44,10 +44,16 @@ hive中的库的概念对应于在hive-site.xml中配置项hive.metastore.wareho
 分别在default库和testdb库下面创建表pokes。
 
 ```
-
+0: jdbc:hive2://localhost:10000> USE default;
+No rows affected (0.585 seconds)
+0: jdbc:hive2://localhost:10000> CREATE TABLE pokes (foo INT, bar STRING);
+No rows affected (0.541 seconds)
+0: jdbc:hive2://localhost:10000> USE testdb;
+No rows affected (0.175 seconds)
+0: jdbc:hive2://localhost:10000> CREATE TABLE pokes (foo INT, bar STRING);
+No rows affected (0.264 seconds)
+0: jdbc:hive2://localhost:10000> 
 ```
-
-
 
 
 
