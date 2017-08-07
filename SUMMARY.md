@@ -22,4 +22,5 @@
   * [Hive内置运算符](di-wu-zhang-hadoop-sheng-tai-quan/hivenei-zhi-yun-suan-fu.md)
   * [Hive库级别操作](di-wu-zhang-hadoop-sheng-tai-quan/hiveku-ji-bie-cao-zuo.md)
   * [Hive内部表](di-wu-zhang-hadoop-sheng-tai-quan/hivenei-bu-biao.md)
+  * [Hive分区表\(Partition\)](di-wu-zhang-hadoop-sheng-tai-quan/hivefen-qu-886828-partition.md)
 
