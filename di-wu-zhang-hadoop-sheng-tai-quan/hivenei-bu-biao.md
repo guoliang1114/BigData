@@ -39,5 +39,5 @@ Time taken: 2.97 seconds, Fetched: 10 row(s)
 
 在这里，id.txt中的内容会被导入到t\_managed\_table的id列。虽然我们并没有指定数据导入到哪一列，但是因为t\_managed\_table中只有一个列id，所以id.txt中的数据只能导入到这一列中。
 
-此时我们在控制台上，可以看到：
+此时我们在控制台上，可以看到：![](/assets/5.7_1.png)
 
