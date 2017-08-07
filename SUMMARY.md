@@ -20,4 +20,5 @@
   * [Hive数据类型](di-wu-zhang-hadoop-sheng-tai-quan/hiveshu-ju-lei-xing.md)
   * [Hive表类型](di-wu-zhang-hadoop-sheng-tai-quan/hivebiao-lei-xing.md)
   * [Hive内置运算符](di-wu-zhang-hadoop-sheng-tai-quan/hivenei-zhi-yun-suan-fu.md)
+  * [Hive库级别操作](di-wu-zhang-hadoop-sheng-tai-quan/hiveku-ji-bie-cao-zuo.md)
 
