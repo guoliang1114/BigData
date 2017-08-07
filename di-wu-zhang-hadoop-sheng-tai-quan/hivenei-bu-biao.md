@@ -14,3 +14,9 @@ create table t_managed_table(id int);
 
 这种方式创建的表就是内部表。由于HIVE是数据仓库工具，因此其并没有插入的命令，只有批量导入数据的命令。
 
+```
+LOAD DATA LOCAL INPATH '/root/id.txt' INTO TABLE t_managed_table;
+```
+
+
+
