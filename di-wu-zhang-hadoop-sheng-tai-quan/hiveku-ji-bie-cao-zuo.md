@@ -31,5 +31,7 @@ No rows affected (0.562 seconds)
 +----------------+--+
 ```
 
+hive中的库的概念对应于在hive-site.xml中配置项hive.metastore.warehouse.dir指定目录的一个子目录。
 
+例如刚才创建的testdb在hdfs中对应的目录为：
 
