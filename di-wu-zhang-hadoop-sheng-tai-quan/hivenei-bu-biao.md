@@ -49,3 +49,9 @@ Time taken: 2.97 seconds, Fetched: 10 row(s)
 
 
 
+**多列的内部表**
+
+
+
+
+
