@@ -137,7 +137,13 @@ yum install oracle-j2sdk1.7
 
 ![](/assets/4.3_8.png)指定安装CDH的服务器
 
-![](/assets/4.3_9.png)
+![](/assets/4.3_9.png)点击继续，设置存储库
+
+![](/assets/4.3_10.png)
+
+jdk安装，由于之前已经安装了jdk，跳过
+
+![](/assets/3.4_11.png)
 
 ```
  #scm服务重启命令
