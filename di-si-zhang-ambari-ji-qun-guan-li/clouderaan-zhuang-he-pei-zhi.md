@@ -129,5 +129,7 @@ yum install oracle-j2sdk1.7
 
 ![](/assets/4.3_4.png)根据提示打开浏览器吧。
 
+使用admin/admin登陆。
 
+![](/assets/4.3_7.png)同意条款。
 
