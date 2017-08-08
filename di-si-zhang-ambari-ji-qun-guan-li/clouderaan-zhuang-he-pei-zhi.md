@@ -7,9 +7,8 @@
 | Cloudera \(Master\) - NN + RM + ZK + ISS | 172.24.222.69 |  |  |  |
 | Cloudera \(Data\) | 172.24.222.70 |  |  |  |
 | Cloudera \(Data\) | 172.24.222.71 |  |  |  |
-| Cloudera \(Data\) | 172.24.222.72 |  |  |  |
-| Cloudera \(Gateway\) - Flume, Scoop, Hue, Kafka, Spark | 172.24.222.73 |  |  |  |
-| Cloudera \(Cloudera Manager + Database\) | 172.24.222.74 |  |  |  |
+| Cloudera \(Gateway\) - Flume, Scoop, Hue, Kafka, Spark | 172.24.222.72 |  |  |  |
+| Cloudera \(Cloudera Manager + Database\) | 172.24.222.73 |  |  |  |
 
 
 
