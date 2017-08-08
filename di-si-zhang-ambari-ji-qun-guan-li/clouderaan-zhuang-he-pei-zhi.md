@@ -74,6 +74,8 @@ setenforce 0
 
 **配置yum源**
 
+配置cloudera的源
+
 从[https://www.cloudera.com/documentation/enterprise/release-notes/topics/cm\_vd.html下载相应的文件，并拷贝到/etc/yum.repos.d/目录下。](https://www.cloudera.com/documentation/enterprise/release-notes/topics/cm_vd.html下载相应的文件，并拷贝到/etc/yum.repos.d/目录下。)
 
 由于网络原因，我们使用离线安装，需要首先准备好相关软件。
@@ -81,6 +83,8 @@ setenforce 0
 * CM
 * cloudera-manager-installer
 * CDH.parcel
+
+配置系统的yum源
 
 
 
