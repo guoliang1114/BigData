@@ -18,11 +18,9 @@
 
 注意区别（**有el6的代表的是centos7的**），我们就下载含有el6的文件和manifest.json文件
 
+本地通过Parcel安装过程与本地通过Package安装过程完全一致，不同的是两者的本地源的配置。 区别如下：
 
-
-本地通过Parcel安装过程与本地通过Package安装过程完全一致，不同的是两者的本地源的配置。 区别如下： 
-
-Package本地源：软件包是.rpm格式的，数量通常较多，下载的时候比较麻烦。通过"createrepo ."的命令创建源，并要放到存放源文件主机的web服务器的根目录下，详见创建本地yum软件源，为本地Package安装Cloudera Manager、Cloudera Hadoop及Impala做准备 
+Package本地源：软件包是.rpm格式的，数量通常较多，下载的时候比较麻烦。通过"createrepo ."的命令创建源，并要放到存放源文件主机的web服务器的根目录下，详见创建本地yum软件源，为本地Package安装Cloudera Manager、Cloudera Hadoop及Impala做准备
 
 Parcel本地源：软件包是以.parcel结尾，相当于压缩包格式的，一个系统版本对应一个，下载的时候方便。如centos 6.x使用的CDH版本为CDH-4.3.0-1.cdh4.3.0.p0.22-el6.parcel，而centos 5.x使用的CDH版本为CDH-4.3.0-1.cdh4.3.0.p0.22-el5.parcel。
 
@@ -77,6 +75,10 @@ setenforce 0
 **配置yum源**
 
 从[https://www.cloudera.com/documentation/enterprise/release-notes/topics/cm\_vd.html下载相应的文件，并拷贝到/etc/yum.repos.d/目录下。](https://www.cloudera.com/documentation/enterprise/release-notes/topics/cm_vd.html下载相应的文件，并拷贝到/etc/yum.repos.d/目录下。)
+
+由于网络原因，我们使用离线安装，需要首先准备好相关软件。
+
+
 
 **安装Cloudera Manager Server **
 
