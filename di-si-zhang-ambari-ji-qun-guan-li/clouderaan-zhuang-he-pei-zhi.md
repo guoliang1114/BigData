@@ -1,5 +1,13 @@
 ## 4.3 Cloudera CDH安装和配置
 
+安装Cloudera的CDH的方式主要有三种方法：
+
+* PATH A： 通过Cloudera Manager自动安装 \(不适合生产环境\)
+* PATH B： Installation Using Cloudera Manager Parcels or Packages
+* PATH C： Manual Installation Using Cloudera Manager Tarballs
+
+由于PATH A比较简单，且不适合生产环境，为了学习使用PATH B来安装。
+
 ### 4.3.1 开发环境安装规划
 
 | 名称 | IP | 服务器名 | 配置信息 | 备注 |
