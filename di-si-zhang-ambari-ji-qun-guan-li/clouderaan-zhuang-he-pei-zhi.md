@@ -127,3 +127,7 @@ yum install oracle-j2sdk1.7
 
 剩下全部ok安装。
 
+![](/assets/4.3_4.png)根据提示打开浏览器吧。
+
+
+
