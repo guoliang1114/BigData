@@ -4,6 +4,7 @@
 
 | 名称 | IP | 服务器名 | 配置 | 备注 |
 | :--- | :--- | :--- | :--- | :--- |
+| Cloudera \(Master\) - NN + RM + ZK + ISS |  |  |  |  |
 | Cloudera \(Data\) |  |  |  |  |
 | Cloudera \(Data\) |  |  |  |  |
 | Cloudera \(Data\) |  |  |  |  |
