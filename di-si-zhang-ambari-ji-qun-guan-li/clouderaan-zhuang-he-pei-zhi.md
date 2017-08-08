@@ -78,7 +78,9 @@ setenforce 0
 
 由于网络原因，我们使用离线安装，需要首先准备好相关软件。
 
-
+* CM
+* cloudera-manager-installer
+* CDH.parcel
 
 **安装Cloudera Manager Server **
 
