@@ -86,7 +86,23 @@ setenforce 0
 
 配置系统的yum源
 
+```
+#检查系统使用的yum包
+rpm -qa |grep yum
+#删除redhat自带的yum包
+rpm -qa|grep yum|xargs rpm -e --nodeps
+#再次检查
+rpm -qa |grep yum
 
+#版本冲突处理
+rpm -e python-urlgrabber-3.9.1-9.el6.noarch
+rpm -ivh python-urlgrabber-3.9.1-11.el6.noarch.rpm
+
+#安装
+rpm -ivh yum-metadata-parser-1.1.2-16.el6.i686.rpm yum-3.2.29-40.el6.centos.noarch.rpm yum-plugin-fastestmirror-1.1.30-14.el6.noarch.rpm
+
+wget -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-6.repo
+```
 
 **安装Cloudera Manager Server **
 
