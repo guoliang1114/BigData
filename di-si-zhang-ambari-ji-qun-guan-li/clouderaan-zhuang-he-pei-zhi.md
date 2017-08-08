@@ -123,3 +123,7 @@ yum install oracle-j2sdk1.7
 
 点击下一步。
 
+![](/assets/4.3_2.png)
+
+
+
