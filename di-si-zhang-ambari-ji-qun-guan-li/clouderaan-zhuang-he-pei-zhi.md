@@ -10,6 +10,8 @@
 | Cloudera \(Data\) | 172.24.222.72 | hadoop4.foton.com.cn | 800G |  |
 | Cloudera \(Gateway\) - Flume, Scoop, Hue, Kafka, Spark   \| Cloudera \(Cloudera Manager + Database\) | 172.24.222.73 | hadoop5.foton.com.cn | 800G |  |
 
+> 以上服务器版本: Red Hat Enterprise Linux Server release 6.6 \(Santiago\)
+>
 > PS. 用户名是root，密码：Pass1234
 
 
