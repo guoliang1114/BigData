@@ -39,8 +39,10 @@
 关闭防火墙
 
 ```
-service iptables stop （临时关闭）  
-chkconfig iptables off （重启后生效）
+#临时关闭
+service iptables stop 
+#重启后生效 
+chkconfig iptables off
 ```
 
 关闭selinux
