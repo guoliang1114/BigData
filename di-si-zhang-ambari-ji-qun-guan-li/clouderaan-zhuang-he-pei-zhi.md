@@ -10,5 +10,7 @@
 | Cloudera \(Gateway\) - Flume, Scoop, Hue, Kafka, Spark | 172.24.222.72 |  |  |  |
 | Cloudera \(Cloudera Manager + Database\) | 172.24.222.73 |  |  |  |
 
+> PS. 用户名是root，密码：Pass1234
+
 
 
