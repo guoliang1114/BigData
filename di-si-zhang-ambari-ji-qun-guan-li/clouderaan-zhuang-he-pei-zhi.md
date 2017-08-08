@@ -4,12 +4,12 @@
 
 | 名称 | IP | 服务器名 | 配置信息 | 备注 |
 | :--- | :--- | :--- | :--- | :--- |
-| Cloudera \(Master\) - NN + RM + ZK + ISS |  |  |  |  |
-| Cloudera \(Data\) |  |  |  |  |
-| Cloudera \(Data\) |  |  |  |  |
-| Cloudera \(Data\) |  |  |  |  |
-| Cloudera \(Gateway\) - Flume, Scoop, Hue, Kafka, Spark |  |  |  |  |
-| Cloudera \(Cloudera Manager + Database\) |  |  |  |  |
+| Cloudera \(Master\) - NN + RM + ZK + ISS | 172.24.222.69 |  |  |  |
+| Cloudera \(Data\) | 172.24.222.70 |  |  |  |
+| Cloudera \(Data\) | 172.24.222.71 |  |  |  |
+| Cloudera \(Data\) | 172.24.222.72 |  |  |  |
+| Cloudera \(Gateway\) - Flume, Scoop, Hue, Kafka, Spark | 172.24.222.73 |  |  |  |
+| Cloudera \(Cloudera Manager + Database\) | 172.24.222.74 |  |  |  |
 
 
 
