@@ -141,9 +141,9 @@ yum install oracle-j2sdk1.7
 
 ![](/assets/4.3_10.png)此处需要注意设置存储库的位置：
 
-http://172.24.222.73/cm5/redhat/6/x86\_64/cm/5.12.0/
+[http://172.24.222.73/cm5/redhat/6/x86\_64/cm/5.12.0/](http://172.24.222.73/cm5/redhat/6/x86_64/cm/5.12.0/)
 
-http://172.24.222.73/cm5/redhat/6/x86\_64/cm/RPM-GPG-KEY-cloudera
+[http://172.24.222.73/cm5/redhat/6/x86\_64/cm/RPM-GPG-KEY-cloudera](http://172.24.222.73/cm5/redhat/6/x86_64/cm/RPM-GPG-KEY-cloudera)
 
 使用本地的存储库
 
@@ -155,7 +155,9 @@ jdk安装，由于之前已经安装了jdk，跳过
 
 由于CDH会自动管理所有主机间的SSH通讯，所以我们之前并没有手动配置各个节点间的SSH免密登录。在这里统一设置就行了，设置好密码点继续。![](/assets/4.3_13.png)执行安装过程
 
-![](/assets/4.3_14.png)
+![](/assets/4.3_14.png)安装成功后，点击继续。
+
+![](/assets/4.3_15.png)
 
 ```
  #scm服务重启命令
