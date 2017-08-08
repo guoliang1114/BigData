@@ -5,6 +5,7 @@
 * PATH A： 通过Cloudera Manager自动安装 \(不适合生产环境\)
 
 * PATH B： Installation Using Cloudera Manager Parcels or Packages
+
 * PATH C： Manual Installation Using Cloudera Manager Tarballs
 
 由于PATH A比较简单，且不适合生产环境，为了学习使用PATH B来安装。
@@ -15,11 +16,11 @@
 
 需要下载的软件有下面5个，下载地址：
 
-cm5.11.1-centos7.tar.gz   的下载地址：http://archive.cloudera.com/cm5/repo-as-tarball/5.11.1/cm5.11.1-centos7.tar.gz
+cm5.11.1-centos7.tar.gz   的下载地址：[http://archive.cloudera.com/cm5/repo-as-tarball/5.11.1/cm5.11.1-centos7.tar.gz](http://archive.cloudera.com/cm5/repo-as-tarball/5.11.1/cm5.11.1-centos7.tar.gz)
 
-cloudera-manager-installer.bin 的下载地址：http://archive.cloudera.com/cm5/installer/5.11.1/cloudera-manager-installer.bin
+cloudera-manager-installer.bin 的下载地址：[http://archive.cloudera.com/cm5/installer/5.11.1/cloudera-manager-installer.bin](http://archive.cloudera.com/cm5/installer/5.11.1/cloudera-manager-installer.bin)
 
-CDH-5.11.1-1.cdh5.11.1.p0.4-el7.parcel，CDH-5.11.1-1.cdh5.11.1.p0.4-el7.parcel.sha1，manifest.json这三个文件的下载地址为：http://archive.cloudera.com/cdh5/parcels/5.11.1/下面
+CDH-5.11.1-1.cdh5.11.1.p0.4-el7.parcel，CDH-5.11.1-1.cdh5.11.1.p0.4-el7.parcel.sha1，manifest.json这三个文件的下载地址为：[http://archive.cloudera.com/cdh5/parcels/5.11.1/下面](http://archive.cloudera.com/cdh5/parcels/5.11.1/下面)
 
 注意区别（**有el7的代表的是centos7的**），我们就下载含有el7的文件和manifest.json文件
 
