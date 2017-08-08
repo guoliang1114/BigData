@@ -143,7 +143,9 @@ yum install oracle-j2sdk1.7
 
 jdk安装，由于之前已经安装了jdk，跳过
 
-![](/assets/3.4_11.png)
+![](/assets/3.4_11.png)不启用单用户模式
+
+![](/assets/4.3_12.png)
 
 ```
  #scm服务重启命令
