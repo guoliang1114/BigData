@@ -11,7 +11,7 @@
   * [深刻理解HDFS工作机制](shen-ke-li-jie-hdfs-gong-zuo-ji-zhi.md)
   * [HDFS知识自查](hdfszhi-shi-zi-cha.md)
   * [hadoop生态圈](hadoopsheng-tai-quan.md)
-* [第四章 Ambari集群管理](di-si-zhang-ambari-ji-qun-guan-li.md)
+* [第四章 商业Hadoop概述](di-si-zhang-ambari-ji-qun-guan-li.md)
   * [Ambari介绍](di-si-zhang-ambari-ji-qun-guan-li/ambarijie-shao.md)
   * [Ambari安装](di-si-zhang-ambari-ji-qun-guan-li/ambarian-zhuang.md)
 * [第五章 大数据查询Hive](di-wu-zhang-hadoop-sheng-tai-quan.md)
