@@ -22,7 +22,7 @@
 >
 > PS. 用户名是root，密码：Pass1234
 
-首先修改各个服务器名称和HOST
+**修改各个服务器名称和HOST**
 
 ```
 172.24.222.69 hadoop1.foton.com.cn hadoop1
@@ -31,6 +31,8 @@
 172.24.222.72 hadoop4.foton.com.cn hadoop4
 172.24.222.73 hadoop5.foton.com.cn hadoop5
 ```
+
+**关闭selinux**
 
 
 
