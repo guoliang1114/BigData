@@ -82,6 +82,8 @@ setenforce 0
 * cloudera-manager-installer
 * CDH.parcel
 
+
+
 **安装Cloudera Manager Server **
 
 首先安装JDK
