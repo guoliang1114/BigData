@@ -14,5 +14,15 @@
 >
 > PS. 用户名是root，密码：Pass1234
 
+首先更各个服务器名称和HOST
+
+```
+172.24.222.69 hadoop1.foton.com.cn hadoop1
+172.24.222.70 hadoop2.foton.com.cn hadoop2
+172.24.222.71 hadoop3.foton.com.cn hadoop3
+172.24.222.72 hadoop4.foton.com.cn hadoop4
+172.24.222.73 hadoop5.foton.com.cn hadoop5
+```
+
 
 
