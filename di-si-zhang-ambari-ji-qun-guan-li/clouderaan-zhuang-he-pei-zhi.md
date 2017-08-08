@@ -14,7 +14,7 @@
 >
 > PS. 用户名是root，密码：Pass1234
 
-首先更各个服务器名称和HOST
+首先修改各个服务器名称和HOST
 
 ```
 172.24.222.69 hadoop1.foton.com.cn hadoop1
