@@ -139,7 +139,13 @@ yum install oracle-j2sdk1.7
 
 ![](/assets/4.3_9.png)点击继续，设置存储库
 
-![](/assets/4.3_10.png)
+![](/assets/4.3_10.png)此处需要注意设置存储库的位置：
+
+http://172.24.222.73/cm5/redhat/6/x86\_64/cm/5.12.0/
+
+http://172.24.222.73/cm5/redhat/6/x86\_64/cm/RPM-GPG-KEY-cloudera
+
+使用本地的存储库
 
 jdk安装，由于之前已经安装了jdk，跳过
 
