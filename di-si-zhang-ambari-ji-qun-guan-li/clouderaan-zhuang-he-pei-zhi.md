@@ -133,3 +133,7 @@ yum install oracle-j2sdk1.7
 
 ![](/assets/4.3_7.png)同意条款。
 
+选择评估版本，有60天的使用期限，过期后，会自动降级到cloudera express
+
+
+
