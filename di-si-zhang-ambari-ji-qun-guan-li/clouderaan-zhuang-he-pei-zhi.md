@@ -1,14 +1,27 @@
-```
-4.3 Cloudera CDH安装和配置
-```
+## 4.3 Cloudera CDH安装和配置
 
 安装Cloudera的CDH的方式主要有三种方法：
 
 * PATH A： 通过Cloudera Manager自动安装 \(不适合生产环境\)
+
 * PATH B： Installation Using Cloudera Manager Parcels or Packages
 * PATH C： Manual Installation Using Cloudera Manager Tarballs
 
 由于PATH A比较简单，且不适合生产环境，为了学习使用PATH B来安装。
+
+软件准备
+
+由于在国内连接cloudera的速度不稳定，因此可以首先准备好一些安装包：
+
+需要下载的软件有下面5个，下载地址：
+
+cm5.11.1-centos7.tar.gz   的下载地址：http://archive.cloudera.com/cm5/repo-as-tarball/5.11.1/cm5.11.1-centos7.tar.gz
+
+cloudera-manager-installer.bin 的下载地址：http://archive.cloudera.com/cm5/installer/5.11.1/cloudera-manager-installer.bin
+
+CDH-5.11.1-1.cdh5.11.1.p0.4-el7.parcel，CDH-5.11.1-1.cdh5.11.1.p0.4-el7.parcel.sha1，manifest.json这三个文件的下载地址为：http://archive.cloudera.com/cdh5/parcels/5.11.1/下面
+
+注意区别（**有el7的代表的是centos7的**），我们就下载含有el7的文件和manifest.json文件
 
 ### 4.3.1 开发环境安装规划
 
@@ -58,7 +71,7 @@ setenforce 0
 
 **配置yum源**
 
-从https://www.cloudera.com/documentation/enterprise/release-notes/topics/cm\_vd.html下载相应的文件，并拷贝到/etc/yum.repos.d/目录下。
+从[https://www.cloudera.com/documentation/enterprise/release-notes/topics/cm\_vd.html下载相应的文件，并拷贝到/etc/yum.repos.d/目录下。](https://www.cloudera.com/documentation/enterprise/release-notes/topics/cm_vd.html下载相应的文件，并拷贝到/etc/yum.repos.d/目录下。)
 
 **安装Cloudera Manager Server **
 
