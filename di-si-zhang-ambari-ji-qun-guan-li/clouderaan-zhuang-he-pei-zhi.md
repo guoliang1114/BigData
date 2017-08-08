@@ -125,5 +125,5 @@ yum install oracle-j2sdk1.7
 
 ![](/assets/4.3_2.png)
 
-剩下一路安装。
+剩下全部ok安装。
 
