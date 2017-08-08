@@ -101,7 +101,7 @@ rpm -ivh python-urlgrabber-3.9.1-11.el6.noarch.rpm
 #安装
 rpm -ivh yum-metadata-parser-1.1.2-16.el6.x86_64.rpm  yum-plugin-fastestmirror-1.1.30-40.el6.noarch.rpm yum-3.2.29-81.el6.centos.noarch.rpm
 
-wget -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-6.repo
+wget -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.163.com/.help/CentOS6-Base-163.repo
 ```
 
 **安装Cloudera Manager Server **
@@ -112,5 +112,12 @@ wget -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-
 yum install oracle-j2sdk1.7
 ```
 
+安装CM
 
+```
+ chmod 777 ./cloudera-manager-installer.bin
+ ./cloudera-manager-installer.bin
+```
+
+![](/assets/4.3_1.png)
 
