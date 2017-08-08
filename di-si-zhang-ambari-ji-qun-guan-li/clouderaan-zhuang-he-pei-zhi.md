@@ -1,4 +1,6 @@
-## 4.3 Cloudera CDH安装和配置
+```
+4.3 Cloudera CDH安装和配置
+```
 
 安装Cloudera的CDH的方式主要有三种方法：
 
@@ -46,6 +48,13 @@ chkconfig iptables off
 ```
 
 关闭selinux
+
+```
+#临时生效
+setenforce 0
+#重启后永久生效
+#修改 /etc/selinux/config 下的 SELINUX=disabled 
+```
 
 
 
