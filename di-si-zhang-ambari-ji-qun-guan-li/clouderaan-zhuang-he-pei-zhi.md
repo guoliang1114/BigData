@@ -135,6 +135,8 @@ yum install oracle-j2sdk1.7
 
 选择评估版本，有60天的使用期限，过期后，会自动降级到cloudera express。
 
+![](/assets/4.3_8.png)
+
 ```
  #scm服务重启命令
  service cloudera-scm-server restart
