@@ -175,6 +175,10 @@ jdk安装，由于之前已经安装了jdk，跳过
 
 ![](/assets/4.3_21.png)
 
+接着审核安装的内容
+
+
+
 ```
  #scm服务重启命令
  service cloudera-scm-server restart
