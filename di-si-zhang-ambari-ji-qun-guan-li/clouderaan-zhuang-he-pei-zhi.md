@@ -53,7 +53,19 @@ chkconfig iptables off
 #临时生效
 setenforce 0
 #重启后永久生效
-#修改 /etc/selinux/config 下的 SELINUX=disabled 
+#修改 /etc/selinux/config 下的 SELINUX=disabled
+```
+
+**配置yum源**
+
+从https://www.cloudera.com/documentation/enterprise/release-notes/topics/cm\_vd.html下载相应的文件，并拷贝到/etc/yum.repos.d/目录下。
+
+**安装Cloudera Manager Server **
+
+首先安装JDK
+
+```
+yum install oracle-j2sdk1.7
 ```
 
 
