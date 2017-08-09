@@ -50,3 +50,13 @@ Source Broker List: hadoop5:9092
 
 ，保存更改。然后添加角色实例，重新配置即可
 
+
+
+```
+参考地址：
+https://www.zybuluo.com/ncepuwanghui/note/474966
+https://community.cloudera.com/t5/Cloudera-Manager-Installation/adding-a-Kafka-service-failed/td-p/40526
+```
+
+
+
