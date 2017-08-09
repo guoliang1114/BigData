@@ -20,6 +20,5 @@
 
 在CDH官网中关于Kafka的安装和升级中已经说到，在CDH中，Kafka作为一个分布式的parcel，单独出来作为parcel分发安装包。只要我们把分离开的kafka的服务描述jar包和服务parcel包下载了，就可以实现完美集成了。
 
-  
 
 
