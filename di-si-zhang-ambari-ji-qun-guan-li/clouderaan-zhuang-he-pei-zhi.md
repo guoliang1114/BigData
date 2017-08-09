@@ -109,21 +109,23 @@ crontab -l
 配置系统的yum源
 
 ```
-#检查系统使用的yum包
-rpm -qa |grep yum
-#删除redhat自带的yum包
-rpm -qa|grep yum|xargs rpm -e --nodeps
-#再次检查
-rpm -qa |grep yum
+#1. 本地yum源
+加载系统盘，搭建yum源，就不再次赘述了。
 
-#版本冲突处理
-rpm -e python-urlgrabber-3.9.1-9.el6.noarch
-rpm -ivh python-urlgrabber-3.9.1-11.el6.noarch.rpm
+#2.cloudera.repo
+找到对应的repo文件。
 
-#安装
-rpm -ivh yum-metadata-parser-1.1.2-16.el6.x86_64.rpm  yum-plugin-fastestmirror-1.1.30-40.el6.noarch.rpm yum-3.2.29-81.el6.centos.noarch.rpm
+#3.搭建本地cloudera源
+#安装apache
+#解压cm5.12.0-centos6.tar.gz
 
-wget -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.163.com/.help/CentOS6-Base-163.repo
+#编辑cloudera.repo文件
+name = Cloudera Manager, Version 5.12.0
+baseurl = http://172.24.222.73/cm5/redhat/6/x86_64/cm/5.12.0/
+gpgkey = http://172.24.222.73/cm5/redhat/6/x86_64/cm/RPM-GPG-KEY-cloudera
+gpgcheck = 1
+
+
 ```
 
 **安装Cloudera Manager Server **
