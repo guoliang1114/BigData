@@ -16,13 +16,10 @@
 
 需要下载的软件有下面4个，文件内容：
 
-cm5.12.0-centos6.tar.gz
-
-CDH-5.12.0-1.cdh5.12.0.p0.29-el6.parcel
-
-CDH-5.12.0-1.cdh5.12.0.p0.29-el6.parcel.sha1	
-
-manifest.json
+* cm5.12.0-centos6.tar.gz
+* CDH-5.12.0-1.cdh5.12.0.p0.29-el6.parcel
+* CDH-5.12.0-1.cdh5.12.0.p0.29-el6.parcel.sha1
+* manifest.json
 
 注意区别（**有el6的代表的是centos6的**），我们就下载含有el6的文件和manifest.json文件
 
@@ -39,10 +36,10 @@ Parcel本地源：软件包是以.parcel结尾，相当于压缩包格式的，�
 | 名称 | IP | 服务器名 | 配置信息 | 备注 |
 | :--- | :--- | :--- | :--- | :--- |
 | Cloudera \(Master\) - NN + RM + ZK + ISS | 172.24.222.69 | hadoop1.foton.com.cn | 300G |  |
-| Cloudera \(Data\) | 172.24.222.70 | hadoop2.foton.com.cn | 800G |  |
+| Cloudera \(Data\)+ZK | 172.24.222.70 | hadoop2.foton.com.cn | 800G |  |
 | Cloudera \(Data\) | 172.24.222.71 | hadoop3.foton.com.cn | 800G |  |
 | Cloudera \(Data\) | 172.24.222.72 | hadoop4.foton.com.cn | 800G |  |
-| Cloudera \(Gateway\) - Flume, Scoop, Hue, Kafka, Spark   \| Cloudera \(Cloudera Manager + Database\) | 172.24.222.73 | hadoop5.foton.com.cn | 800G |  |
+| Cloudera \(Gateway\) - Flume, Scoop, Hue, Kafka, Spark ，ZK  \| Cloudera \(Cloudera Manager + Database\) | 172.24.222.73 | hadoop5.foton.com.cn | 800G |  |
 
 > 以上服务器版本: Red Hat Enterprise Linux Server release 6.6 \(Santiago\)
 >
