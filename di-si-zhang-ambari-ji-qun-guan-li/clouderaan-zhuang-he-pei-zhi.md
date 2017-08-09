@@ -125,7 +125,7 @@ baseurl = http://172.24.222.73/cm5/redhat/6/x86_64/cm/5.12.0/
 gpgkey = http://172.24.222.73/cm5/redhat/6/x86_64/cm/RPM-GPG-KEY-cloudera
 gpgcheck = 1
 
-
+#4 拷贝parcel文件到目录 /opt/cloudera/parcel-repo
 ```
 
 **安装Cloudera Manager Server **
