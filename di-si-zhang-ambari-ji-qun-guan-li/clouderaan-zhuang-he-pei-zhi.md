@@ -39,7 +39,7 @@ Parcel本地源：软件包是以.parcel结尾，相当于压缩包格式的，�
 | Cloudera \(Data\)+ZK | 172.24.222.70 | hadoop2.foton.com.cn | 800G |  |
 | Cloudera \(Data\) | 172.24.222.71 | hadoop3.foton.com.cn | 800G |  |
 | Cloudera \(Data\) | 172.24.222.72 | hadoop4.foton.com.cn | 800G |  |
-| Cloudera \(Gateway\) - Flume, Scoop, Hue, Kafka, Spark ，ZK  ，Cloudera \(Cloudera Manager + Database\) | 172.24.222.73 | hadoop5.foton.com.cn | 800G |   |
+| Cloudera \(Gateway\) - Flume, Scoop, Hue, Kafka, Spark ，ZK  ，Cloudera \(Cloudera Manager + Database\) | 172.24.222.73 | hadoop5.foton.com.cn | 800G |  |
 
 > 以上服务器版本: Red Hat Enterprise Linux Server release 6.6 \(Santiago\)
 >
@@ -92,6 +92,18 @@ crontab -e
 00 12 * * * root /usr/sbin/ntpdate hadoop5 >> /root/ntpdate.log 2>&1
 #查看任务
 crontab -l
+```
+
+修改linux swap空间的swappiness
+
+Cloudera 建议将 /proc/sys/vm/swappiness 设置为 0,最大不超过10。
+
+修改swappiness的值为零：
+
+```
+root@hadoop5:cat /proc/sys/vm/swappiness
+root@hadoop5:sysctl vm.swappiness=0
+root@hadoop5:echo 0 > /proc/sys/vm/swappiness
 ```
 
 **配置yum源**
