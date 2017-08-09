@@ -22,5 +22,14 @@
 
 在CM中点击Parcel中点击，查看
 
-![](/assets/4.4_5.png)
+![](/assets/4.4_5.png)可以下载再分配。
+
+当然可以手动下载到目录：/opt/cloudera/parcel-repo
+
+然后启动cm服务，检查更新parcel，分配并激活percel包，注意此处一定要激活才能使用。
+
+
+
+  
+
 
