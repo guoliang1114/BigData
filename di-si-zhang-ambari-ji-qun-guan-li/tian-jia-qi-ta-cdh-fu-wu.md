@@ -6,9 +6,13 @@
 
 在页面中选择Sqoop 2，并选择要安装到的节点。
 
-![](/assets/4.4_1.png) 
+![](/assets/4.4_1.png)
 
 设置密码
 
-![](/assets/4.4_2.png)密码为Pass1234
+![](/assets/4.4_2_1.png)
+
+密码为Pass1234
+
+![](/assets/4.4_4.png)
 
