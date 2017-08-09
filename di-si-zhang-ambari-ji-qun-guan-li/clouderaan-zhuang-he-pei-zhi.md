@@ -72,6 +72,23 @@ setenforce 0
 #修改 /etc/selinux/config 下的 SELINUX=disabled
 ```
 
+**配置时钟**
+
+计划使用hadoop5作为时钟服务器
+
+```
+yum install ntp
+service ntpd restart
+#设置开机启动
+chkconfig ntpd on
+
+#其他服务器设置定时同步任务
+crontab -e
+00 12 * * * root /usr/sbin/ntpdate hadoop5 >> /root/ntpdate.log 2>&1
+#查看任务
+crontab -l
+```
+
 **配置yum源**
 
 配置cloudera的源
@@ -184,6 +201,32 @@ jdk安装，由于之前已经安装了jdk，跳过
 ```
  #scm服务重启命令
  service cloudera-scm-server restart
+```
+
+
+
+异常处理
+
+| `3WARN653222119@scm-web-0:com.cloudera.server.web.cmf.csrf.CsrfRefererInterceptor: Rejecting request originating from xx.xx.xx.xxforhttp://xxx.xxxx.lo/cmf/express-wizard/wizard with referrer`[`http://xxx.xxxx.lo`](http://xxx.xxxx.lo/) |
+| :--- |
+
+
+```
+#直接注释掉csrf
+[root@xx.xx.xx.xx cloudera-scm-server]# cd /usr/share/cmf/
+[root@xx.xx.xx.xx cmf]# grep -i -r  csrf  ./
+Binary file ./cloudera-navigator-server/libs/cdh5/hadoop-yarn-server-nodemanager-2.6.0-cdh5.5.0.jar matches
+Binary file ./common_jars/hadoop-yarn-server-nodemanager-2.6.0-cdh5.5.0.jar matches
+Binary file ./common_jars/server-5.6.0.jar matches
+Binary file ./common_jars/hadoop-yarn-server-resourcemanager-2.5.0-cdh5.3.2.jar matches
+./webapp/WEB-INF/spring/mvc-config.xml:                <bean class="com.cloudera.server.web.cmf.csrf.CsrfRefererInterceptor" />
+Binary file ./lib/cdh5-java6/hadoop-yarn-server-resourcemanager-2.5.0-cdh5.3.2.jar matches
+Binary file ./lib/server-5.6.0.jar matches
+Binary file ./lib/cdh5/hadoop-yarn-server-nodemanager-2.6.0-cdh5.5.0.jar matches
+[root@xx.xx.xx.xx cmf]# vi ./webapp/WEB-INF/spring/mvc-config.xml
+注释掉这个bean，然后重启server，在访问nginx，整个世界清净了·~~~~~~~~~~~~~~~~~~~~~~~~~~·
+              <!--  <bean class="com.cloudera.server.web.cmf.csrf.CsrfRefererInterceptor" /> -->
+
 ```
 
 
