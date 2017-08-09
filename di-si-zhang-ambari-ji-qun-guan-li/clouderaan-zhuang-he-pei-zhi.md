@@ -10,13 +10,21 @@
 
 由于PATH A比较简单，且不适合生产环境，为了学习使用PATH B来安装。
 
-软件准备
+**软件准备**
 
 由于在国内连接cloudera的速度不稳定，因此可以首先准备好一些安装包：
 
-需要下载的软件有下面5个，下载地址：
+需要下载的软件有下面4个，文件内容：
 
-注意区别（**有el6的代表的是centos7的**），我们就下载含有el6的文件和manifest.json文件
+cm5.12.0-centos6.tar.gz
+
+CDH-5.12.0-1.cdh5.12.0.p0.29-el6.parcel
+
+CDH-5.12.0-1.cdh5.12.0.p0.29-el6.parcel.sha1	
+
+manifest.json
+
+注意区别（**有el6的代表的是centos6的**），我们就下载含有el6的文件和manifest.json文件
 
 本地通过Parcel安装过程与本地通过Package安装过程完全一致，不同的是两者的本地源的配置。 区别如下：
 
