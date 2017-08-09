@@ -239,3 +239,13 @@ Binary file ./lib/cdh5/hadoop-yarn-server-nodemanager-2.6.0-cdh5.5.0.jar matches
 
 
 
+ 
+
+> 参考文档：
+>
+> https://www.cloudera.com/documentation/enterprise/latest/topics/cm\_ig\_install\_path\_b.html\#id\_gzv\_zmm\_25\_\_d10688e306
+>
+> http://www.jianshu.com/p/57179e03795f
+
+
+
