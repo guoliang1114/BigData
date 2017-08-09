@@ -39,7 +39,7 @@ Parcel本地源：软件包是以.parcel结尾，相当于压缩包格式的，�
 | Cloudera \(Data\)+ZK | 172.24.222.70 | hadoop2.foton.com.cn | 800G |  |
 | Cloudera \(Data\) | 172.24.222.71 | hadoop3.foton.com.cn | 800G |  |
 | Cloudera \(Data\) | 172.24.222.72 | hadoop4.foton.com.cn | 800G |  |
-| Cloudera \(Gateway\) - Flume, Scoop, Hue, Kafka, Spark ，ZK  ，Cloudera \(Cloudera Manager + Database\) | 172.24.222.73 | hadoop5.foton.com.cn | 800G |  |
+| Cloudera \(Gateway\) - Flume, Scoop, Hue, Kafka, Spark ，ZK  ，Cloudera \(Cloudera Manager + Database\) | 172.24.222.73 | hadoop5.foton.com.cn | 800G |   |
 
 > 以上服务器版本: Red Hat Enterprise Linux Server release 6.6 \(Santiago\)
 >
