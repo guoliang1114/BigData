@@ -28,5 +28,25 @@
 
 然后启动cm服务，检查更新parcel，分配并激活percel包，注意此处一定要激活才能使用。
 
-添加服务的过程和上面一致的![](/assets/4.4_6.png)
+添加服务的过程和上面一致的![](/assets/4.4_6.png)下一步：两个属性必填：
+
+Destination Broker List： hadoop5:9092
+
+Source Broker List: hadoop5:9092
+
+下一步启动，会遇到以下错误：
+
+**Java Heap Size不够**
+
+点击继续，出错后，Kafka服务未启动。返回集群配置，打卡Kafka服务配置页，查找“Java Heap Size of Broker”项，将对大小从50MB修改为256MB。
+
+**配置Topic Whitelist**
+
+项为正则表达式：
+
+```
+(?!x)x
+```
+
+，保存更改。然后添加角色实例，重新配置即可
 
