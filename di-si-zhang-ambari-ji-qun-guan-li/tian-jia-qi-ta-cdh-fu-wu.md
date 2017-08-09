@@ -50,8 +50,6 @@ Source Broker List: hadoop5:9092
 
 ，保存更改。然后添加角色实例，重新配置即可
 
-
-
 ```
 参考地址：
 https://www.zybuluo.com/ncepuwanghui/note/474966
@@ -59,4 +57,12 @@ https://community.cloudera.com/t5/Cloudera-Manager-Installation/adding-a-Kafka-s
 ```
 
 
+
+### 4.4.3 添加KODU服务
+
+![](/assets/4.4.3_1.png)
+
+填写相关目录
+
+![](/assets/4.3.3_2.png)
 

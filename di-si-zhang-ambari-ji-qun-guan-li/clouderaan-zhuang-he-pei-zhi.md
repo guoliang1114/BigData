@@ -1,5 +1,11 @@
 ## 4.3 Cloudera CDH安装和配置
 
+CDH — Cloudera 分发的 Apache Hadoop 和其他相关开放源代码项目，包括 Impala 和 Cloudera Search。CDH 还提供安全保护以及与许多硬件和软件解决方案的集成。
+
+* Cloudera Manager — 一个复杂的应用程序，用于部署、管理、监控您的 CDH 部署并诊断问题。Cloudera Manager 提供 Admin Console，这是一种基于 Web 的用户界面，使您的企业数据管理简单而直接。它还包括 Cloudera Manager API，可用来获取群集运行状况信息和度量以及配置 Cloudera Manager。
+* Cloudera Navigator — CDH 平台的端到端数据管理工具。Cloudera Navigator 使管理员、数据经理和分析师能够了解 Hadoop 中的大量数据。Cloudera Navigator 中强大的审核、数据管理、沿袭管理和生命周期管理使企业能够遵守严格的法规遵从性和法规要求。
+* Cloudera Impala — 一种大规模并行处理 SQL 引擎，用于交互式分析和商业智能。其高度优化的体系结构使它非常适合用于具有联接、聚合和子查询的传统 BI 样式的查询。它可以查询来自各种源的 Hadoop 数据文件，包括由 MapReduce 作业生成的数据文件或加载到 Hive 表中的数据文件。YARN 和 Llama 资源管理组件让 Impala 能够共存于使用 Impala SQL 查询并发运行批处理工作负载的群集上。您可以通过 Cloudera Manager 用户界面管理 Impala 及其他 Hadoop 组件，并通过 Sentry 授权框架保护其数据。
+
 安装Cloudera的CDH的方式主要有三种方法：
 
 * PATH A： 通过Cloudera Manager自动安装 \(不适合生产环境\)
