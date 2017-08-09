@@ -203,13 +203,13 @@ jdk安装，由于之前已经安装了jdk，跳过
  service cloudera-scm-server restart
 ```
 
-
-
 异常处理
 
-| `3WARN653222119@scm-web-0:com.cloudera.server.web.cmf.csrf.CsrfRefererInterceptor: Rejecting request originating from xx.xx.xx.xxforhttp://xxx.xxxx.lo/cmf/express-wizard/wizard with referrer`[`http://xxx.xxxx.lo`](http://xxx.xxxx.lo/) |
-| :--- |
-
+```
+#启动cloudera scm server的时候
+3WARN653222119@scm-web-0:com.cloudera.server.web.cmf.csrf.CsrfRefererInterceptor: Rejecting request originating from xx.xx.xx.xxforhttp://xxx.xxxx.lo/cmf/express-wizard/wizard with referrer
+http://xxx.xxxx.lo
+```
 
 ```
 #直接注释掉csrf
@@ -226,7 +226,6 @@ Binary file ./lib/cdh5/hadoop-yarn-server-nodemanager-2.6.0-cdh5.5.0.jar matches
 [root@xx.xx.xx.xx cmf]# vi ./webapp/WEB-INF/spring/mvc-config.xml
 注释掉这个bean，然后重启server，在访问nginx，整个世界清净了·~~~~~~~~~~~~~~~~~~~~~~~~~~·
               <!--  <bean class="com.cloudera.server.web.cmf.csrf.CsrfRefererInterceptor" /> -->
-
 ```
 
 
