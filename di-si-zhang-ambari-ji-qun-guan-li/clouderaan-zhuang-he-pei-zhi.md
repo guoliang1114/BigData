@@ -94,7 +94,7 @@ crontab -e
 crontab -l
 ```
 
-修改linux swap空间的swappiness
+**修改linux swap空间的swappiness**
 
 Cloudera 建议将 /proc/sys/vm/swappiness 设置为 0,最大不超过10。
 
@@ -104,6 +104,16 @@ Cloudera 建议将 /proc/sys/vm/swappiness 设置为 0,最大不超过10。
 root@hadoop5:cat /proc/sys/vm/swappiness
 root@hadoop5:sysctl vm.swappiness=0
 root@hadoop5:echo 0 > /proc/sys/vm/swappiness
+```
+
+**大页面压缩设置**
+
+该设置有可能引发重大性能问题
+
+```
+echo never > /sys/kernel/mm/redhat_transparent_hugepage/defrag
+echo never > /sys/kernel/mm/redhat_transparent_hugepage/enabled
+vi /etc/rc.local
 ```
 
 **配置yum源**
