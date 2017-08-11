@@ -63,5 +63,14 @@ hadoopslave2
 
 配置环境变量方便未来使用。
 
+```
+ export HBASE_HOME=/hadoop/hbase-1.2.6
+ export PATH=$PATH:$HBASE_HOME/bin:$HBASE_HOME/conf
+```
 
+**将修改好的安装目录分发到所有节点**，一并修改环境变量。
+
+scp -r /hadoop/hbase-1.2.6  hadoop@hadoopslave1:/hadoop/发送到hadoopslave1上，hadoopslave2的发送都一样，然后分别在slave上做环境变量配置。
+
+**启动HBase**
 
