@@ -4,3 +4,5 @@ HBase（Hadoop Database）是一个高可靠、高性能、面向列、可伸缩
 
 HBase的整个项目使用Java语言实现，它是Apache基金会的Hadoop项目的一部分，既是模仿Google BigTable的开源产品，同时又是Hadoop的衍生产品。而Hadoop作为批量离线计算系统已经得到了业界的普遍认可，并经过了工业上的验证，所以HBase具备“站在巨人肩膀之上”的优势，其发展势头非常迅猛。
 
+HBase还是一种非关系型数据库，即NoSQL数据库。在Eric Brewer的CAP理论中，HBase属于CP类型的系统，其NoSQL的特性非常明显，这些特性也决定了其独特的应用场景。接下来的内容将详细讲解HBase的发展历史、发行版本和特性。
+
