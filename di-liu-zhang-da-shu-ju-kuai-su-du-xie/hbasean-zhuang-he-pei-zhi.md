@@ -96,3 +96,5 @@ scp -r /hadoop/hbase-1.2.6  hadoop@hadoopslave1:/hadoop/发送到hadoopslave1上
 
 可以看到 HBase Web UI 。
 
+![](/assets/6.3_1.png)
+
