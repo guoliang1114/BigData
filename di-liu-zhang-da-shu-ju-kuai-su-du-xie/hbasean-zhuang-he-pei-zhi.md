@@ -6,9 +6,9 @@
 
 | HostName | HBase角色 | Zookeeper | Hadoop角色 |
 | :--- | :--- | :--- | :--- |
-| hadoopmaster |  |  | master |
-| hadoopslave1 |  |  | slave1 |
-| hadoopslave2 |  |  | slave2 |
+| hadoopmaster | master | YES | master |
+| hadoopslave1 | backup master & Region Server | YES | slave1 |
+| hadoopslave2 | Region Server | YES | slave2 |
 
 
 
