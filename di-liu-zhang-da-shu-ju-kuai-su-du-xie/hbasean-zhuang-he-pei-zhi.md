@@ -20,5 +20,7 @@ vi hbase-env.conf
 export JAVA_HOME=/home/jdk1.8.0_131
 ```
 
+  3. 修改hbase-site.xml 
+
 
 
