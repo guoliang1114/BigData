@@ -12,5 +12,7 @@
 
 首先将HBase和Zookeeper安装包上传到服务器端。
 
+1. 安装zookeeper
+
 
 
