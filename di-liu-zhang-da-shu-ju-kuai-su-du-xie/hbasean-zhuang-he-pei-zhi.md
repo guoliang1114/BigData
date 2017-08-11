@@ -12,6 +12,10 @@
 
 首先将HBase和Zookeeper安装包上传到服务器端：
 
+修改服务器参数
+
+
+
 **解压HBase压缩文件。**
 
 **修改hbase-env.sh文件，修改JAVA\_HOME的地址。**
@@ -59,8 +63,7 @@ hbase.zookeeper.property.dataDir指定ZooKeeper的zoo.conf中的配置。 快照
 ```
 hadoopslave1
 hadoopslave2
-
 ```
 
-修改
+
 
