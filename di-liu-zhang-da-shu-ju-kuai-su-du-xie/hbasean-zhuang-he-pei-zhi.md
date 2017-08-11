@@ -10,9 +10,11 @@
 | hadoopslave1 | 192.168.44.132 | backup master & Region Server | YES | slave1 |
 | hadoopslave2 | 192.168.44.133 | Region Server | YES | slave2 |
 
-首先将HBase和Zookeeper安装包上传到服务器端。
+首先将HBase和Zookeeper安装包上传到服务器端：
 
-1. 安装zookeeper
+1. 解压HBase压缩文件。
+2. 
+
 
 
 
