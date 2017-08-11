@@ -12,15 +12,16 @@
 
 首先将HBase和Zookeeper安装包上传到服务器端：
 
-1. 解压HBase压缩文件。
-2. 修改hbase-env.sh文件，修改JAVA\_HOME的地址。
+解压HBase压缩文件。
+
+修改hbase-env.sh文件，修改JAVA\_HOME的地址。
 
 ```
 vi hbase-env.conf
 export JAVA_HOME=/home/jdk1.8.0_131
 ```
 
-1. 修改hbase-site.xml 
+修改hbase-site.xml 
 
 ```
 vi hbase-site.conf
