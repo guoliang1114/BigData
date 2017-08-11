@@ -4,11 +4,11 @@
 
 整个步骤为，安装和配置Zookeeper，安装和配置HBase。
 
-| HostName | HBase角色 | Zookeeper | Hadoop角色 |
-| :--- | :--- | :--- | :--- |
-| hadoopmaster | master | YES | master |
-| hadoopslave1 | backup master & Region Server | YES | slave1 |
-| hadoopslave2 | Region Server | YES | slave2 |
+| HostName | IP | HBase角色 | Zookeeper | Hadoop角色 |
+| :--- | :--- | :--- | :--- | :--- |
+| hadoopmaster | 192.168.44.131 | master | YES | master |
+| hadoopslave1 | 192.168.44.132 | backup master & Region Server | YES | slave1 |
+| hadoopslave2 | 192.168.44.133 | Region Server | YES | slave2 |
 
 
 
