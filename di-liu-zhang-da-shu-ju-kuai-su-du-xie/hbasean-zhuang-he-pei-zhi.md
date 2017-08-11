@@ -4,3 +4,9 @@
 
 整个步骤为，安装和配置Zookeeper，安装和配置HBase。
 
+| HostName | HBase角色 | Zookeeper | Hadoop角色 |
+| :--- | :--- | :--- | :--- |
+|  |  |  |  |
+
+
+
