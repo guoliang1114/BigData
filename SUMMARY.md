@@ -30,4 +30,5 @@
   * [JDBC操作Hive](di-wu-zhang-hadoop-sheng-tai-quan/jdbccao-zuo-hive.md)
 * [第六章 大数据快速读写](di-liu-zhang-da-shu-ju-kuai-su-du-xie.md)
   * [HBase介绍](di-liu-zhang-da-shu-ju-kuai-su-du-xie/hbasejie-shao.md)
+  * [HBase核心功能模块](di-liu-zhang-da-shu-ju-kuai-su-du-xie/hbasehe-xin-gong-neng-mo-kuai.md)
 
