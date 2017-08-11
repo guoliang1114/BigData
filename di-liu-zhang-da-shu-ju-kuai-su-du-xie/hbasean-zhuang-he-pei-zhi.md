@@ -20,18 +20,15 @@ vi hbase-env.conf
 export JAVA_HOME=/home/jdk1.8.0_131
 ```
 
-  3. 修改hbase-site.xml 
+1. 修改hbase-site.xml 
 
 ```
 vi hbase-site.conf
-
 ```
 
 hbase.rootdir指定Hbase数据存储目录
 
 hbase.cluster.distributed 指定是否是完全分布式模式，单机模式和伪分布式模式需要将该值设为false
-
-hbase.master指定Master的位置
 
 hbase.zookeeper.quorum 指定zooke的集群，多台机器以逗号分隔
 
