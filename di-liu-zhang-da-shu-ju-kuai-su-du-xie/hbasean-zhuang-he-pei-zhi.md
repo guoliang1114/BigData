@@ -74,3 +74,25 @@ scp -r /hadoop/hbase-1.2.6  hadoop@hadoopslave1:/hadoop/发送到hadoopslave1上
 
 **启动HBase**
 
+```
+#在主节点运行
+./start-hbase.sh
+#使用jps查看
+[hadoop@hadoopmaster bin]$ jps
+
+16928 SecondaryNameNode
+16727 NameNode
+29639 HMaster
+29754 Jps
+17083 ResourceManager
+17356 RunJar
+```
+
+**验证HBase**
+
+在 master 运行 jps 应该会有HMaster进程。在各个 slave 上运行jps 应该会有HQuorumPeer,HRegionServer两个进程。 在浏览器中输入
+
+[http://hadoopmaster:16010](http://master:16010/)
+
+可以看到 HBase Web UI 。
+
