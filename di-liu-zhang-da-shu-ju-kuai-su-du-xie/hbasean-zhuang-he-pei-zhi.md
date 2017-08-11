@@ -61,5 +61,7 @@ hadoopslave1
 hadoopslave2
 ```
 
+配置环境变量方便未来使用。
+
 
 
