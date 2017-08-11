@@ -30,8 +30,8 @@ syncLimit=5
 # the directory where the snapshot is stored.
 # do not use /tmp for storage， /tmp here is just
 # example sakes.
-dataDir=/home/hadoop/zookeeper-3.4.5/zookeeperdir/zookeeper-data
-dataLogDir=/home/hadoop/zookeeper-3.4.5/zookeeperdir/logs
+dataDir=/hadoop/zookeeper-3.4.10/zookeeperdir/zookeeper-data
+dataLogDir=/hadoop/zookeeper-3.4.10/zookeeperdir/logs
 # the port at which the clients will connect
 clientPort=2181
 # Be sure to read the maintenance section of the
@@ -42,8 +42,7 @@ clientPort=2181
 # Set to “0” to disable auto purge feature
 #autopurge.purgeInterval=1
 # 2888，3888 are election port
-server.1=host1：2888：3888
-
+server.1=hadoopmaster:2888:3888
 ```
 
 **解压HBase压缩文件。**
