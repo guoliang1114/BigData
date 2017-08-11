@@ -24,6 +24,25 @@ export JAVA_HOME=/home/jdk1.8.0_131
 
 ```
 vi hbase-site.conf
+
+<configuration>
+  <property>
+    <name>hbase.rootdir</name>
+    <value>hdfs://hadoopmaster:9000/hbase</value>
+  </property>
+  <property>
+    <name>hbase.cluster.distributed</name>
+    <value>true</value>
+  </property>
+  <property>
+    <name>hbase.zookeeper.quorum</name>
+    <value>hadoopmaster,hadoopslave1,hadoopslave2</value>
+  </property>
+  <property>
+    <name>hbase.zookeeper.property.dataDir</name>
+    <value>/hadoop/hbase-1.2.6/zookeeper</value>
+  </property>
+</configuration>
 ```
 
 hbase.rootdir指定Hbase数据存储目录
@@ -31,4 +50,8 @@ hbase.rootdir指定Hbase数据存储目录
 hbase.cluster.distributed 指定是否是完全分布式模式，单机模式和伪分布式模式需要将该值设为false
 
 hbase.zookeeper.quorum 指定zooke的集群，多台机器以逗号分隔
+
+hbase.zookeeper.property.dataDir指定ZooKeeper的zoo.conf中的配置。 快照的存储位置线上配置：/home/hadoop/zookeeperData,默认值：${hbase.tmp.dir}/zookeeper，将会覆盖zookeeper默认的设置
+
+
 
