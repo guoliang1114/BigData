@@ -12,6 +12,40 @@
 
 首先将HBase和Zookeeper安装包上传到服务器端：
 
+**解压Zookeeper压缩文件。**
+
+将安装包conf目录下的zoo\_sample.cfg文件复制一份，命名为zoo.cfg。
+
+修改zoo.cfg配置文件，示例如下：
+
+```
+# The number of milliseconds of each tick
+tickTime=2000
+# The number of ticks that the initial
+# synchronization phase can take
+initLimit=10
+# The number of ticks that can pass between
+# sending a request and getting an acknowledgement
+syncLimit=5
+# the directory where the snapshot is stored.
+# do not use /tmp for storage， /tmp here is just
+# example sakes.
+dataDir=/home/hadoop/zookeeper-3.4.5/zookeeperdir/zookeeper-data
+dataLogDir=/home/hadoop/zookeeper-3.4.5/zookeeperdir/logs
+# the port at which the clients will connect
+clientPort=2181
+# Be sure to read the maintenance section of the
+# administrator guide before turning on autopurge.
+# The number of snapshots to retain in dataDir
+#autopurge.snapRetainCount=3
+# Purge task interval in hours
+# Set to “0” to disable auto purge feature
+#autopurge.purgeInterval=1
+# 2888，3888 are election port
+server.1=host1：2888：3888
+
+```
+
 **解压HBase压缩文件。**
 
 **修改hbase-env.sh文件，修改JAVA\_HOME的地址。**
