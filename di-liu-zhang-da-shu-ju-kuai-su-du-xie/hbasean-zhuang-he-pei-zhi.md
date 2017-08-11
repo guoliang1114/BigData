@@ -6,7 +6,9 @@
 
 | HostName | HBase角色 | Zookeeper | Hadoop角色 |
 | :--- | :--- | :--- | :--- |
-|  |  |  |  |
+| hadoopmaster |  |  | master |
+| hadoopslave1 |  |  | slave1 |
+| hadoopslave2 |  |  | slave2 |
 
 
 
