@@ -19,13 +19,14 @@ HBase包含可以与HBase进行通信的Shell。 HBase使用Hadoop文件系统�
 
 * **create:**
 
-    创建一个表。
+  创建一个表。
 
 * **list:**  
   列出HBase的所有表。
 
-* **disable:**
+* **disable:**  
   禁用表。
+
 * **is\_disabled:**
   验证表是否被禁用。
 * **enable:**
@@ -44,6 +45,27 @@ HBase包含可以与HBase进行通信的Shell。 HBase使用Hadoop文件系统�
   丢弃在命令中给出匹配“regex”的表。
 * **Java Admin API:**
   在此之前所有的上述命令，Java提供了一个通过API编程来管理实现DDL功能。在这个org.apache.hadoop.hbase.client包中有HBaseAdmin和HTableDescriptor 这两个重要的类提供DDL功能。
+
+**数据操作命令**
+
+* **put:**
+
+      把指定列在指定的行中单元格的值在一个特定的表。
+
+* **get:**
+  取行或单元格的内容。
+* **delete:**
+  删除表中的单元格值。
+* **deleteall:**
+  删除给定行的所有单元格。
+* **scan:**
+  扫描并返回表数据。
+* **count:**
+  计数并返回表中的行的数目。
+* **truncate:**
+  禁用，删除和重新创建一个指定的表。
+* **Java client API:**
+  在此之前所有上述命令，Java提供了一个客户端API来实现DML功能，CRUD（创建检索更新删除）操作更多的是通过编程，在org.apache.hadoop.hbase.client包下。 在此包HTable 的 Put和Get是重要的类。
 
 
 
