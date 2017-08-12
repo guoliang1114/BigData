@@ -27,8 +27,9 @@ HBase包含可以与HBase进行通信的Shell。 HBase使用Hadoop文件系统�
 * **disable:**  
   禁用表。
 
-* **is\_disabled:**
+* **is\_disabled:**  
   验证表是否被禁用。
+
 * **enable:**
   启用一个表。
 * **is\_enabled:**
@@ -50,10 +51,11 @@ HBase包含可以与HBase进行通信的Shell。 HBase使用Hadoop文件系统�
 
 * **put:**
 
-      把指定列在指定的行中单元格的值在一个特定的表。
+  把指定列在指定的行中单元格的值在一个特定的表。
 
-* **get:**
+* **get:**  
   取行或单元格的内容。
+
 * **delete:**
   删除表中的单元格值。
 * **deleteall:**
