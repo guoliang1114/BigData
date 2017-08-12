@@ -50,5 +50,13 @@ N => 'NONE', MIN_VERSIONS => '0', BLOCKCACHE => 'true', BLOCKSIZE => '65536', RE
 2 row(s) in 0.0630 seconds
 ```
 
+同时也可以使用is\_disabled来查看表是否被禁用
+
+```
+hbase(main):010:0> is_disabled 'emp'
+true                                                                                                                                                                                 
+0 row(s) in 0.0260 seconds
+```
+
 
 
