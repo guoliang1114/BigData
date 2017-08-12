@@ -77,5 +77,21 @@ true
 hbase(main):002:0>
 ```
 
+### 6.5.4 表描述和修改
+
+describe返回对表的说明。
+
+```
+hbase(main):002:0> desc 'emp'
+Table emp is ENABLED                                                                                                                                                                 
+emp                                                                                                                                                                                  
+COLUMN FAMILIES DESCRIPTION                                                                                                                                                          
+{NAME => 'personal data', BLOOMFILTER => 'ROW', VERSIONS => '1', IN_MEMORY => 'false', KEEP_DELETED_CELLS => 'FALSE', DATA_BLOCK_ENCODING => 'NONE', TTL => 'FOREVER', COMPRESSION =>
+ 'NONE', MIN_VERSIONS => '0', BLOCKCACHE => 'true', BLOCKSIZE => '65536', REPLICATION_SCOPE => '0'}                                                                                  
+{NAME => 'professional data', BLOOMFILTER => 'ROW', VERSIONS => '1', IN_MEMORY => 'false', KEEP_DELETED_CELLS => 'FALSE', DATA_BLOCK_ENCODING => 'NONE', TTL => 'FOREVER', COMPRESSIO
+N => 'NONE', MIN_VERSIONS => '0', BLOCKCACHE => 'true', BLOCKSIZE => '65536', REPLICATION_SCOPE => '0'}                                                                              
+2 row(s) in 0.1550 seconds
+```
+
 
 
