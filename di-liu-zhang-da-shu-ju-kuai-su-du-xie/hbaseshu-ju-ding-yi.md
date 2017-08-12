@@ -67,5 +67,15 @@ hbase(main):011:0> enable 'emp'
 0 row(s) in 1.3130 seconds
 ```
 
+也可以使用is\_enabled来判断表是否为启用状态。
+
+```
+hbase(main):001:0> is_enabled 'emp'
+true                                                                                                                                                                                 
+0 row(s) in 0.5310 seconds
+
+hbase(main):002:0> 
+```
+
 
 
