@@ -2,7 +2,7 @@
 
 在安装HBase之前，请先安装好Hadoop集群，Hadoop集群具体的安装和配置请参照之前的文档。
 
-
+本次安装我们使用HBase内置的ZooKeeper
 
 | HostName | IP | HBase角色 | Zookeeper | Hadoop角色 |
 | :--- | :--- | :--- | :--- | :--- |
