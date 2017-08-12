@@ -16,5 +16,9 @@ create ‘<table name>’,’<column family>’
 hbase(main):002:0> create 'emp', 'personal data', ’professional data’
 ```
 
+| Row  Key | personal data | professinonal data |
+| :--- | :--- | :--- |
+|  |  |  |
 
+如上表所示。
 
