@@ -13,7 +13,7 @@ create ‘<table name>’,’<column family>’
 下面给出的是一个表名为emp的样本模式。它有两个列族：“personal data”和“professional data”。
 
 ```
-hbase(main):002:0> create 'emp', 'personal data', ’professional data’
+hbase(main):002:0> create 'emp', 'personal data', 'professional data'
 ```
 
 | Row  Key | personal data | professinonal data |
@@ -21,4 +21,34 @@ hbase(main):002:0> create 'emp', 'personal data', ’professional data’
 |  |  |  |
 
 如上表所示。
+
+接着我们使用list验证创建
+
+```
+hbase(main):003:0> list
+TABLE                                                                                                                                                                                
+emp                                                                                                                                                                                  
+1 row(s) in 0.0590 seconds
+
+=> ["emp"]
+```
+
+### 6.5.2 禁用表
+
+要删除表或改变其设置，首先需要使用 disable 命令关闭表。使用 enable 命令，可以重新启用它。
+
+```
+disable ‘emp’
+hbase(main):006:0> desc 'emp'
+Table emp is DISABLED                                                                                                                                                                
+emp                                                                                                                                                                                  
+COLUMN FAMILIES DESCRIPTION                                                                                                                                                          
+{NAME => 'personal data', BLOOMFILTER => 'ROW', VERSIONS => '1', IN_MEMORY => 'false', KEEP_DELETED_CELLS => 'FALSE', DATA_BLOCK_ENCODING => 'NONE', TTL => 'FOREVER', COMPRESSION =>
+ 'NONE', MIN_VERSIONS => '0', BLOCKCACHE => 'true', BLOCKSIZE => '65536', REPLICATION_SCOPE => '0'}                                                                                  
+{NAME => 'professional data', BLOOMFILTER => 'ROW', VERSIONS => '1', IN_MEMORY => 'false', KEEP_DELETED_CELLS => 'FALSE', DATA_BLOCK_ENCODING => 'NONE', TTL => 'FOREVER', COMPRESSIO
+N => 'NONE', MIN_VERSIONS => '0', BLOCKCACHE => 'true', BLOCKSIZE => '65536', REPLICATION_SCOPE => '0'}                                                                              
+2 row(s) in 0.0630 seconds
+```
+
+
 
