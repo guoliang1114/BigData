@@ -74,7 +74,7 @@ hbase(main):001:0> is_enabled 'emp'
 true                                                                                                                                                                                 
 0 row(s) in 0.5310 seconds
 
-hbase(main):002:0> 
+hbase(main):002:0>
 ```
 
 
