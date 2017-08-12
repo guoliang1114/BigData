@@ -12,5 +12,9 @@ create ‘<table name>’,’<column family>’
 
 下面给出的是一个表名为emp的样本模式。它有两个列族：“personal data”和“professional data”。
 
+```
+hbase(main):002:0> create 'emp', 'personal data', ’professional data’
+```
+
 
 
