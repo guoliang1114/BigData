@@ -60,6 +60,8 @@ true
 
 ### 6.5.3 启用表
 
+启用表的语法：
+
 ```
 hbase(main):011:0> enable 'emp'
 0 row(s) in 1.3130 seconds
