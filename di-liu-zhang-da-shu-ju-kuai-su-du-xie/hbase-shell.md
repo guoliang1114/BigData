@@ -33,8 +33,9 @@ HBase包含可以与HBase进行通信的Shell。 HBase使用Hadoop文件系统�
 * **enable:**  
   启用一个表。
 
-* **is\_enabled:**
+* **is\_enabled:**  
   验证表是否已启用。
+
 * **describe:**
   提供了一个表的描述。
 * **alter:**
@@ -60,8 +61,9 @@ HBase包含可以与HBase进行通信的Shell。 HBase使用Hadoop文件系统�
 * **delete:**  
   删除表中的单元格值。
 
-* **deleteall:**
+* **deleteall:**  
   删除给定行的所有单元格。
+
 * **scan:**
   扫描并返回表数据。
 * **count:**
@@ -73,5 +75,5 @@ HBase包含可以与HBase进行通信的Shell。 HBase使用Hadoop文件系统�
 
 要退出交互shell命令，在任何时候键入 exit 或使用&lt;Ctrl + C&gt;
 
-。进一步处理检查shell功能之前，使用 list 命令用于列出所有可用命令。list是用来获取所有HBase 表的列表。首先，验证安装HBase在系统中使用如下所示。
+进一步处理检查shell功能之前，使用 list 命令用于列出所有可用命令。list是用来获取所有HBase 表的列表。首先，验证安装HBase在系统中使用如下所示。
 
