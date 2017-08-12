@@ -11,5 +11,9 @@ HBase包含可以与HBase进行通信的Shell。 HBase使用Hadoop文件系统�
 * **table\_help:**表引用命令提供帮助。
 * **whoami:**提供有关用户的信息。
 
+在安装和配置里我们已经使用过了status命令。
+
+
+
 
 
