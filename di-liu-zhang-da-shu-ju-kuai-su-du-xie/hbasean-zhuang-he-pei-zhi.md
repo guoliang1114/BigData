@@ -98,3 +98,24 @@ scp -r /hadoop/hbase-1.2.6  hadoop@hadoopslave1:/hadoop/发送到hadoopslave1上
 
 ![](/assets/6.3_1.png)
 
+同时也可以使用hive shell命令查看
+
+```
+[hadoop@hadoopslave2 bin]$ ./hbase shell
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/hadoop/hbase-1.2.6/lib/slf4j-log4j12-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/usr/hdp/2.6.1.0-129/hadoop/lib/slf4j-log4j12-1.7.10.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+HBase Shell; enter 'help<RETURN>' for list of supported commands.
+Type "exit<RETURN>" to leave the HBase Shell
+Version 1.2.6, rUnknown, Mon May 29 02:25:32 CDT 2017
+
+hbase(main):001:0> status
+1 active master, 0 backup masters, 2 servers, 0 dead, 1.0000 average load
+
+hbase(main):002:0> 
+```
+
+
+
