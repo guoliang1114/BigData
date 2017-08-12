@@ -1,6 +1,6 @@
 ## 6.1 HBase介绍
 
-HBase（Hadoop Database）是一个高可靠、高性能、面向列、可伸缩的分布式数据库，利用HBase技术可在廉价PC上搭建起大规模结构化存储集群。HBase参考Google的BigTable建模，使用类似GFS的HDFS作为底层文件存储系统，在其上可以运行MapReduce批量处理数据，使用ZooKeeper作为协同服务组件。
+HBase（Hadoop Database）是一个高可靠、高性能、面向列、可伸缩的**分布式数据库**，利用HBase技术可在廉价PC上搭建起大规模结构化存储集群。HBase参考Google的BigTable建模，使用类似GFS的HDFS作为底层文件存储系统，在其上可以运行MapReduce批量处理数据，使用ZooKeeper作为协同服务组件。
 
 HBase的整个项目使用Java语言实现，它是Apache基金会的Hadoop项目的一部分，既是模仿Google BigTable的开源产品，同时又是Hadoop的衍生产品。而Hadoop作为批量离线计算系统已经得到了业界的普遍认可，并经过了工业上的验证，所以HBase具备“站在巨人肩膀之上”的优势，其发展势头非常迅猛。
 
@@ -149,6 +149,4 @@ Facebook检视了自己的应用场景，指出为什么要选择HBase。Faceboo
 一个不断增加的数据集，是很少被访问的。
 
 显然HBase就能搞定这一切。Facebook在Hadoop、Hive上积累了丰富的经验，并且成为HBase的“大客户”，基于这点，我们也有充足理由相信它能变得更加流行。
-
-
 
