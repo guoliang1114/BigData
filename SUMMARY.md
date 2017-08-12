@@ -32,4 +32,5 @@
   * [HBase介绍](di-liu-zhang-da-shu-ju-kuai-su-du-xie/hbasejie-shao.md)
   * [HBase核心功能模块](di-liu-zhang-da-shu-ju-kuai-su-du-xie/hbasehe-xin-gong-neng-mo-kuai.md)
   * [HBase安装和配置](di-liu-zhang-da-shu-ju-kuai-su-du-xie/hbasean-zhuang-he-pei-zhi.md)
+  * [HBase Shell](di-liu-zhang-da-shu-ju-kuai-su-du-xie/hbase-shell.md)
 
