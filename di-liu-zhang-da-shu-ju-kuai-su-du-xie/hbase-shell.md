@@ -13,20 +13,17 @@ HBase包含可以与HBase进行通信的Shell。 HBase使用Hadoop文件系统�
 
 在安装和配置里我们已经使用过了status命令。
 
-
-
 **数据定义命令**
 
 这些是关于HBase在表中操作的命令。
 
-
-
 * **create:**
 
-        创建一个表。
+    创建一个表。
 
-* **list:**
+* **list:**  
   列出HBase的所有表。
+
 * **disable:**
   禁用表。
 * **is\_disabled:**
