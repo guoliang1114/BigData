@@ -93,5 +93,8 @@ N => 'NONE', MIN_VERSIONS => '0', BLOCKCACHE => 'true', BLOCKSIZE => '65536', RE
 2 row(s) in 0.1550 seconds
 ```
 
+alter用于更改现有表的命令。使用此命令可以更改列族的单元，设定最大数量和删除表范围运算符，并从表中删除列家族。
+
+  
 
 
