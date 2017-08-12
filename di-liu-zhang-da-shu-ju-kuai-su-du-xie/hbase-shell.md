@@ -30,8 +30,9 @@ HBase包含可以与HBase进行通信的Shell。 HBase使用Hadoop文件系统�
 * **is\_disabled:**  
   验证表是否被禁用。
 
-* **enable:**
+* **enable:**  
   启用一个表。
+
 * **is\_enabled:**
   验证表是否已启用。
 * **describe:**
@@ -56,8 +57,9 @@ HBase包含可以与HBase进行通信的Shell。 HBase使用Hadoop文件系统�
 * **get:**  
   取行或单元格的内容。
 
-* **delete:**
+* **delete:**  
   删除表中的单元格值。
+
 * **deleteall:**
   删除给定行的所有单元格。
 * **scan:**
@@ -69,5 +71,7 @@ HBase包含可以与HBase进行通信的Shell。 HBase使用Hadoop文件系统�
 * **Java client API:**
   在此之前所有上述命令，Java提供了一个客户端API来实现DML功能，CRUD（创建检索更新删除）操作更多的是通过编程，在org.apache.hadoop.hbase.client包下。 在此包HTable 的 Put和Get是重要的类。
 
+要退出交互shell命令，在任何时候键入 exit 或使用&lt;Ctrl + C&gt;
 
+。进一步处理检查shell功能之前，使用 list 命令用于列出所有可用命令。list是用来获取所有HBase 表的列表。首先，验证安装HBase在系统中使用如下所示。
 
