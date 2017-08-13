@@ -188,11 +188,7 @@ VMartDB=> select projection_schema,projection_name,anchor_table_name from projec
 
 \q 可以退出adminTools。
 
-
-
 ### 10.2.5 数据库设计器
-
-
 
 ```
 cd /opt/vertica/examples/VMart_Schema
@@ -203,9 +199,11 @@ adminTools
 
 ![](/assets-10/10.2.5_1.png)
 
-选择数据库，点击ok。
+选择数据库，点击ok。输入密码。
 
+![](/assets-10/10.2.5-3.png)
 
+设计器输出目录保持默认。
 
 
 
