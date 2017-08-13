@@ -28,6 +28,13 @@ Vertica：vertica-8.1.0
 
 然后使用 ifconfig查看服务器IP信息。
 
+关闭防火墙
+
+```
+service iptables stop #立即关闭
+chkconfig iptables off #重启后关闭
+```
+
 **设置hostname**
 
 为了方便后续操作，设置服务器名称
@@ -44,6 +51,10 @@ HOSTNAME=db1
 ```
 
 **安装MC（Management Console）**
+
+```
+# rpm -Uvh vertica-console-3.8.0-3.x86_64.RHEL6.rpm
+```
 
 
 
