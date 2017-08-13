@@ -154,6 +154,12 @@ ssh db3 "mkdir /root/.ssh"
 scp -r /root/.ssh/vauthorized_keys2 db2:/root/.ssh/.
 scp -r /root/.ssh/vauthorized_keys2 db3:/root/.ssh/.
 
+ssh db2 "cd /root/.ssh/;cat vauthorized_keys2 >> authorized_keys2; chmod 600 /root/.ssh/authorized_keys2"
+ssh db3 "cd /root/.ssh/;cat vauthorized_keys2 >> authorized_keys2; chmod 600 /root/.ssh/authorized_keys2"
+
+ ssh -i /root/.ssh/vid_rsa db2 "rm /root/.ssh/vauthorized_keys2"
+ ssh -i /root/.ssh/vid_rsa db3 "rm /root/.ssh/vauthorized_keys2"
+
 ```
 
 
