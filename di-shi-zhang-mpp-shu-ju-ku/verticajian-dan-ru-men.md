@@ -10,9 +10,35 @@
 su - dbadmin
 cd /opt/vertica/examples/VMart_Schema
 ./vmart_gen  #命令执行需要花费一些时间
+Using default parameters
+datadirectory = ./
+numfiles = 1
+seed = 20177
+null = ''
+timefile = Time.txt
+numfactsalesrows = 5000000
+numfactorderrows = 300000
+numprodkeys = 60000
+numstorekeys = 250
+numpromokeys = 1000
+numvendkeys = 50
+numcustkeys = 50000
+numempkeys = 10000
+numwarehousekeys = 100
+numshippingkeys = 100
+numonlinepagekeys = 1000
+numcallcenterkeys = 200
+numfactonlinesalesrows = 5000000
+numinventoryfactrows = 300000
+gen_load_script = false
+years = 2003 to 2007
+Data Generated successfully !
+```
 
+创建示例数据库
 
-
+```
+$adminTools
 ```
 
 
