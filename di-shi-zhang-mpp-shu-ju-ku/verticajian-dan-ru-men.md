@@ -205,5 +205,13 @@ adminTools
 
 设计器输出目录保持默认。
 
+![](/assets-10/10.2.5-5.png)
 
+选择comprehensivec创建一个完整的初始设计。
+
+![](/assets-10/10.2.5_7.png)
+
+选择store模式
+
+![](/assets-10/10.2.5_9.png)
 
