@@ -53,10 +53,10 @@ HOSTNAME=db1
 **安装依赖包**
 
 ```
+#检查操作系统的安装包
 yum install pstack 
 yum install mcelog
 yum install sysstat
-
 ```
 
 **安装MC（Management Console）**
