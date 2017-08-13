@@ -41,5 +41,13 @@ Data Generated successfully !
 $adminTools
 ```
 
+![](/assets-10/10.2_1.png)
+
+选择第6项下的第一项创建数据库
+
+![](/assets-10/10.2_2.png)
+
+
+
 
 
