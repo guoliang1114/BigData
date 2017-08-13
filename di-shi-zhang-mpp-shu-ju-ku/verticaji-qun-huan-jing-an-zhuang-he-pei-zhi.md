@@ -145,6 +145,12 @@ cd ~
 mkdir .ssh
 ssh-keygen -q -t rsa -f ~/.ssh/vid_rsa -N ''
 chmod 700 /root/.ssh
+cd ~/.ssh
+cat vid_rsa.pub >> vauthorized_keys2
+cat vid_rsa.pub >> authorized_keys2
+ssh db2 "mkdir /root/.ssh"
+ssh db3 "mkdir /root/.ssh"
+
 ```
 
 
