@@ -51,5 +51,7 @@ $adminTools
 
 ![](/assets-10/10.2_3.png)
 
+数据库名称为VMartDB
+
 
 
