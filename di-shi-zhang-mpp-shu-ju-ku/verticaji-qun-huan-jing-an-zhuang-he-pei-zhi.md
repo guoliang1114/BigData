@@ -26,8 +26,7 @@ Vertica：vertica-8.1.0
 
 `service network restart`
 
-然后使用 ifconfig查看服务器IP信息。  
-
+然后使用 ifconfig查看服务器IP信息。
 
 **设置hostname**
 
@@ -43,6 +42,8 @@ vi /etc/sysconfig/network
 NETWORKING=yes
 HOSTNAME=db1
 ```
+
+**安装MC（Management Console）**
 
 
 
