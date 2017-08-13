@@ -283,3 +283,5 @@ ssh db3 "cd /root/.ssh/;cat vauthorized_keys2 >> authorized_keys2; chmod 600 /ro
 
 ![](/assets-10/10.1_23.png)
 
+![](/assets-10/10.1_24.png)
+
