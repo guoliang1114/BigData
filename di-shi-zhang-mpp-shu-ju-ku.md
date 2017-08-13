@@ -28,6 +28,7 @@ MPP即大规模并行处理（Massively Parallel Processor ）。 在数据库�
 * Hive等sql-on-hadoop性能太慢
 
 * SQL兼容性与支持不足
+
 * 数据安全性无法保证
 
 
