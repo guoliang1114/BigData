@@ -51,6 +51,12 @@ setenforce 0
 /etc/selinux/config 文件中的 SELINUX="" 为 disabled
 ```
 
+**修改kerne参数**
+
+```
+sysctl -w kernel.pid_max=524288
+```
+
 **设置hostname**
 
 为了方便后续操作，设置服务器名称
