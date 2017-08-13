@@ -105,5 +105,11 @@ start OK
 /etc/init.d/verticad start
 ```
 
+**设置MC**
+
+打开浏览器,输入地址: https://192.168.44.135:5450/webui/login
+
+![](/assets-10/10.1_1.png)
+
 
 
