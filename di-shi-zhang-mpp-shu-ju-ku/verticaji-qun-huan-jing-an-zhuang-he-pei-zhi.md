@@ -164,5 +164,7 @@ ssh db3 "cd /root/.ssh/;cat vauthorized_keys2 >> authorized_keys2; chmod 600 /ro
  rm ~/.ssh/vauthorized_keys2
 ```
 
+运行MC的集群导航
+
 
 
