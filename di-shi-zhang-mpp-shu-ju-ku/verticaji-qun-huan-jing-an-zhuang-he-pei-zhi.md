@@ -148,6 +148,7 @@ chmod 700 /root/.ssh
 cd ~/.ssh
 cat vid_rsa.pub >> vauthorized_keys2
 cat vid_rsa.pub >> authorized_keys2
+
 ssh db2 "mkdir /root/.ssh"
 ssh db3 "mkdir /root/.ssh"
 
@@ -159,7 +160,7 @@ ssh db3 "cd /root/.ssh/;cat vauthorized_keys2 >> authorized_keys2; chmod 600 /ro
 
  ssh -i /root/.ssh/vid_rsa db2 "rm /root/.ssh/vauthorized_keys2"
  ssh -i /root/.ssh/vid_rsa db3 "rm /root/.ssh/vauthorized_keys2"
- 
+
  rm ~/.ssh/vauthorized_keys2
 ```
 
