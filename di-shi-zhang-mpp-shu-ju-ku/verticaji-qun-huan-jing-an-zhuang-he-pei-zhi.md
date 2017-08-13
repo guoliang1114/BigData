@@ -54,7 +54,45 @@ setenforce 0
 **修改kerne参数**
 
 ```
+#1
+vi /etc/sysctl.conf
+#添加参数
+fs.file-max = 65536
+#重新载入
+sysctl -p
+
+
+#2
+vi /etc/security/limits.conf
+dbadmin - nice 0
+
+#3 min_free_kbytes 设置
+/sbin/sysctl vm.min_free_kbytes
+vm.min_free_kbytes = 45056
+#以上参数需要大于4096
+
+#4 
+ulimit -n
+dbadmin - nofile 65536
+
+#5
+vi /etc/pam.d/su
+session required pam_limits.so
+
+
+#6
 sysctl -w kernel.pid_max=524288
+
+#7
+vi /etc/security/limits.conf
+dbadmin - as unlimited
+dbadmin - fsize unlimited
+dbadmin - nproc 4096
+
+#8
+vi /etc/sysctl.conf
+vm.max_map_count=65536
+sysctl -p
 ```
 
 **设置hostname**
