@@ -6,5 +6,14 @@
 
 切换到dbadmin用户，导航到/opt/vertica/examples目录下。该目录的脚本为示例数据生成器。
 
+```
+su - dbadmin
+cd /opt/vertica/examples/VMart_Schema
+./vmart_gen  #命令执行需要花费一些时间
+
+
+
+```
+
 
 
