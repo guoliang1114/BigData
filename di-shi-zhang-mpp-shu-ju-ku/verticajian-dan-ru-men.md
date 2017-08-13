@@ -2,12 +2,11 @@
 
 上一节我们安装和配置了数据库，最终把数据启动起来。本节我们使用官方自带的例子快速入门。
 
-**安装VMart示例数据**
+### 10.2.1 **安装VMart示例数据**
 
 切换到dbadmin用户，导航到/opt/vertica/examples目录下。该目录的脚本为示例数据生成器。
 
 ```
-su - dbadmin
 cd /opt/vertica/examples/VMart_Schema
 ./vmart_gen  #命令执行需要花费一些时间
 Using default parameters
@@ -35,10 +34,10 @@ years = 2003 to 2007
 Data Generated successfully !
 ```
 
-创建示例数据库
+### 10.2.2 **创建示例数据库**
 
 ```
-$adminTools
+
 ```
 
 ![](/assets-10/10.2_1.png)
@@ -72,4 +71,6 @@ $adminTools
 一会儿就看到创建成功了。
 
 ![](/assets-10/10.2_12.png)
+
+
 
