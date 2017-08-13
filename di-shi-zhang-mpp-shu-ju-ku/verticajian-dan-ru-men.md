@@ -86,7 +86,7 @@ Type:  \h or \? for help with vsql commands
 VMartDB=>
 ```
 
-执行schme定义
+执行schme和表定义
 
 ```
 VMartDB=> \i vmart_define_schema.sql
@@ -112,6 +112,82 @@ CREATE TABLE
 CREATE TABLE
 ALTER TABLE
 ```
+
+使用\dt 查看创建的表
+
+```
+VMartDB=> \dt
+                          List of tables
+    Schema    |         Name          | Kind  |  Owner  | Comment 
+--------------+-----------------------+-------+---------+---------
+ online_sales | call_center_dimension | table | dbadmin | 
+ online_sales | online_page_dimension | table | dbadmin | 
+ online_sales | online_sales_fact     | table | dbadmin | 
+ public       | customer_dimension    | table | dbadmin | 
+ public       | date_dimension        | table | dbadmin | 
+ public       | employee_dimension    | table | dbadmin | 
+ public       | inventory_fact        | table | dbadmin | 
+ public       | product_dimension     | table | dbadmin | 
+ public       | promotion_dimension   | table | dbadmin | 
+ public       | shipping_dimension    | table | dbadmin | 
+ public       | vendor_dimension      | table | dbadmin | 
+ public       | warehouse_dimension   | table | dbadmin | 
+ store        | store_dimension       | table | dbadmin | 
+ store        | store_orders_fact     | table | dbadmin | 
+ store        | store_sales_fact      | table | dbadmin | 
+(15 rows)
+
+VMartDB=> 
+```
+
+### 10.2.4 加载示例数据
+
+同样使用\i 执行sql
+
+```
+VMartDB=> \i vmart_load_data.sql
+ Rows Loaded 
+-------------
+        1826
+(1 row)
+
+ Rows Loaded 
+-------------
+       60000
+(1 row)
+
+ Rows Loaded 
+-------------
+         250
+...............
+ 
+```
+
+```
+VMartDB=> select projection_schema,projection_name,anchor_table_name from projections;
+ projection_schema |       projection_name       |   anchor_table_name   
+-------------------+-----------------------------+-----------------------
+ public            | date_dimension_super        | date_dimension
+ public            | product_dimension_super     | product_dimension
+ store             | store_dimension_super       | store_dimension
+ public            | promotion_dimension_super   | promotion_dimension
+ public            | vendor_dimension_super      | vendor_dimension
+ public            | customer_dimension_super    | customer_dimension
+ public            | employee_dimension_super    | employee_dimension
+ public            | warehouse_dimension_super   | warehouse_dimension
+ public            | shipping_dimension_super    | shipping_dimension
+ online_sales      | online_page_dimension_super | online_page_dimension
+ online_sales      | call_center_dimension_super | call_center_dimension
+ store             | store_sales_fact_super      | store_sales_fact
+ store             | store_orders_fact_super     | store_orders_fact
+ online_sales      | online_sales_fact_super     | online_sales_fact
+ public            | inventory_fact_super        | inventory_fact
+(15 rows)
+```
+
+查询projections。当然也可以使用\timing 来执行SQL，在查询后可以返回使用的时间。
+
+\q 可以退出adminTools。
 
 
 
