@@ -113,6 +113,9 @@ vi /etc/sysctl.conf
 vm.swappiness = 1
 cat /proc/sys/vm/swappiness
 echo 1 > /proc/sys/vm/swappiness
+
+#11
+sysctl -w kernel.pid_max=524288
 ```
 
 **设置hostname**
