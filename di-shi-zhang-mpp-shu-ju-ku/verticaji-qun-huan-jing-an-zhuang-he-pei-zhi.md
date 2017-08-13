@@ -164,7 +164,10 @@ ssh db3 "cd /root/.ssh/;cat vauthorized_keys2 >> authorized_keys2; chmod 600 /ro
  rm ~/.ssh/vauthorized_keys2
 ```
 
-运行MC的集群导航
+**运行MC的集群导航**
 
+登录MC，点击Provisioning -  Createa new cluster
+
+![](/assets-10/10.1_7.png)  
 
 
