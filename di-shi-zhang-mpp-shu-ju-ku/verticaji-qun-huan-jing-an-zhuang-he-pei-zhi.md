@@ -271,8 +271,6 @@ ssh db3 "cd /root/.ssh/;cat vauthorized_keys2 >> authorized_keys2; chmod 600 /ro
 
 ![](/assets-10/10.1_16.png)
 
-
-
 **创建数据库**
 
 ![](/assets-10/10.1_20.png)填写数据库名称以及密码点击下一步。
@@ -280,4 +278,8 @@ ssh db3 "cd /root/.ssh/;cat vauthorized_keys2 >> authorized_keys2; chmod 600 /ro
 ![](/assets-10/10.1_21.png)由于电脑磁盘有限，先创建两个节点吧。
 
 ![](/assets-10/10.1_22.png)
+
+创建成功。
+
+![](/assets-10/10.1_23.png)
 
