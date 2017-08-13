@@ -61,5 +61,15 @@ $adminTools
 
 选择要部署到的服务器，我们全选。
 
+![](/assets-10/10.2_9.png)
 
+设置数据库的目录，使用/home/dbadmin/class\_files
+
+![](/assets-10/10.2_10.png)
+
+点击Yes创建数据库。
+
+一会儿就看到创建成功了。
+
+![](/assets-10/10.2_12.png)
 
