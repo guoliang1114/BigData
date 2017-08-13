@@ -44,7 +44,7 @@ service iptables stop #立即关闭
 chkconfig iptables off #重启后关闭
 ```
 
-关闭S
+关闭
 
 ```
 setenforce 0
@@ -73,6 +73,7 @@ HOSTNAME=db1
 yum install pstack 
 yum install mcelog
 yum install sysstat
+yum install dialog
 ```
 
 **安装MC（Management Console）**
