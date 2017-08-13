@@ -44,6 +44,13 @@ service iptables stop #立即关闭
 chkconfig iptables off #重启后关闭
 ```
 
+关闭S
+
+```
+setenforce 0
+/etc/selinux/config 文件中的 SELINUX="" 为 disabled
+```
+
 **设置hostname**
 
 为了方便后续操作，设置服务器名称
@@ -179,4 +186,10 @@ ssh db3 "cd /root/.ssh/;cat vauthorized_keys2 >> authorized_keys2; chmod 600 /ro
 ![](/assets-10/10.1_9.png)点击预览，会打开新页面，在页面中输入IP地址
 
 ![](/assets-10/10.1_10.png)
+
+**验证和创建集群**
+
+![](/assets-10/10.1_12.png)
+
+针对每台服务器进行校验。
 
