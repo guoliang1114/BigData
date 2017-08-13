@@ -21,7 +21,6 @@ Vertica：vertica-8.1.0
 * 验证服务器并创建集群
 * 基于集群创建新的数据库
 
-  
 **安装Vertica**
 
 准备虚拟机，安装Redhat 6.6操作系统
@@ -135,7 +134,18 @@ start OK
 
 ![](/assets-10/10.1_5.png)
 
-使用刚刚设置的密码登录。
+使用刚刚设置的密码登录。登录成功即可。
+
+**免密码访问**
+
+在开始安装集群之前，MC必须能够访问所有的服务器，MC使用SSH访问各个服务器。
+
+```
+cd ~
+mkdir .ssh
+ssh-keygen -q -t rsa -f ~/.ssh/vid_rsa -N ''
+chmod 700 /root/.ssh
+```
 
 
 
