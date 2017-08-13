@@ -159,7 +159,8 @@ ssh db3 "cd /root/.ssh/;cat vauthorized_keys2 >> authorized_keys2; chmod 600 /ro
 
  ssh -i /root/.ssh/vid_rsa db2 "rm /root/.ssh/vauthorized_keys2"
  ssh -i /root/.ssh/vid_rsa db3 "rm /root/.ssh/vauthorized_keys2"
-
+ 
+ rm ~/.ssh/vauthorized_keys2
 ```
 
 
