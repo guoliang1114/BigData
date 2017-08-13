@@ -93,6 +93,17 @@ dbadmin - nproc 4096
 vi /etc/sysctl.conf
 vm.max_map_count=65536
 sysctl -p
+
+
+#9
+vi /etc/rc.local
+echo never > /sys/kernel/mm/redhat_transparent_hugepage/enabled
+#重启才会生效哦
+
+#10
+vi /etc/sysctl.conf
+#添加
+vm.swappiness = 1
 ```
 
 **设置hostname**
