@@ -37,10 +37,8 @@ Data Generated successfully !
 ### 10.2.2 **创建示例数据库**
 
 ```
-adminTools
+./adminTools
 ```
-
-
 
 ![](/assets-10/10.2_1.png)
 
