@@ -215,3 +215,27 @@ adminTools
 
 ![](/assets-10/10.2.5_9.png)仅选择1，2。取消部署设计。
 
+![](/assets-10/10.2.5-10.png)
+
+输入sql地址。点击ok。
+
+![](/assets-10/10.2.5-6.png)
+
+再次弹出信息时，点击处理。设计器会根据数据推荐一个优化设计。完成后点击回车即可。
+
+再次回到adminTools，点击链接数据库。
+
+执行sql
+
+```
+select projection_schema,projection_name,anchor_table_name from projections;
+```
+
+可以使用cat查看数据库设计器生成的脚本。
+
+```
+\i cat VMart_Design_deploy.sql
+```
+
+
+
