@@ -137,7 +137,7 @@ VMartDB=> \dt
  store        | store_sales_fact      | table | dbadmin | 
 (15 rows)
 
-VMartDB=> 
+VMartDB=>
 ```
 
 ### 10.2.4 加载示例数据
@@ -160,7 +160,6 @@ VMartDB=> \i vmart_load_data.sql
 -------------
          250
 ...............
- 
 ```
 
 ```
@@ -188,6 +187,25 @@ VMartDB=> select projection_schema,projection_name,anchor_table_name from projec
 查询projections。当然也可以使用\timing 来执行SQL，在查询后可以返回使用的时间。
 
 \q 可以退出adminTools。
+
+
+
+### 10.2.5 数据库设计器
+
+
+
+```
+cd /opt/vertica/examples/VMart_Schema
+adminTools
+```
+
+在“主菜单”中选择“设置菜单”,选择运行数据库设计器。
+
+![](/assets-10/10.2.5_1.png)
+
+选择数据库，点击ok。
+
+
 
 
 
