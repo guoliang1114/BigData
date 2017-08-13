@@ -47,7 +47,9 @@ $adminTools
 
 ![](/assets-10/10.2_2.png)
 
+点击ok，进入创建数据库界面
 
+![](/assets-10/10.2_3.png)
 
 
 
