@@ -176,5 +176,7 @@ ssh db3 "cd /root/.ssh/;cat vauthorized_keys2 >> authorized_keys2; chmod 600 /ro
 
 ![](/assets-10/10.1_8.png)执行安装文件
 
-![](/assets-10/10.1_9.png)
+![](/assets-10/10.1_9.png)点击预览，会打开新页面，在页面中输入IP地址
+
+![](/assets-10/10.1_10.png)
 
