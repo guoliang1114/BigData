@@ -37,8 +37,10 @@ Data Generated successfully !
 ### 10.2.2 **创建示例数据库**
 
 ```
-
+adminTools
 ```
+
+
 
 ![](/assets-10/10.2_1.png)
 
@@ -71,6 +73,4 @@ Data Generated successfully !
 一会儿就看到创建成功了。
 
 ![](/assets-10/10.2_12.png)
-
-
 
