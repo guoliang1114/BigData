@@ -213,5 +213,5 @@ adminTools
 
 选择store模式
 
-![](/assets-10/10.2.5_9.png)
+![](/assets-10/10.2.5_9.png)仅选择1，2。取消部署设计。
 
