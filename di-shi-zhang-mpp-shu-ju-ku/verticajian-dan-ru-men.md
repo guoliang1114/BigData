@@ -51,7 +51,15 @@ $adminTools
 
 ![](/assets-10/10.2_3.png)
 
-数据库名称为VMartDB
+数据库名称为VMartDB,点击ok
+
+![](/assets-10/10.2_5.png)
+
+输入密码后，点击ok
+
+![](/assets-10/10.2_6.png)
+
+选择要部署到的服务器，我们全选。
 
 
 
