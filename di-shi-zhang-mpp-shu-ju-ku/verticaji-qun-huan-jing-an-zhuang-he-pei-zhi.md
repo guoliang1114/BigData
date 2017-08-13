@@ -51,6 +51,13 @@ setenforce 0
 /etc/selinux/config 文件中的 SELINUX="" 为 disabled
 ```
 
+**设置时钟同步**
+
+```
+/sbin/service ntpd restart
+/sbin/chkconfig ntpd on
+```
+
 **修改kerne参数**
 
 ```
@@ -104,6 +111,8 @@ echo never > /sys/kernel/mm/redhat_transparent_hugepage/enabled
 vi /etc/sysctl.conf
 #添加
 vm.swappiness = 1
+cat /proc/sys/vm/swappiness
+echo 1 > /proc/sys/vm/swappiness
 ```
 
 **设置hostname**
