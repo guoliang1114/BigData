@@ -151,6 +151,9 @@ cat vid_rsa.pub >> authorized_keys2
 ssh db2 "mkdir /root/.ssh"
 ssh db3 "mkdir /root/.ssh"
 
+scp -r /root/.ssh/vauthorized_keys2 db2:/root/.ssh/.
+scp -r /root/.ssh/vauthorized_keys2 db3:/root/.ssh/.
+
 ```
 
 
