@@ -50,6 +50,15 @@ NETWORKING=yes
 HOSTNAME=db1
 ```
 
+**安装依赖包**
+
+```
+yum install pstack 
+yum install mcelog
+yum install sysstat
+
+```
+
 **安装MC（Management Console）**
 
 ```
@@ -88,7 +97,6 @@ Please open the Vertica Management Console at https://db1:5450/webui
 2017-08-13 18:30:02.546:INFO:oejs.AbstractConnector:Started SslSelectChannelConnector@0.0.0.0:5450 STARTING
 start OK
 [postinstall] Changing permissions of /opt/vconsole
-
 ```
 
 安装完毕后，如果需要手动重启MC
