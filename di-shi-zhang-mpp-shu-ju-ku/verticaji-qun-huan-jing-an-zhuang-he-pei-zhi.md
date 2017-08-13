@@ -174,5 +174,7 @@ ssh db3 "cd /root/.ssh/;cat vauthorized_keys2 >> authorized_keys2; chmod 600 /ro
 
 点击下一步
 
-![](/assets-10/10.1_8.png)
+![](/assets-10/10.1_8.png)执行安装文件
+
+![](/assets-10/10.1_9.png)
 
