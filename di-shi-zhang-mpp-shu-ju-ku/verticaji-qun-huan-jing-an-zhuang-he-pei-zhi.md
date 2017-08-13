@@ -116,6 +116,10 @@ echo 1 > /proc/sys/vm/swappiness
 
 #11
 sysctl -w kernel.pid_max=524288
+
+#12
+/sbin/blockdev --setra 2048 /dev/sda
+echo '/sbin/blockdev --setra 2048 /dev/sda' >> /etc/rc.local
 ```
 
 **设置hostname**
@@ -260,4 +264,8 @@ ssh db3 "cd /root/.ssh/;cat vauthorized_keys2 >> authorized_keys2; chmod 600 /ro
 ![](/assets-10/10.1_12.png)
 
 针对每台服务器进行校验。
+
+校验成功后，县级创建集群。
+
+![](/assets-10/10.1_15.png)
 
