@@ -72,3 +72,46 @@ Data Generated successfully !
 
 ![](/assets-10/10.2_12.png)
 
+### 10.2.3 定义架构和表
+
+打开adminTools，选择“Main Menu”，然后选择“连接到数据库”，会看到以下内容：
+
+```
+Welcome to vsql, the Vertica Analytic Database interactive terminal.
+
+Type:  \h or \? for help with vsql commands
+       \g or terminate with semicolon to execute query
+       \q to quit
+
+VMartDB=>
+```
+
+执行schme定义
+
+```
+VMartDB=> \i vmart_define_schema.sql
+CREATE SCHEMA
+CREATE SCHEMA
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+ALTER TABLE
+CREATE TABLE
+CREATE TABLE
+ALTER TABLE
+CREATE TABLE
+ALTER TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+ALTER TABLE
+```
+
+
+
