@@ -53,7 +53,48 @@ HOSTNAME=db1
 **安装MC（Management Console）**
 
 ```
-# rpm -Uvh vertica-console-3.8.0-3.x86_64.RHEL6.rpm
+[root@db1 ~]# rpm -Uvh vertica-console-8.1.0-3.x86_64.RHEL6.rpm 
+Preparing...                ########################################### [100%]
+[preinstall] clean up older drivers
+[preinstall] Starting installation....
+   1:vertica-console        ########################################### [100%]
+[postinstall] copy vertica-consoled
+[postinstall] configure the daemon service
+Cleaning up temp folder...
+Starting the vertica management console....
+Vertica Console: 2017-08-13 18:29:24.808:INFO:cv.Startup:Attempting to load properties from /opt/vconsole/config/console.properties
+2017-08-13 18:29:24.810:INFO:cv.Startup:Starting Server...
+2017-08-13 18:29:24.841:WARN:oejs.AbstractConnector:Acceptors should be <=2*availableProcessors: SslSelectChannelConnector@0.0.0.0:5450 STOPPED
+2017-08-13 18:29:24.924:INFO:cv.Startup:starting monitor thread
+2017-08-13 18:29:24.932:INFO:oejs.Server:jetty-7.x.y-SNAPSHOT
+2017-08-13 18:29:24.969:INFO:oejw.WebInfConfiguration:Extract jar:file:/opt/vconsole/lib/webui.war!/ to /opt/vconsole/temp/webapp
+2017-08-13 18:29:30.050:INFO:/webui:Set web app root system property: 'webapp.root' = [/opt/vconsole/temp/webapp]
+2017-08-13 18:29:30.113:INFO:/webui:Initializing log4j from [classpath:log4j.xml]
+2017-08-13 18:29:30.150:INFO:/webui:Initializing Spring root WebApplicationContext
+---- Upgrading /opt/vconsole/config/console.properties ----
+
+
+************************************************************************************************************
+
+Please open the Vertica Management Console at https://db1:5450/webui
+
+************************************************************************************************************
+
+
+2017-08-13 18:29:58.333:INFO:oejsh.ContextHandler:started o.e.j.w.WebAppContext{/webui,file:/opt/vconsole/temp/webapp/},file:/opt/vconsole/lib/webui.war
+2017-08-13 18:29:58.425:INFO:/webui:Initializing Spring FrameworkServlet 'appServlet'
+2017-08-13 18:30:02.377:INFO:oejdp.ScanningAppProvider:Deployment monitor /opt/vconsole/webapps at interval 2
+2017-08-13 18:30:02.493:INFO:oejhs.SslContextFactory:Enabled Protocols [SSLv2Hello, TLSv1, TLSv1.1, TLSv1.2] of [SSLv2Hello, SSLv3, TLSv1, TLSv1.1, TLSv1.2]
+2017-08-13 18:30:02.546:INFO:oejs.AbstractConnector:Started SslSelectChannelConnector@0.0.0.0:5450 STARTING
+start OK
+[postinstall] Changing permissions of /opt/vconsole
+
+```
+
+安装完毕后，如果需要手动重启MC
+
+```
+/etc/init.d/verticad start
 ```
 
 
