@@ -243,5 +243,7 @@ select projection_schema,projection_name,anchor_table_name from projections;
 \i cat VMart_Design_deploy.sql
 ```
 
+10.2.6 使用Vartica console管理数据库
+
 
 
