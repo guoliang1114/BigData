@@ -48,14 +48,25 @@ VMartDB=> select *  from load_streams;
  v_vmartdb_node0001-27364:0xe5f | 45035996273707065 |            1 |             | online_sales | 45035996273707716 | online_sales_fact | 2017-08-14 01:18:19.374771+08 |            30249 | f            |            5000000 |                  0 |  379423758 |             379423758 |                    100 |            5000000 |          5000000 |                   100
 (3 rows)
 
-VMartDB=> 
+VMartDB=>
 ```
 
 查询load\_streams查看数据加载的过程。脚本中使用DIRECT将数据加载到了ROS。
 
 ### 10.3.2 创建分区
 
+```
+select *  from partitions;
+#查看系统中的分区。
+VMartDB=> select *  from partitions;
+ partition_key | projection_id | table_schema | projection_name | ros_id | ros_size_bytes | ros_row_count | node_name | deleted_row_count | location_label 
+---------------+---------------+--------------+-----------------+--------+----------------+---------------+-----------+-------------------+----------------
+(0 rows)
 
+
+```
+
+VMart默认不创建分区。我们可以手动创建。
 
 
 
