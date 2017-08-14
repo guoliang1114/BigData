@@ -243,7 +243,23 @@ select projection_schema,projection_name,anchor_table_name from projections;
 \i cat VMart_Design_deploy.sql
 ```
 
-10.2.6 使用Vartica console管理数据库
+### 10.2.6 使用Vartica console管理数据库
 
+登陆VC，点击数据库和集群，查看之前创建的集群。
 
+![](/assets-10/10.2.6_1.png)可以看到我们之前创建的MyTest以及使用adminTools创建的VMartDB。
+
+点击import Discovered。
+
+![](/assets-10/10.2.6_2.png)
+
+点击导入。
+
+![](/assets-10/10.2.6_3.png)
+
+打开数据库预览。
+
+![](/assets-10/10.2.6_6.png)可以看到该数据库的预览。
+
+![](/assets-10/10.2.6_7.png)
 
