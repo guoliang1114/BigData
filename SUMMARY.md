@@ -37,4 +37,5 @@
 * [第十章 MPP数据库](di-shi-zhang-mpp-shu-ju-ku.md)
   * [Vertica集群环境安装和配置](di-shi-zhang-mpp-shu-ju-ku/verticaji-qun-huan-jing-an-zhuang-he-pei-zhi.md)
   * [Vertica Lab 1](di-shi-zhang-mpp-shu-ju-ku/verticajian-dan-ru-men.md)
+  * [Vertica Lab 2](di-shi-zhang-mpp-shu-ju-ku/vertica-lab-2.md)
 
