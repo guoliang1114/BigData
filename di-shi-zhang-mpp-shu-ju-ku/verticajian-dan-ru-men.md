@@ -261,5 +261,5 @@ select projection_schema,projection_name,anchor_table_name from projections;
 
 ![](/assets-10/10.2.6_6.png)可以看到该数据库的预览。
 
-![](/assets-10/10.2.6_7.png)
+可以查看到所有的表以及其相关信息。![](/assets-10/10.2.6_7.png)
 
