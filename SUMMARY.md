@@ -40,4 +40,5 @@
   * [Vertica Lab 2](di-shi-zhang-mpp-shu-ju-ku/vertica-lab-2.md)
 * [第十一章 Tesseract OCR](di-shi-yi-zhang-tesseract-ocr.md)
   * [安装 Tesseract](di-shi-yi-zhang-tesseract-ocr/an-zhuang-tesseract.md)
+  * [安装Tessract3](di-shi-yi-zhang-tesseract-ocr/an-zhuang-tessract3.md)
 
