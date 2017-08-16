@@ -18,6 +18,7 @@ make
 make install
 cd ..
 
+
 #Install Tesseract from Source
 wget https://github.com/tesseract-ocr/tesseract/archive/3.05.00.tar.gz
 tar -zxvf 3.05.00.tar.gz
