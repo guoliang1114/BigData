@@ -37,11 +37,21 @@ make install
 
 我们准备常见的中文，繁体，英文包
 
-chi\_sim	Chinese - Simplified	chi\_sim.traineddata
+chi\_sim    Chinese - Simplified    chi\_sim.traineddata
 
-chi\_tra	Chinese - Traditional	chi\_tra.traineddata
+chi\_tra    Chinese - Traditional    chi\_tra.traineddata
 
-eng	        English	eng.traineddata
+eng            English    eng.traineddata
 
-enm	English, Middle \(1100-1500\)	enm.traineddata
+enm    English, Middle \(1100-1500\)    enm.traineddata
+
+osd Orientation and script detection osd.traineddata
+
+准备好包后，将这些文件存放到data目录下，并指定
+
+```
+export TESSDATA_PREFIX=/ocr/tesseract/tessdata
+```
+
+
 
