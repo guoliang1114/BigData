@@ -25,5 +25,7 @@ make install
 ldconfig
 ```
 
+安装Tesseract
+
 
 
