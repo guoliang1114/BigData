@@ -3,19 +3,23 @@
 **安装依赖包**
 
 ```
-sudo apt-get install g++ # or clang++ (presumably)
-sudo apt-get install autoconf automake libtool
-sudo apt-get install autoconf-archive
-sudo apt-get install pkg-config
-sudo apt-get install libpng12-dev
-sudo apt-get install libjpeg8-dev
-sudo apt-get install libtiff5-dev
-sudo apt-get install zlib1g-dev
+yum install g++ # or clang++ (presumably)
+yum install autoconf automake libtool
+yum install autoconf-archive
+yum install pkg-config
+yum install libpng12-dev
+yum install libjpeg8-dev
+yum install libtiff5-dev
+yum install zlib1g-dev
 
 #如果需要训练模型
-sudo apt-get install libicu-dev
-sudo apt-get install libpango1.0-dev
-sudo apt-get install libcairo2-dev
+yum install libicu-dev
+yum install libpango1.0-dev
+yum install libcairo2-dev
+
+#安装leptonica,它是一个图示处理和分析的软件
+
+
 ```
 
 
