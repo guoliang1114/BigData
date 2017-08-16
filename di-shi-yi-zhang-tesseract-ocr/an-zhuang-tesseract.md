@@ -33,5 +33,7 @@ ldconfig
 make install
 ```
 
+**准备Tesseract语言包**
+
 
 
