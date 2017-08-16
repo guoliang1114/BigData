@@ -35,5 +35,13 @@ make install
 
 **准备Tesseract语言包**
 
+我们准备常见的中文，繁体，英文包
 
+chi\_sim	Chinese - Simplified	chi\_sim.traineddata
+
+chi\_tra	Chinese - Traditional	chi\_tra.traineddata
+
+eng	        English	eng.traineddata
+
+enm	English, Middle \(1100-1500\)	enm.traineddata
 
