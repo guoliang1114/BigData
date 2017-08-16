@@ -29,7 +29,7 @@ ldconfig
 
 ```
 ./autogen.sh
-./configure --prefix=/ocr/tesseract/
+./configure --prefix=/ocr/tesseract/ --with-extra-libraries=/usr/local/lib
 make install
 ```
 
