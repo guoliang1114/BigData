@@ -25,7 +25,13 @@ make install
 ldconfig
 ```
 
-安装Tesseract
+**安装Tesseract**
+
+```
+./autogen.sh
+./configure --prefix=/ocr/tesseract/
+make install
+```
 
 
 
