@@ -156,5 +156,17 @@ hbase(main)> revoke 'test','t1'
 hbase(main)> put 't1','rowkey001','f1:col1','value01'
 ```
 
+查询数据
+
+```
+语法：get <table>,<rowkey>,[<family:column>,....]
+例如：查询表t1，rowkey001中的f1下的col1的值
+hbase(main)> get 't1','rowkey001', 'f1:col1'
+或者：
+hbase(main)> get 't1','rowkey001', {COLUMN=>'f1:col1'}
+查询表t1，rowke002中的f1下的所有列值
+hbase(main)> get 't1','rowkey001'
+```
+
 
 
