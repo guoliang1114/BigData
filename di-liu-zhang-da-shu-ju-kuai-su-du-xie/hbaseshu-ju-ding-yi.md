@@ -118,7 +118,15 @@ hbase(main)> enable 'test1'
 
 ### 6.5.7 权限管理
 
+分配权限
 
+```
+语法 : grant <user> <permissions> <table> <column family> <column qualifier> 
+参数后面用逗号分隔权限用五个字母表示： "RWXCA".
+READ('R'), WRITE('W'), EXEC('X'), CREATE('C'), ADMIN('A')
+例如，给用户‘test'分配对表t1有读写的权限，
+hbase(main)> grant 'test','RW','t1'
+```
 
 
 
