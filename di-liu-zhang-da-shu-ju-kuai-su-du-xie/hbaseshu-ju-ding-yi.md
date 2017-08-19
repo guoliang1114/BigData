@@ -100,8 +100,8 @@ alter用于更改现有表的命令。使用此命令可以更改列族的单元
 删除表分两步，首先禁用表，再删除表。
 
 ```
-disable emp
-drop emp
+disable 'emp'
+drop 'emp'
 ```
 
 
