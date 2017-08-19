@@ -110,12 +110,11 @@ drop 'emp'
 
 ```
 语法: alter 't1', {NAME => 'f1'}, {NAME => 'f2', METHOD => 'delete'}
+例如：修改表test1的cf的TTL为180天
 hbase(main)> disable 'test1'
 hbase(main)> alter 'test1',{NAME=>'body',TTL=>'15552000'},{NAME=>'meta', TTL=>'15552000'}
 hbase(main)> enable 'test1'
 ```
-
-
 
 
 
