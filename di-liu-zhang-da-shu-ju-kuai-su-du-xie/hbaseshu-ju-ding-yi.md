@@ -168,5 +168,16 @@ hbase(main)> get 't1','rowkey001', {COLUMN=>'f1:col1'}
 hbase(main)> get 't1','rowkey001'
 ```
 
+扫描表
+
+```
+语法：scan <table>, {COLUMNS => [ <family:column>,.... ], LIMIT => num}
+另外，还可以添加STARTROW、TIMERANGE和FITLER等高级功能
+例如：扫描表t1的前5条数据
+hbase(main)> scan 't1',{LIMIT=>5}
+```
+
+查询表中的数据行数
+
 
 
