@@ -104,5 +104,18 @@ disable 'emp'
 drop 'emp'
 ```
 
+### 6.5.6 修改表
+
+修改表首先也要禁用表，再修改表
+
+```
+语法: alter 't1', {NAME => 'f1'}, {NAME => 'f2', METHOD => 'delete'}
+hbase(main)> disable 'test1'
+hbase(main)> alter 'test1',{NAME=>'body',TTL=>'15552000'},{NAME=>'meta', TTL=>'15552000'}
+hbase(main)> enable 'test1'
+```
+
+
+
 
 
