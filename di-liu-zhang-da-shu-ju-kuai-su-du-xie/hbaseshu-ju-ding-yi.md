@@ -116,5 +116,9 @@ hbase(main)> alter 'test1',{NAME=>'body',TTL=>'15552000'},{NAME=>'meta', TTL=>'1
 hbase(main)> enable 'test1'
 ```
 
+### 6.5.7 权限管理
+
+
+
 
 
