@@ -148,5 +148,13 @@ hbase(main)> revoke 'test','t1'
 
 ### 6.5.8 数据操作
 
+添加数据
+
+```
+语法：put <table>,<rowkey>,<family:column>,<value>,<timestamp>
+例如：给表t1的添加一行记录：rowkey是rowkey001，family name：f1，column name：col1，value：value01，timestamp：系统默认
+hbase(main)> put 't1','rowkey001','f1:col1','value01'
+```
+
 
 
