@@ -128,5 +128,9 @@ READ('R'), WRITE('W'), EXEC('X'), CREATE('C'), ADMIN('A')
 hbase(main)> grant 'test','RW','t1'
 ```
 
+使用以下命令查看权限
+
+
+
 
 
