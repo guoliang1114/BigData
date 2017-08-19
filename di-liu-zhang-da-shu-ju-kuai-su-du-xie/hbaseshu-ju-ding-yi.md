@@ -130,7 +130,19 @@ hbase(main)> grant 'test','RW','t1'
 
 使用以下命令查看权限
 
+```
+语法：user_permission <table>
+例如，查看表t1的权限列表
+hbase(main)> user_permission 't1'
+```
 
+回收权限
+
+```
+与分配权限类似，语法：revoke <user> <table> <column family> <column qualifier>
+例如，收回test用户在表t1上的权限
+hbase(main)> revoke 'test','t1'
+```
 
 
 
