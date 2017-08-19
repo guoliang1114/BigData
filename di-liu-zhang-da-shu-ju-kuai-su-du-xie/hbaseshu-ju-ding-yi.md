@@ -146,5 +146,7 @@ hbase(main)> user_permission 't1'
 hbase(main)> revoke 'test','t1'
 ```
 
+### 6.5.8 数据操作
+
 
 
