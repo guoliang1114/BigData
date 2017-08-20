@@ -5,6 +5,7 @@
 * [第二章 大数据业务设计和梳理](chapter2.md)
   * 大数据业务设计
   * [大数据案例集](chapter2/da-shu-ju-an-li-ji.md)
+    * [工业领域案例集](chapter2/da-shu-ju-an-li-ji/gong-ye-ling-yu-an-li-ji.md)
 * [第三章  Hadoop技术方案](chapter3.md)
   * [Hadoop简介](chapter301.md)
   * [Hadoop 完全分布式的搭建](chapter302.md)
