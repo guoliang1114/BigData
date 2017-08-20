@@ -32,7 +32,10 @@ hbase(main)> scan 't1',{LIMIT=>5}
 查询表中的数据行数
 
 ```
-
+语法：count <table>, {INTERVAL => intervalNum, CACHE => cacheNum}
+INTERVAL设置多少行显示一次及对应的rowkey，默认1000；CACHE每次去取的缓存区大小，默认是10，调整该参数可提高查询速度
+例如，查询表t1中的行数，每100条显示一次，缓存区为500
+hbase(main)> count 't1', {INTERVAL => 100, CACHE => 500}
 ```
 
 
