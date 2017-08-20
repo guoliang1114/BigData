@@ -97,5 +97,5 @@
 
 该模块采用Oracle OBIEE，显示流程、显示KPI、闭环推进；后端采用Oracle硬件存放基础数据，并使用ETL工具同Informatica对数据抽取、清洗和转换。供应链SCOR模块架构如图：
 
-
+![](/assets2/2.2.1.1_7.png)
 
