@@ -14,6 +14,15 @@ HBase是基于列设计的，那什么是基于列呢？
 | 2 | George2 | 13 | 1990-01-02 |
 | 3 | George3 | 15 | 1990-01-03 |
 
-  
+
+
+HBase表结构是这样的
+
+| Row Key | Time Stamp | ColumnFamily contents | ColumnFamily names |
+| :--- | :--- | :--- | :--- |
+| me.format.hbase | t1 | contents:format='George1' |  |
+| me.format.hbase | t2 | contents:title='title1' |  |
+| me.fotmat.hbase | t3 |  | names:gogog='data1' |
+
 
 
