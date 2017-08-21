@@ -14,8 +14,6 @@ HBase是基于列设计的，那什么是基于列呢？
 | 2 | George2 | 13 | 1990-01-02 |
 | 3 | George3 | 15 | 1990-01-03 |
 
-
-
 HBase表结构是这样的
 
 | Row Key | Time Stamp | ColumnFamily contents | ColumnFamily names |
@@ -24,5 +22,13 @@ HBase表结构是这样的
 | me.format.hbase | t2 | contents:title='title1' |  |
 | me.fotmat.hbase | t3 |  | names:gogog='data1' |
 
+从上面这个HBase表的例子来说明HBase的存储结构。
 
+Row Key：行的键值，其实就相当于这一行的标识符。上面的数据其实只有1行，因为他们的标识符是一样的。
+
+TimeStamp：时间戳，创建数据的时间戳，hbase默认会自动生成
+
+ColumnFamily：列的前缀，一列可以存储多条数据，具体存储什么类型的数据还需要另外一个标示符qualify，上面那个例子中，contents和names就是两个Column Family
+
+ColumnFamily qualify：列前缀后的标识符，一个ColumnFamily可以有多个qualify。上面那个例子中format和title就是contents这个ColumnFamily的qualify。gogogo是names这个ColumnFamily的qualify
 
