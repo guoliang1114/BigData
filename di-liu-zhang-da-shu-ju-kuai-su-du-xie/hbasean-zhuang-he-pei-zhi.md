@@ -114,7 +114,7 @@ Version 1.2.6, rUnknown, Mon May 29 02:25:32 CDT 2017
 hbase(main):001:0> status
 1 active master, 0 backup masters, 2 servers, 0 dead, 1.0000 average load
 
-hbase(main):002:0> 
+hbase(main):002:0>
 ```
 
 
