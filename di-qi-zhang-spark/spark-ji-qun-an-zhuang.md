@@ -73,8 +73,8 @@ export SPARK_MASTER_IP=hadoopmaster
 export SPARK_MASTER_HOST=hadoopmaster
 export SPARK_LOCAL_IP=hadoopmaster
 export SPARK_WORKER_MEMORY=0.5g
-export SPARK_WORKER_CORES=2
+export SPARK_WORKER_CORES=1
 ```
 
-注：在设置Worker进程的CPU个数和内存大小，要注意机器的实际硬件条件，如果配置的超过当前Worker节点的硬件条件，Worker进程会启动失败。+
+注：在设置Worker进程的CPU个数和内存大小，要注意机器的实际硬件条件，如果配置的超过当前Worker节点的硬件条件，Worker进程会启动失败。
 
