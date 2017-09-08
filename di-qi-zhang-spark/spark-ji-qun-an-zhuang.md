@@ -78,3 +78,16 @@ export SPARK_WORKER_CORES=1
 
 注：在设置Worker进程的CPU个数和内存大小，要注意机器的实际硬件条件，如果配置的超过当前Worker节点的硬件条件，Worker进程会启动失败。
 
+```
+#配置slave
+cp slaves.template  slaves
+vi slaves
+#设置slave节点
+hadoopslave1
+hadoopslave2
+```
+
+接着，将文件分发到slave服务器吧。
+
+
+
