@@ -48,5 +48,22 @@ export PATH=$SCALA_HOME/bin:$PATH
 
 **安装Spark**
 
+下载Spark安装包
+
+```
+tar -zxvf spark-2.2.0-bin-hadoop2.7.tgz
+chmod -R 775 /hadoop/spark-2.2.0-bin-hadoop2.7
+chown -R hadoop:hadoop /hadoop/spark-2.2.0-bin-hadoop2.7
+
+#修改环境变量
+export SPARK_HOME=/hadoop/spark-2.2.0-bin-hadoop2.7
+export PATH=$PATH:$SPARK_HOME/bin
+
+#进入spark配置目录
+cd conf
+cp spark-env.sh.template spark-env.sh   #从配置模板复制
+vi spark-env.sh     #添加配置内容
+```
+
 
 
