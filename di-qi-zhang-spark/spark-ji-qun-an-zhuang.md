@@ -9,5 +9,13 @@ Spark的集群架构图
 
 本文的Spark安装基于YARN安装。
 
+安装规划:
+
+| 服务器名称 | 服务器IP | 备注 |
+| :--- | :--- | :--- |
+| hadoopmaster | 192.168.44.131 | Spark master |
+| hadoopslave1 | 192.168.44.132 | Spark Work1 |
+| hadoopslave2 | 192.168.44.133 | Spark Work2 |
+
 
 
