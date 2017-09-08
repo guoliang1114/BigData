@@ -46,5 +46,7 @@ export SCALA_HOME=/usr/share/scala
 export PATH=$SCALA_HOME/bin:$PATH
 ```
 
+安装Spark
+
 
 
