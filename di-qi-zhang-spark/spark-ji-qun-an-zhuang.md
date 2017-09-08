@@ -46,6 +46,8 @@ export SCALA_HOME=/usr/share/scala
 export PATH=$SCALA_HOME/bin:$PATH
 ```
 
+需要在所有的slave节点上安装scala。
+
 **安装Spark**
 
 下载Spark安装包
@@ -98,7 +100,6 @@ scp -r ./spark-2.2.0-bin-hadoop2.7  hadoopslave2:/hadoop/
 
 ```
 sbin/start-all.sh
-
 ```
 
 验证spark是否启动成功
