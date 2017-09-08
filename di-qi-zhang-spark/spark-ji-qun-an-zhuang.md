@@ -11,11 +11,10 @@ Spark的集群架构图
 
 安装环境:
 
-> 虚拟机: VMWare Fusion 8.5.7  
-> 操作系统: RedHat Linux Server 7.2  
-> JDK环境: JDK-8u131-linux-x64  
-> Hadoop+YARN: Apache Hadoop 2.8  
-> Spark: spark-2.2.0
+> 虚拟机: VMWare Fusion 8.5.7
+> 操作系统: RedHat Linux Server 7.2
+> JDK环境: JDK-8u131-linux-x64 Hadoop+YARN: Apache Hadoop 2.8
+> scala-2.10.6 Spark: spark-2.2.0
 
 安装规划:
 
@@ -36,9 +35,7 @@ Spark的集群架构图
 
 由于操作系统、Hadoop、YARN已经在之前的文档的安装过了，本节不做叙述了
 
-安装Scala
-
-
+**安装Scala**
 
 
 
