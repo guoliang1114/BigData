@@ -9,6 +9,14 @@ Spark的集群架构图
 
 本文的Spark安装基于YARN安装。
 
+安装环境:
+
+> 虚拟机: VMWare Fusion 8.5.7
+> 操作系统: RedHat Linux Server 7.2
+> JDK环境: JDK-8u131-linux-x64
+> Hadoop+YARN: Apache Hadoop 2.8
+> Spark: spark-2.2.0
+
 安装规划:
 
 | 服务器名称 | 服务器IP | 备注 |
@@ -17,5 +25,7 @@ Spark的集群架构图
 | hadoopslave1 | 192.168.44.132 | Spark Work1 |
 | hadoopslave2 | 192.168.44.133 | Spark Work2 |
 
+安装步骤：
 
+**安装过程：**
 
