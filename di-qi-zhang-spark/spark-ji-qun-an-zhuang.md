@@ -118,5 +118,7 @@ $jps
 3231 NodeManager
 ```
 
+当然也可以进入进入Spark的Web管理页面： http://hadoopmaster:8080
 
+![](/assets7/7.1_3.png)
 
