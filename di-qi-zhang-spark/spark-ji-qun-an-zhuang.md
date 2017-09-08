@@ -71,10 +71,7 @@ export JAVA_HOME=/home/jdk1.8.0_131
 export SCALA_HOME=/home/scala-2.10.6
 export HADOOP_HOME=/hadoop/hadoop-2.8.0
 export HADOOP_CONF_DIR=/hadoop/hadoop-2.8.0/etc/hadoop
-export SPARK_MASTER_IP=hadoopmaster
-export SPARK_MASTER_HOST=hadoopmaster
-export SPARK_LOCAL_IP=hadoopmaster
-export SPARK_WORKER_MEMORY=0.5g
+export SPARK_WORKER_MEMORY=500m
 export SPARK_WORKER_CORES=1
 ```
 
