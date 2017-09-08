@@ -89,5 +89,12 @@ hadoopslave2
 
 接着，将文件分发到slave服务器吧。
 
+```
+scp -r ./spark-2.2.0-bin-hadoop2.7  hadoopslave1:/hadoop/
+scp -r ./spark-2.2.0-bin-hadoop2.7  hadoopslave2:/hadoop/
+```
+
+**启动spark**
+
 
 
