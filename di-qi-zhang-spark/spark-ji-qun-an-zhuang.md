@@ -96,5 +96,29 @@ scp -r ./spark-2.2.0-bin-hadoop2.7  hadoopslave2:/hadoop/
 
 **启动spark**
 
+```
+sbin/start-all.sh
+
+```
+
+验证spark是否启动成功
+
+```
+用jps检查，在 master 上应该有以下几个进程：
+$ jps
+7949 Jps
+7328 SecondaryNameNode
+7805 Master
+7137 NameNode
+7475 ResourceManager
+
+在 slave 上应该有以下几个进程：
+$jps
+3132 DataNode
+3759 Worker
+3858 Jps
+3231 NodeManager
+```
+
 
 
