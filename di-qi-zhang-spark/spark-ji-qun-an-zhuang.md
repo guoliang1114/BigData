@@ -73,6 +73,7 @@ export HADOOP_HOME=/hadoop/hadoop-2.8.0
 export HADOOP_CONF_DIR=/hadoop/hadoop-2.8.0/etc/hadoop
 export SPARK_WORKER_MEMORY=500m
 export SPARK_WORKER_CORES=1
+export SPARK_EXECUTOR_MEMORY=500M
 ```
 
 注：在设置Worker进程的CPU个数和内存大小，要注意机器的实际硬件条件，如果配置的超过当前Worker节点的硬件条件，Worker进程会启动失败。
@@ -118,7 +119,17 @@ $jps
 3231 NodeManager
 ```
 
-当然也可以进入进入Spark的Web管理页面： http://hadoopmaster:8080
+当然也可以进入进入Spark的Web管理页面： [http://hadoopmaster:8080](http://hadoopmaster:8080)
 
 ![](/assets7/7.1_3.png)
+
+**运行示例**
+
+**Spark Standalone 集群模式运行**
+
+```
+./spark-submit --class org.apache.spark.examples.SparkPi --master spark://hadoopmaster:7077 /hadoop/spark-2.2.0-bin-hadoop2.7/examples/jars/spark-examples_2.11-2.2.0.jar 100
+```
+
+
 
