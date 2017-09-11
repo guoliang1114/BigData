@@ -40,6 +40,7 @@
   * [HBase数据操作](di-liu-zhang-da-shu-ju-kuai-su-du-xie/hbaseshu-ju-cao-zuo.md)
 * [第七章 Spark](di-qi-zhang-spark.md)
   * [Spark 集群安装](di-qi-zhang-spark/spark-ji-qun-an-zhuang.md)
+  * [Spark RDD](di-qi-zhang-spark/spark-rdd.md)
 * [第十章 MPP数据库](di-shi-zhang-mpp-shu-ju-ku.md)
   * [Vertica集群环境安装和配置](di-shi-zhang-mpp-shu-ju-ku/verticaji-qun-huan-jing-an-zhuang-he-pei-zhi.md)
   * [Vertica Lab 1](di-shi-zhang-mpp-shu-ju-ku/verticajian-dan-ru-men.md)
