@@ -2,7 +2,14 @@
 
 首先打开Tensorflow官方下载合适的版本：[https://www.tensorflow.org/install/](https://www.tensorflow.org/install/)
 
-Tensorflow默认使用pip安装，需要准备好pip版本。另外请注意使用的是CPU还是GPU版本。GPU版本会快很多。
+官方可以使用四种方式安装：
+
+1. virtualenv 
+2. "native" pip 
+3. Docker 
+4. 使用源码安装
+
+本文使用pip安装，需要准备好pip版本。另外请注意使用的是CPU还是GPU版本。GPU版本会快很多。
 
 Tensorflow模板需要Python的版本是：
 
@@ -99,5 +106,5 @@ Hello, TensorFlow!
 
 具体的安装文档请查看：
 
-https://www.tensorflow.org/install/install\_mac\#validate\_your\_installation
+[https://www.tensorflow.org/install/install\_mac\#validate\_your\_installation](https://www.tensorflow.org/install/install_mac#validate_your_installation)
 
