@@ -18,7 +18,15 @@ Scikit-learn的基本功能主要被分为六大部分：分类，回归，聚�
 
 总结来说，Scikit-learn实现了一整套用于数据降维，模型选择，特征提取和归一化的完整算法/模块，虽然缺少按步骤操作的参考教程，但Scikit-learn针对每个算法和模块都提供了丰富的参考样例和详细的说明文档。
 
-安装 scikit-learn
+### 安装 scikit-learn
+
+安装之前需要说明，scikit-learn需要的依赖环境：
+
+Scikit-learn requires:
+
+* Python \(&gt;= 2.7 or &gt;= 3.3\),
+* NumPy \(&gt;= 1.8.2\),
+* SciPy \(&gt;= 0.13.3\).
 
 
 
