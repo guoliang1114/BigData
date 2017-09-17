@@ -20,5 +20,11 @@ pip 6.0.3 from /Library/Python/2.7/site-packages (python 2.7)
 
 官网推荐使用高版本的pip，首先升级pip
 
+```
+sudo easy_install --upgrade pip
+sudo easy_install --upgrade six 
+
+```
+
 
 
