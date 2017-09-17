@@ -47,6 +47,7 @@
   * [Tensorflow学习笔记](di-jiu-zhang-shen-du-xue-xi/tensorflowxue-xi-bi-ji.md)
     * [Tensorflow 安装 \(Mac\)](di-jiu-zhang-shen-du-xue-xi/tensorflowxue-xi-bi-ji/tensorflow-2-an-zhuang-mac.md)
     * [Tensorflow处理结构](di-jiu-zhang-shen-du-xue-xi/tensorflowxue-xi-bi-ji/tensorflowchu-li-jie-gou.md)
+    * [Tensorflow快速入门例子](di-jiu-zhang-shen-du-xue-xi/tensorflowxue-xi-bi-ji/tensorflowkuai-su-ru-men-li-zi.md)
 * [第十章 MPP数据库](di-shi-zhang-mpp-shu-ju-ku.md)
   * [Vertica集群环境安装和配置](di-shi-zhang-mpp-shu-ju-ku/verticaji-qun-huan-jing-an-zhuang-he-pei-zhi.md)
   * [Vertica Lab 1](di-shi-zhang-mpp-shu-ju-ku/verticajian-dan-ru-men.md)
