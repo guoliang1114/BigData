@@ -78,5 +78,18 @@ Installing collected packages: numpy, werkzeug, html5lib, markdown, bleach, tens
 Successfully installed bleach-1.5.0 funcsigs-1.0.2 html5lib-0.9999999 markdown-2.6.9 mock-2.0.0 numpy-1.13.1 pbr-3.1.1 tensorflow-1.3.0 tensorflow-tensorboard-0.1.6 werkzeug-0.12.2
 ```
 
+#### **验证安装**
+
+安装完毕后，我们需要来验证是否安装无误。
+
+```
+$python
+
+import tensorflow as tf
+hello = tf.constant('Hello, TensorFlow!')
+sess = tf.Session()
+print(sess.run(hello))
+```
+
 
 
