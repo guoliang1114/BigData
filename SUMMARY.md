@@ -42,8 +42,10 @@
   * [Spark 集群安装](di-qi-zhang-spark/spark-ji-qun-an-zhuang.md)
   * [Spark RDD](di-qi-zhang-spark/spark-rdd.md)
 * [第九章 深度学习](di-jiu-zhang-shen-du-xue-xi.md)
-  * 人工智能简介
+  * [人工智能简介](di-jiu-zhang-shen-du-xue-xi/ren-gong-zhi-neng-jian-jie.md)
   * [决策树应用](di-jiu-zhang-shen-du-xue-xi/jue-ce-shu-ying-yong.md)
+  * [Tensorflow学习笔记](di-jiu-zhang-shen-du-xue-xi/tensorflowxue-xi-bi-ji.md)
+    * [Tensorflow 2 安装 \(Mac\)](di-jiu-zhang-shen-du-xue-xi/tensorflowxue-xi-bi-ji/tensorflow-2-an-zhuang-mac.md)
 * [第十章 MPP数据库](di-shi-zhang-mpp-shu-ju-ku.md)
   * [Vertica集群环境安装和配置](di-shi-zhang-mpp-shu-ju-ku/verticaji-qun-huan-jing-an-zhuang-he-pei-zhi.md)
   * [Vertica Lab 1](di-shi-zhang-mpp-shu-ju-ku/verticajian-dan-ru-men.md)
