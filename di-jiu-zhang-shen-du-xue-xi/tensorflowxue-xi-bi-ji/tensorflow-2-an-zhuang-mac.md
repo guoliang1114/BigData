@@ -41,3 +41,42 @@ pip 9.0.1 from /Library/Python/2.7/site-packages/pip-9.0.1-py2.7.egg (python 2.7
 
 安装Tensorflow的过程非常简单。
 
+```
+pip install tensorflow      # Python 2.7; CPU support
+
+
+Collecting tensorflow
+  Downloading tensorflow-1.3.0-cp27-cp27m-macosx_10_11_x86_64.whl (39.4MB)
+    100% |████████████████████████████████| 39.4MB 32kB/s 
+Requirement already satisfied: six>=1.10.0 in /Library/Python/2.7/site-packages/six-1.10.0-py2.7.egg (from tensorflow)
+Requirement already satisfied: protobuf>=3.3.0 in /Library/Python/2.7/site-packages (from tensorflow)
+Requirement already satisfied: wheel in /Library/Python/2.7/site-packages (from tensorflow)
+Requirement already satisfied: backports.weakref>=1.0rc1 in /Library/Python/2.7/site-packages (from tensorflow)
+Collecting numpy>=1.11.0 (from tensorflow)
+  Downloading numpy-1.13.1-cp27-cp27m-macosx_10_6_intel.macosx_10_9_intel.macosx_10_9_x86_64.macosx_10_10_intel.macosx_10_10_x86_64.whl (4.6MB)
+    100% |████████████████████████████████| 4.6MB 191kB/s 
+Collecting tensorflow-tensorboard<0.2.0,>=0.1.0 (from tensorflow)
+  Downloading tensorflow_tensorboard-0.1.6-py2-none-any.whl (2.2MB)
+    100% |████████████████████████████████| 2.2MB 384kB/s 
+Collecting mock>=2.0.0 (from tensorflow)
+  Downloading mock-2.0.0-py2.py3-none-any.whl (56kB)
+    100% |████████████████████████████████| 61kB 706kB/s 
+Requirement already satisfied: setuptools in /System/Library/Frameworks/Python.framework/Versions/2.7/Extras/lib/python (from protobuf>=3.3.0->tensorflow)
+Collecting werkzeug>=0.11.10 (from tensorflow-tensorboard<0.2.0,>=0.1.0->tensorflow)
+  Downloading Werkzeug-0.12.2-py2.py3-none-any.whl (312kB)
+    100% |████████████████████████████████| 317kB 460kB/s 
+Collecting html5lib==0.9999999 (from tensorflow-tensorboard<0.2.0,>=0.1.0->tensorflow)
+Collecting markdown>=2.6.8 (from tensorflow-tensorboard<0.2.0,>=0.1.0->tensorflow)
+Collecting bleach==1.5.0 (from tensorflow-tensorboard<0.2.0,>=0.1.0->tensorflow)
+  Downloading bleach-1.5.0-py2.py3-none-any.whl
+Collecting funcsigs>=1; python_version < "3.3" (from mock>=2.0.0->tensorflow)
+  Downloading funcsigs-1.0.2-py2.py3-none-any.whl
+Collecting pbr>=0.11 (from mock>=2.0.0->tensorflow)
+  Downloading pbr-3.1.1-py2.py3-none-any.whl (99kB)
+    100% |████████████████████████████████| 102kB 343kB/s 
+Installing collected packages: numpy, werkzeug, html5lib, markdown, bleach, tensorflow-tensorboard, funcsigs, pbr, mock, tensorflow
+Successfully installed bleach-1.5.0 funcsigs-1.0.2 html5lib-0.9999999 markdown-2.6.9 mock-2.0.0 numpy-1.13.1 pbr-3.1.1 tensorflow-1.3.0 tensorflow-tensorboard-0.1.6 werkzeug-0.12.2
+```
+
+
+
