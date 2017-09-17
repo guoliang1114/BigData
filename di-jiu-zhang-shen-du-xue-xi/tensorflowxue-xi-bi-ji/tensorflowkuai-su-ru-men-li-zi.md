@@ -31,10 +31,19 @@ for step in range(201):
     sess.run(train)
     if step%20 == 0:
         print(step,sess.run(weights),sess.run(biases))
-
 ```
 
 解释:
 
 一般python编码不支持中文，如果python文件中需要使用中文，修改先定义文件编码。因此在第一行我们使用coding来指定python文件的编码。
+
+在如上代码中，我们随机生成了x\_data,并且x\_data类型为float32。接着定义了 y\_data, 
+
+y\_data=f\(x\)=0.1\*x+0.3
+
+本节我们需要使用数据训练出weight=0.1，biases=0.3。
+
+首先定义 weight为-0.1到0.1的随机数。biases默认为0。
+
+
 
