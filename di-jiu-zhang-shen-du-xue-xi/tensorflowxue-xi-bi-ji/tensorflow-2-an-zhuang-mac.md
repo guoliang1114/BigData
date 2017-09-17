@@ -11,7 +11,7 @@ Tensorflow模板需要Python的版本是：
 
 我的Mac使用的是python 2.7版本。
 
-另外需要关闭Mac的的System Integrity Protection的问题，解决的办法是关闭保护SIP。
+另外需要关闭Mac的的System Integrity Protection的问题，解决的办法是关闭保护SIP，以及允许安装第三方的软件。
 
 > 关闭SIP
 >
