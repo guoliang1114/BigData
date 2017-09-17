@@ -91,5 +91,13 @@ sess = tf.Session()
 print(sess.run(hello))
 ```
 
+如果python输入以下内容，就说明安装正确了。
 
+```
+Hello, TensorFlow!
+```
+
+具体的安装文档请查看：
+
+https://www.tensorflow.org/install/install\_mac\#validate\_your\_installation
 
