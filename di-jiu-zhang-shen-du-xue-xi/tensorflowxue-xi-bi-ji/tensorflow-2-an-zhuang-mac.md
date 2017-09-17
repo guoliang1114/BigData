@@ -22,9 +22,18 @@ pip 6.0.3 from /Library/Python/2.7/site-packages (python 2.7)
 
 ```
 sudo easy_install --upgrade pip
-sudo easy_install --upgrade six 
+sudo easy_install --upgrade six
 
+再次检查版本
+pip -V
+pip 9.0.1 from /Library/Python/2.7/site-packages/pip-9.0.1-py2.7.egg (python 2.7)
 ```
+
+**安装 TensorFlow**
+
+安装Tensorflow的过程非常简单。
+
+
 
 
 
