@@ -49,7 +49,7 @@ f\(x\)=weight\*x+biases
 
 紧接着，定义损失函数loss=tf.reduce\_mean\(tf.square\(y-y\_data\)\)。
 
-然后定义优化器，我们希望训练的结果是loss最够的小。
+然后定义优化器，我们希望训练的结果是loss最够的小。优化器使用梯度下降的方式。
 
 接着初始化tensorflow的变量，创建session。执行session。为了方便看到过程，我们定期打印出weights和biases的值。
 
@@ -70,6 +70,4 @@ f\(x\)=weight\*x+biases
 ```
 
 会发现经过201步的执行，weight的值趋近于0.1，biases趋近于0.3。和我们之前的定义是一致的。
-
-
 
