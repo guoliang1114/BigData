@@ -53,4 +53,6 @@
   * [Vertica Lab 1](di-shi-zhang-mpp-shu-ju-ku/verticajian-dan-ru-men.md)
   * [Vertica Lab 2](di-shi-zhang-mpp-shu-ju-ku/vertica-lab-2.md)
 * [第十一章 ELC SCV POC](di-shi-yi-zhang-elc-scv-poc.md)
+  * [11.1 Kafka快速介绍](di-shi-yi-zhang-elc-scv-poc/111-kafkakuai-su-jie-shao.md)
+  * [11.2 snapLogic](di-shi-yi-zhang-elc-scv-poc/snaplogic.md)
 
